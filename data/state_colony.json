@@ -1,0 +1,141 @@
+{
+ "ts": "2026-09-06 11:50:08 +0700",
+ "profiles": [
+  {
+   "address": "0xa60e892ab5fbf4754e3052b7643e48a1bd6b3065",
+   "chain": "robinhood",
+   "n_alert": 11,
+   "vol": 9362.220000000001,
+   "tags": [
+    "fresh_wallet",
+    "gmgn",
+    "gmgn_go",
+    "sandwich_bot",
+    "smart_degen"
+   ],
+   "pnl": 1177742.6949674776,
+   "winrate": 53.92817059483727,
+   "hold_h": 52.39204308579937,
+   "n_tok": 1791,
+   "fund": "0x3807771db053dae9ead980692b6ef85c9c10f0bd"
+  },
+  {
+   "address": "0x9d1255efc7a50b9e2fbbc18cab238733e36ce6f2",
+   "chain": "robinhood",
+   "n_alert": 10,
+   "vol": 13820.24,
+   "tags": [
+    "fomo",
+    "gmgn",
+    "gmgn_go",
+    "smart_degen"
+   ],
+   "pnl": 42234.72614593342,
+   "winrate": 75.75757575757575,
+   "hold_h": 77.55547222222222,
+   "n_tok": 40,
+   "fund": "0x9c7cd07ebecd52f99c19b387f53db634c3d0e5d8"
+  },
+  {
+   "address": "0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9",
+   "chain": "robinhood",
+   "n_alert": 136,
+   "vol": 96263.55,
+   "tags": [
+    "gmgn",
+    "gmgn_go",
+    "smart_degen"
+   ],
+   "pnl": 26069.717666878783,
+   "winrate": 55.27272727272727,
+   "hold_h": 20.506766154452322,
+   "n_tok": 284,
+   "fund": "0x47081ad66d7a72c814a9a3e5d4d9baea62d3ee8d"
+  },
+  {
+   "address": "0x98feae3174b130f06cad43e7d5d9d3e146f4dd14",
+   "chain": "robinhood",
+   "n_alert": 10,
+   "vol": 14820.17,
+   "tags": [
+    "gmgn",
+    "gmgn_go",
+    "smart_degen"
+   ],
+   "pnl": 22222.463695759314,
+   "winrate": 49.29577464788733,
+   "hold_h": 4.959001345636294,
+   "n_tok": 291,
+   "fund": "0x3807771db053dae9ead980692b6ef85c9c10f0bd"
+  },
+  {
+   "address": "0xd137469da61b84aa489058229dfe54c63a30faa0",
+   "chain": "bsc",
+   "n_alert": 15,
+   "vol": 13134.460000000001,
+   "tags": [
+    "gmgn",
+    "gmgn_go",
+    "smart_degen"
+   ],
+   "pnl": 17937.059553197545,
+   "winrate": 54.3046357615894,
+   "hold_h": 41.04554460864806,
+   "n_tok": 204,
+   "fund": "0x0d0707963952f2fba59dd06f2b425ace40b492fe"
+  },
+  {
+   "address": "DjiJKVgtS3MrR9VasbQWMMZUpB4zsbipeKUJR1YLw91r",
+   "chain": "sol",
+   "n_alert": 13,
+   "vol": 9017.509999999998,
+   "tags": [
+    "axiom",
+    "gmgn",
+    "gmgn_go",
+    "smart_degen"
+   ],
+   "pnl": 12864.100601303056,
+   "winrate": 38.95781637717122,
+   "hold_h": 36.32594404667197,
+   "n_tok": 446,
+   "fund": "54ZZWNRTqwLyaVH68MG8ZR8cfRU5Zppsny7DihVxmjEE"
+  },
+  {
+   "address": "0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97",
+   "chain": "robinhood",
+   "n_alert": 35,
+   "vol": 14848.76,
+   "tags": [
+    "smart_degen"
+   ],
+   "pnl": 1473.812372691498,
+   "winrate": 50.98039215686274,
+   "hold_h": 2.7054192386831275,
+   "n_tok": 108,
+   "fund": "0x12398beeeef34e5976eee6d6a0527b1dd0914448"
+  },
+  {
+   "address": "BopgSXVHNqks8GNMp5UJ3g54mKP1Wgfs8j6DcRNSCoBb",
+   "chain": "sol",
+   "n_alert": 21,
+   "vol": 18922.53,
+   "tags": [
+    "axiom",
+    "photon",
+    "smart_degen"
+   ],
+   "pnl": -7904.809562435186,
+   "winrate": 34.54545454545455,
+   "hold_h": 59.38791497289973,
+   "n_tok": 175,
+   "fund": "39azUYFWPz3VHgKCf3VChUwbpURdCHRxjWVowf5jUJjg"
+  }
+ ],
+ "colonies": [
+  [
+   "0xa60e892ab5fbf4754e3052b7643e48a1bd6b3065",
+   "0x98feae3174b130f06cad43e7d5d9d3e146f4dd14"
+  ]
+ ]
+}

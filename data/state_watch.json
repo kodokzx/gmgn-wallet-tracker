@@ -1,0 +1,5148 @@
+{
+ "sm:robinhood": 1788689835,
+ "sm:bsc": 1788689838,
+ "sm:sol": 1788689836,
+ "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1788673075,
+ "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1788689818,
+ "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1788687280,
+ "initialized": true,
+ "gflow": {
+  "robinhood:0x0c5453edca198471fc39edb9156d9627caae04bf": {
+   "sym": "Forever",
+   "A": 0.0,
+   "B": -1.3952139999998963,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x09b3d5a233004cd2e5fa5133311356ca3c8431dc": {
+   "sym": "SHARES",
+   "A": 12.163518481877645,
+   "B": -4535.402588621313,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x82cb7613d4ef9d8df7e50fad2271c260a0b0c96e": {
+   "sym": "goldfish",
+   "A": 0.0,
+   "B": 726.4285004974585,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xe462da1b17d0ab6f54adeca8ae1e5da31918bffe": {
+   "sym": "VALUELESS",
+   "A": 0.0,
+   "B": 197.60639691000006,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x117cc2133c37b721f49de2a7a74833232b3b4c0c": {
+   "sym": "SPY",
+   "A": 0.0,
+   "B": -508.2798779389695,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x9e92bbf2017bbfb7a06c975ca30e268cd2e57777": {
+   "sym": "股狗",
+   "A": 0.0,
+   "B": -2181.7469023219874,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xb17c14ef132cfae1e22af3a539c402daf21d7777": {
+   "sym": "🔶",
+   "A": 0.0,
+   "B": -1088.7469352210107,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x84c104d7b6c5e646937de8cd1729525276a87777": {
+   "sym": "Froggie",
+   "A": 0.0,
+   "B": -178.17868259766567,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x2ab8a4dd2191989ac2898006df350b236d2b7777": {
+   "sym": "Sue",
+   "A": 0.0,
+   "B": -2319.1115195575244,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R": {
+   "sym": "RAY",
+   "A": 0.0,
+   "B": -5627.471343773105,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ": {
+   "sym": "PURR",
+   "A": 0.0,
+   "B": 591.0000449702752,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:CTPoyCwkjMvoJwU4xvZZqoD8tiYk6yDchySiN5gGpump": {
+   "sym": "fone",
+   "A": 0.0,
+   "B": -2655.06628274157,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Pren1FvFX6J3E4kXhJuCiAD5aDmGEb7qJRncwA8Lkhw": {
+   "sym": "ANTHRP",
+   "A": 154.99154799999997,
+   "B": -5354.94476266226,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:8SKrQVfmiNsP6K8Wg9amMAM5uQUayoveiawFfpZbgFgn": {
+   "sym": "UNDERCLASS",
+   "A": 0.0,
+   "B": -1278.5769066491143,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xb63f5cca37b7886d731af9c868350d7d9bd9af4f": {
+   "sym": "Doohnibor",
+   "A": 0.0,
+   "B": -815.44778155,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:H8AAs5YU9HhwCpRH48dJqdJft6gJAGhCXZKybfHFEuTc": {
+   "sym": "SOLCAT",
+   "A": 0.0,
+   "B": -5388.06764584393,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:So11111111111111111111111111111111111111112": {
+   "sym": "WSOL",
+   "A": -683.3136210000001,
+   "B": -3923.5971310000004,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn": {
+   "sym": "PUMP",
+   "A": 0.0,
+   "B": -1282.7372413407998,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:C2ncc5hGcXoF3rX4G9gfnP5KY9ieWvTJ7gtzuUpFRGJa": {
+   "sym": "TIT",
+   "A": 0.0,
+   "B": -526.366443,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:ANM35KbUcfKdEVBXzSjZBoT6ceSwYRs3fuc79fp7kRqP": {
+   "sym": "Pumpcat",
+   "A": 0.0,
+   "B": -1069.5575250134702,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xc71d692ff5323d818b425a9536301c5147ed3a6b": {
+   "sym": "Elon",
+   "A": 0.0,
+   "B": -1122.821263156831,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x12d5ee7917ca430073c3a638ee1e6f0648a98a01": {
+   "sym": "FATCOIN",
+   "A": 0.0,
+   "B": 1412.889186314191,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x9e88da78e13755bea9a4988c987849794ec3f5e8": {
+   "sym": "Pledge",
+   "A": 0.0,
+   "B": -231.40757187652787,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xeb8cd1f381b6c1a2248e98f6aba1d1167ffe1825": {
+   "sym": "UNIPCS",
+   "A": 0.0,
+   "B": -1322.9368745035072,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x95a7ced47a4533cc23c08209a6d26352103460d4": {
+   "sym": "Commoner",
+   "A": 0.0,
+   "B": 613.550421,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xd976b2ab3cf025f6136558687c174520c92b7777": {
+   "sym": "Healthcoin",
+   "A": 0.0,
+   "B": 557.3053864420539,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x2e8c31162b855a2ffa90f6f8634643ad6f111e18": {
+   "sym": "AI",
+   "A": 0.0,
+   "B": 29155.471237693946,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xf3cf3416415d8daf65db5217a8d848000226107e": {
+   "sym": "POINTFAR",
+   "A": 0.0,
+   "B": -519.6071808173948,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3e208dc63cc0ef2a61e401587737e4df2dc74aef": {
+   "sym": "RYZE",
+   "A": 0.0,
+   "B": 406.67321275526365,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xf2ec508422174ee564de98187db9359d318afb6b": {
+   "sym": "DJTB",
+   "A": 0.0,
+   "B": 612.3374798009409,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xa8871d3e017ec945c585d401c92656a7e29a7777": {
+   "sym": "川宝",
+   "A": 0.0,
+   "B": 605.8282997733245,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:98sMhvDwXj1RQi5c5Mndm3vPe9cBqPrbLaufMXFNMh5g": {
+   "sym": "HYPE",
+   "A": 0.0,
+   "B": 1619.6014187233995,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:B2or5WpZMW1MYzKqyicAzXTpgb6Rp4Bsc9vkRxn5LiDN": {
+   "sym": "FONE",
+   "A": 0.0,
+   "B": 519.1130226927974,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump": {
+   "sym": "ANSEM",
+   "A": 0.0,
+   "B": -4247.75916846014,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x5759a852243a56a48853af1d28fd4e0f33747c9b": {
+   "sym": "18932",
+   "A": 0.0,
+   "B": 638.9970046210237,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x62c71cd34a52c30d894419cbcc55db2afa8032ea": {
+   "sym": "YOLO",
+   "A": 0.0,
+   "B": -2537.295131346088,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xf05babb8172bea20e974b458c593399be11250dd": {
+   "sym": "GRACE",
+   "A": 0.0,
+   "B": -520.1623625951971,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x9a3e2b85a5322131fa1b6968e3538890687a94e1": {
+   "sym": "WAGMI",
+   "A": 0.0,
+   "B": 811.18598715,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x69c68e4c00c6f6e4ac027300293a879be1e11e18": {
+   "sym": "AP",
+   "A": 0.0,
+   "B": -2441.310123692775,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xd9db30bb0d2b8d2eae3826a1372117e058791e18": {
+   "sym": "MOO",
+   "A": 0.0,
+   "B": 7918.456697745361,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x556b78e745aefe48bc69e0c7c2775d7e03b27777": {
+   "sym": "WOULD",
+   "A": 0.0,
+   "B": -150.5414207219991,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x872a3301465fe098171df2524df2ebd5798c7777": {
+   "sym": "SHOULD",
+   "A": 0.0,
+   "B": -1103.1547945732386,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS": {
+   "sym": "ZEC",
+   "A": 0.0,
+   "B": -3150.522497700444,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF": {
+   "sym": "OPENAI",
+   "A": 521.113719,
+   "B": -3806.9862456353403,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:7tWFogvm3EyPmHsGMrQBiw1wBpXxdF88dZW5HkeTL4tH": {
+   "sym": "JALAPEÑO",
+   "A": 0.0,
+   "B": -2605.9921215015124,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": {
+   "sym": "OTC",
+   "A": 0.0,
+   "B": -18757.06548708046,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Aigf5pKPyZW8nzxCrHEisE4tZMiUhFpKie8mYE7cmj6c": {
+   "sym": "NVDGE",
+   "A": 0.0,
+   "B": 513.5809613704,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR": {
+   "sym": "ZCAT",
+   "A": 0.0,
+   "B": -2193.49629589891,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
+   "sym": "STONK",
+   "A": 0.0,
+   "B": 2643.6609694692,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x14623dd0784cb5c484f8935c7c218d110332b538": {
+   "sym": "PCAT",
+   "A": 0.0,
+   "B": -1401.6533030640708,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x9411910f947b2d178ce5cc71d5f6e15b0e033798": {
+   "sym": "run",
+   "A": 0.0,
+   "B": -406.04539567911354,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xad4ee775920441d9555a3ed0ab24bcb3e34e9460": {
+   "sym": "POPO",
+   "A": 0.0,
+   "B": 737.91768897,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x451b42a15100c340ca12f7c66de06fac5ea2d751": {
+   "sym": "BOW",
+   "A": 0.0,
+   "B": -1884.3076575757575,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x9e94c8b5a0caeda5d0471c3a9f5ed4f3519d88c7": {
+   "sym": "ROCKET",
+   "A": 0.0,
+   "B": 615.07400625,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xb9972ca7188e511174947e3936a5315ac7073277": {
+   "sym": "PROLOGUE",
+   "A": 0.0,
+   "B": -3463.8226767938168,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x9d7d4d0e0c41fa6bc1e30ddf8645d8f83c101e18": {
+   "sym": "CHROME",
+   "A": 0.0,
+   "B": 2221.331109535183,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x86df20937c45d2aacac6f6eed5d0a891b3887777": {
+   "sym": "旺柴",
+   "A": 0.0,
+   "B": -3590.331171417991,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x135b978ddbdcb41afce5dcc1a88640568d677777": {
+   "sym": "Q币",
+   "A": 0.0,
+   "B": -1888.6952841736706,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x205812cdbed920aff76c6580abd681a46d11efc7": {
+   "sym": "QQQB",
+   "A": 0.0,
+   "B": -479.27218728796174,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x4c42e2217b4c28ab0df322373dd25e974a024444": {
+   "sym": "ANDY",
+   "A": 0.0,
+   "B": 113.3712411729091,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:C8Sno3qvRqWGja6fQAxzDMyzdrfZ7dLzyZKTD9fLiHie": {
+   "sym": "FHOOD",
+   "A": 0.0,
+   "B": -703.1358239224028,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:5hwVC2mhDQw1XzdALnXCFYeVF8G9iJWeJ4LumjwSTHix": {
+   "sym": "STANK",
+   "A": 0.0,
+   "B": 525.987,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8": {
+   "sym": "SPCXx",
+   "A": 0.0,
+   "B": 1093.5683929396998,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump": {
+   "sym": "testicle",
+   "A": 0.0,
+   "B": -567.92022559375,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6qY9nzQGrHZFhSzzqrnh5LL2dr47yqibfo42FZifaGQS": {
+   "sym": "PAIRED",
+   "A": 0.0,
+   "B": -581.2677214917021,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xdf600ad755c49bc191ad0e8b3305e59ff5147777": {
+   "sym": "CanCat",
+   "A": 0.0,
+   "B": -2227.6902857979403,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xccfbcd3bf85d8657a6bbd10b8c81c99f13207777": {
+   "sym": "十八bro",
+   "A": 0.0,
+   "B": -3530.9474960582525,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:HQHx2HJwWReMjDQMw1ZCH3w4yxBAqYZTaUHun6Lvpump": {
+   "sym": "KikeInu",
+   "A": 0.0,
+   "B": -526.45018774392,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3de514ada7ed28501bc0acf7a93c443b04621ebc": {
+   "sym": "S3XY",
+   "A": 0.0,
+   "B": -1086.1346375388794,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3c6decf82517f4182dbc190cbb04e253fe68fe67": {
+   "sym": "ROB",
+   "A": 0.0,
+   "B": 110.64025982796625,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x05b37fb53a299a1b874a619e1c4c404d52c36f4c": {
+   "sym": "RDDT",
+   "A": 0.0,
+   "B": 120.33682172017956,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xfa0653c203c4c73bf89ba357369cec6991e4d8d2": {
+   "sym": "MAG7",
+   "A": 0.0,
+   "B": -591.5985853228867,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x07dcaccade1e3c034c707039bdfe02792f88ffff": {
+   "sym": "FOMOCAT",
+   "A": -977.8517695272262,
+   "B": -229.20370065361533,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:7hGgx1VtNTj193fFXXuMEkp1MRV6JbWYgMBhHRYxaxu2": {
+   "sym": "FRIES",
+   "A": 0.0,
+   "B": -1061.5382192112947,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x38c4d77938821037d3a42c7da0519ee5a9158cad": {
+   "sym": "ELON",
+   "A": 0.0,
+   "B": 134.82280338285,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xa0699d0524acac87f43fbc765686c36b10ccad37": {
+   "sym": "POPCORN",
+   "A": 0.0,
+   "B": 1228.476942,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x98096d17e191b3da1d5f99a6d7b3584351b11e18": {
+   "sym": "BONER",
+   "A": 0.0,
+   "B": 3744.5749586112174,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xfa6d9b504848606eb9aec04ccc161d169b3f2159": {
+   "sym": "BREW",
+   "A": 0.0,
+   "B": -4011.84728645458,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:HLBm9EovjiN7H2TCZGE3vsbmadhzwvc6WhrRLBRypump": {
+   "sym": "ARGOS",
+   "A": 0.0,
+   "B": 1047.7434781814,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6eCJKonwXUGd31v99i8RWQatrjPNSy2KisC7LPeTPHgD": {
+   "sym": "ZOOKO",
+   "A": 0.0,
+   "B": 528.7,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:HiY4qx8j5QuVh5UFnKyFq1DvzzDNgFkgyyhEeDXhpump": {
+   "sym": "KEKODYSSEUS",
+   "A": 0.0,
+   "B": -50.35647591885004,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:C3CZPHy8nVZ192R4yrNBiG7asAEHc5wYmTiof7Fvpump": {
+   "sym": "whitepaper",
+   "A": 0.0,
+   "B": -600.24074860008,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x97216593d3b2769da6f0adeee6fb8e36da4e319f": {
+   "sym": "Ponsan",
+   "A": 0.0,
+   "B": -2198.556020148974,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xa3602804e096cb73bd8344afc1ff3f3390b899c5": {
+   "sym": "PEZ",
+   "A": 0.0,
+   "B": 10160.192898209316,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x5e7516be1be5d4396b060908cd44c9db093c4189": {
+   "sym": "MUPPETS",
+   "A": 0.0,
+   "B": -100.9414880697434,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x385f4f8ae47651ce5f58f5265395a669f8281e18": {
+   "sym": "MEME",
+   "A": 0.0,
+   "B": -6382.521778289823,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xf40592daacb3e5abf358789f5688c0b4f64d7777": {
+   "sym": "FLORK",
+   "A": 0.0,
+   "B": -777.854443385908,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x265b3982ea730748100947f52561a4eab54affff": {
+   "sym": "AST",
+   "A": 0.0,
+   "B": -2954.309301029167,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:4RkjwMUre2BxWfspgcuCYUe7DfPRHS4AxXWHZ92b5qQX": {
+   "sym": "PLUMBER",
+   "A": 0.0,
+   "B": -555.3983221572,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:9BVn3Y8tPghbnGuuuxoj2mGekqgSQV1M7nALF7brpump": {
+   "sym": "NYAN",
+   "A": 0.0,
+   "B": 1042.97926883904,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:4ytoC4JhuZsqyLC9jTYGxLvwGu4vELA9w4xWc4qRgHik": {
+   "sym": "BAG",
+   "A": 0.0,
+   "B": 2748.3281489744786,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x380b789970dccb4a0d81c818915db25a19b0fc80": {
+   "sym": "Sakadung",
+   "A": 0.0,
+   "B": -802.3082,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x2d84761120398564a77eb0512df6c9f1157c8652": {
+   "sym": "BACON",
+   "A": 0.0,
+   "B": -723.679745,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x7dbf38976f6d3b9c529e7d9484a71898b409ee6a": {
+   "sym": "ZZZ",
+   "A": 0.0,
+   "B": -133.73085928874616,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3dc51b3a57a2b0a26c2d2a316cdc0902494ed930": {
+   "sym": "GODL",
+   "A": 0.0,
+   "B": -0.7328228925875919,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e": {
+   "sym": "GLD",
+   "A": 0.0,
+   "B": 22.68922454227095,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x47a685a5234b7f02fcac2704b7e458e52fa509b2": {
+   "sym": "CLANK",
+   "A": 0.0,
+   "B": 613.13375334321,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x18acb55d1151e324371c42642d3429b0eefc69f0": {
+   "sym": "CHIP",
+   "A": 0.0,
+   "B": 1856.1336318786089,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x01a51df93fc9768470abd4637d3498bb83a71b43": {
+   "sym": "DOHJ",
+   "A": 0.0,
+   "B": -208.21024651000005,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x35900d68794903aa6fe2eb4ebe715da82206fda8": {
+   "sym": "KINESIN",
+   "A": 0.0,
+   "B": 605.4742234646,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:JE8zmsKRivXggZsJxXHBdCkako85YawNtU5hqS4upump": {
+   "sym": "PAX",
+   "A": 0.0,
+   "B": 2817.06122405754,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:F5PYCFQdD7EWfwBabtxiKTmRAJBCH4AxDZApt4fZpump": {
+   "sym": "STARE",
+   "A": 0.0,
+   "B": -0.33078687109991733,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xcba87c79a508ddcfb26c814380d111226ebc6b52": {
+   "sym": "AIRDROP",
+   "A": 0.0,
+   "B": -1.118398874439663,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x5d6ef090a1461b11c9427ac319260122d1c61e18": {
+   "sym": "ICOIN",
+   "A": 0.0,
+   "B": 2231.735608501989,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Lyi47medADEVDd5hxJo1mbxhnBct841sFpcGRyHTuwp": {
+   "sym": "UBI",
+   "A": 0.0,
+   "B": -1664.4763050000001,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xdbf10a3fa8ae05c4999d631cc5ed45fcfa0383e9": {
+   "sym": "RUIN",
+   "A": 0.0,
+   "B": -677.4416292689438,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x507b6f349a80114097a67b8b4677367acc15b220": {
+   "sym": "par",
+   "A": 0.0,
+   "B": 1137.9845583953954,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xc269d59a0d608ea0bd672f2f4616c372d8554444": {
+   "sym": "ClipX",
+   "A": 0.0,
+   "B": 2146.1536510193887,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x7cd4eaebed10c8197e2b18284911353518b37777": {
+   "sym": "7777",
+   "A": 0.0,
+   "B": 165.84940470941547,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xaca7781415dbe89ed3f8be1150eb8c69d5477777": {
+   "sym": "兔星星",
+   "A": 0.0,
+   "B": -1903.7603235080055,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x02fca66c1d1afb4e2a7884261eb00f63598a7436": {
+   "sym": "NVDAB",
+   "A": 0.0,
+   "B": 1007.9292275230259,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xeeb56b0b7ac901835a78b008c9d3c73615d87777": {
+   "sym": "Eliza",
+   "A": 0.0,
+   "B": 501.6748396869353,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:DVxaAXi3L2NMgqpBqYmuVJkSK4bVJ1JgjvTmQgTpump": {
+   "sym": "NOVALUE",
+   "A": 0.0,
+   "B": -708.42750631305,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:8VNFMjSrZSex9J5ji5g8rAhZLgwo78MTXgTASD17TLiU": {
+   "sym": "PIKA",
+   "A": 0.0,
+   "B": 73.60412898199263,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:vAddewUHuYgRDrL6n3kXtBXMT635evJz8K93j6Wm1Ba": {
+   "sym": "ASH",
+   "A": 0.0,
+   "B": 663.56398790615,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:3ZaTieuhk4LmWUEJpp9xUyhEmhaAGojmGurLLiURH6PS": {
+   "sym": "BATON",
+   "A": 0.0,
+   "B": 629.0911764734601,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x6b1d42927b1a84ec28fa88d4fc6fa7af404966be": {
+   "sym": "PAIR",
+   "A": 0.0,
+   "B": 6336.046546213721,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xd7321801caae694090694ff55a9323139f043b88": {
+   "sym": "JUGGERNAUT",
+   "A": 0.0,
+   "B": -851.94412912967,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x420393b70a34d6aef855ef56e87d4d4161f27c27": {
+   "sym": "LIGER",
+   "A": 0.0,
+   "B": -1266.7686689125508,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x2c1862c40f21608461abb6a430ea03e06058aec3": {
+   "sym": "TOPBLAST",
+   "A": 0.0,
+   "B": -214.94999900000005,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x8b3e3ba1a55b939f93f0a205f94520b9468e17f8": {
+   "sym": "RIDE",
+   "A": 0.0,
+   "B": 858.27594897,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xe0514a254b465c8c804f77230fb1059f84b21e18": {
+   "sym": "AMC",
+   "A": 0.0,
+   "B": -526.3030836952903,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x292655a45d04ca013c637694447ec94ca4be7777": {
+   "sym": "BRO",
+   "A": 0.0,
+   "B": -225.9756916189708,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:udPEzBjbGMzYZbuLtByqLYhc4TEs6EebG8R7fwdpump": {
+   "sym": "TEXTIT",
+   "A": 0.0,
+   "B": -518.46899989419,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:eL5fUxj2J4CiQsmW85k5FG9DvuQjjUoBHoQBi2Kpump": {
+   "sym": "UFD",
+   "A": 0.0,
+   "B": 6252.08638581085,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:7ssJZGFT3twGqeYA1kvpoMWwZYvMZvrMEbjRaWgg46BL": {
+   "sym": "BUTTHOLE",
+   "A": 0.0,
+   "B": -1033.99510368349,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": {
+   "sym": "CATE",
+   "A": 0.0,
+   "B": -9148.726002838981,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xe1e5f00a9b0255ca4df85b3130ee0f77d15acc2d": {
+   "sym": "🅿️",
+   "A": 109.5068743400002,
+   "B": -16868.418473153066,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xca9c78dd337a67f6e0077f65f5e9218719d30edf": {
+   "sym": "NET",
+   "A": 0.0,
+   "B": 893.248950721185,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x2474acef22fc4f7546a6dfd71927c57ad4144648": {
+   "sym": "Miner",
+   "A": 0.0,
+   "B": -729.5108120852819,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x8e62f281f282686fca6dcb39288069a93fc23f1c": {
+   "sym": "HOODRAT",
+   "A": 0.0,
+   "B": -502.0264802187453,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x4ef9d3062c7f6eba4aae4990c5036598c6eff4ec": {
+   "sym": "BABAB",
+   "A": 0.0,
+   "B": 1213.2885331825269,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x5d1ef6ef51ee796e952519af843877c208227777": {
+   "sym": "千帆星座",
+   "A": 0.0,
+   "B": 601.46110741781,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x75b364916b65f1e8959fa0210a6922c2ee237777": {
+   "sym": "TrustCat",
+   "A": 0.0,
+   "B": -740.245528827582,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:FYtP5AiiB4eUjVA88EeZS73PDpi7RPLusdqtXizYpump": {
+   "sym": "GOY",
+   "A": -1037.125319868,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:8NGpdSE1tZqUrvpUVqsn5Revncc6yUafk8mnAyK9fNCE": {
+   "sym": "Chud",
+   "A": 0.0,
+   "B": -594.87541394073,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:CaWZeUM4FvX9dPkjGc2xHS6tSN3qJfTWyvaG77aM5o7h": {
+   "sym": "AGI",
+   "A": 0.0,
+   "B": -2676.014250465701,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump": {
+   "sym": "neet",
+   "A": 0.0,
+   "B": 4113.62950543328,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": {
+   "sym": "USDC",
+   "A": 0.0,
+   "B": -1096.41926308855,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:oPAiAikWTaFj9RYoRFD35ccfwhnMcB3ThgBZRHSkjTZ": {
+   "sym": "tOpenAI",
+   "A": 0.0,
+   "B": -1847.015391,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:GhuEi5AWtZaWuAda4ysJwMTzU8oMdjiL1bz6eziptT2p": {
+   "sym": "FROGE",
+   "A": 0.0,
+   "B": -2479.5891725751662,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x9b904964003848a9dfd5608885dcb366e0c21f47": {
+   "sym": "🪶",
+   "A": 0.0,
+   "B": -1413.810729,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xfa9cee6881e6be5f3bd9a3520fa3bb5fe49d763d": {
+   "sym": "🅿️",
+   "A": 0.0,
+   "B": 605.544845796099,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xf5726fb3bc585039875bc9572b976f6cd8817777": {
+   "sym": "🦋",
+   "A": -1582.4307360939142,
+   "B": -1093.0306207820636,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xce70a08238083ea6b4b7e90ea73d59e0d1b77faa": {
+   "sym": "🅿️",
+   "A": 0.0,
+   "B": -197.49886199999992,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x7c057788c14518dc62127dde5cd6b45cca7f1fbf": {
+   "sym": "🅿️",
+   "A": 0.0,
+   "B": 736.329275,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xca52f1dd96ba5ced3dda9770223002ffa4587777": {
+   "sym": "🅱️",
+   "A": 0.0,
+   "B": -517.3736960069158,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:GCa9TZMK9Q3VUSkhZgX76YAQBjqQd1dPxkBnZojFpump": {
+   "sym": "Plumber",
+   "A": 0.0,
+   "B": -26.21595575925005,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:BK7S3SLaEviW28pgBECF2FMUfQtibM2DCm8xJgRK8XH9": {
+   "sym": "ZIVIDENDS",
+   "A": 0.0,
+   "B": 627.4506417810288,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x4b1c1725fa83d1a3effe48c992c969788cfac32a": {
+   "sym": "P",
+   "A": -2367.807782323282,
+   "B": -28.639961002350105,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x1ea3ffc43ee291a4373418286e9b001aebe14444": {
+   "sym": "🔶",
+   "A": 0.0,
+   "B": 10.523295984771153,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:68fn2tLABKmS7VA9Eaz3n6RfoXM3iBWUACckT9dwpump": {
+   "sym": "HAPPY",
+   "A": 0.0,
+   "B": 502.5564491508,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x851a8543455636c51a53889c5002e5c16d6c45f5": {
+   "sym": "🅿️",
+   "A": 0.0,
+   "B": 1209.0413723422687,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xf2179e3ce2c20bd66989bc75a94df19983c22673": {
+   "sym": "OSK",
+   "A": 0.0,
+   "B": 57.612945317745016,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:taoC6xyv2v8tDLcev4uaGUgV4vdQsWJrGft2kcBRrBY": {
+   "sym": "TAO",
+   "A": 0.0,
+   "B": -1978.6568809507999,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:2pouN3by7twkiZGy5aEKYUpf78ALDpKRTNu2WsQkpkqt": {
+   "sym": "BUTT",
+   "A": 0.0,
+   "B": -3609.517938419774,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x2a846aaaf896ef393ccb76398c1d96ea97374444": {
+   "sym": "BORT",
+   "A": 0.0,
+   "B": 3011.082228,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6ars8ZWUb6a4jrnHgZL54ZntwNBpEfyUyQSLwX5KU9s7": {
+   "sym": "memestock",
+   "A": 0.0,
+   "B": 1038.83439119376,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x7df5daaf80e65dfcc7a1435d9b52bcf2b5753fbe": {
+   "sym": "UNIPCS",
+   "A": 0.0,
+   "B": -2797.964866127445,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xa9236e79eb4a2ecbe76c8c75afd251345a9242c6": {
+   "sym": "$TPS",
+   "A": 0.0,
+   "B": -903.5750392591917,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x25b865486dac88b811d8600494a1f99387bb7777": {
+   "sym": "TIMELESS",
+   "A": 0.0,
+   "B": -1472.2522769705195,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xded852de9fe9ba9b6f27f39e8e81cf851a5c79cc": {
+   "sym": "ROBINCAT",
+   "A": 0.0,
+   "B": -3081.454149,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x51fb76be80ab6daaa345d818f4e06441816b4fea": {
+   "sym": "NASDANQ",
+   "A": 0.0,
+   "B": -1033.602141018233,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xbe98b75361935b18d688409424a869a4c3dc7401": {
+   "sym": "NUDES",
+   "A": 0.0,
+   "B": -8301.157937295808,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xe77ed03b608a02829f569b0f116ec85cb7bf3cc7": {
+   "sym": "FRACTIONS",
+   "A": 0.0,
+   "B": -703.3228517168161,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xc7f2dec1dc2230a8ff811b55a2057e34df9c7777": {
+   "sym": "b",
+   "A": 0.0,
+   "B": 523.3140250274491,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xc9d825e83aada475bd4d38c8ca984ed746277777": {
+   "sym": "Stonks",
+   "A": 0.0,
+   "B": 1517.5495085073821,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:33TdSo6P4ux6WSHV6T4y6ZddB1ufgboMwq817NT8641u": {
+   "sym": "BAWSAQ",
+   "A": 0.0,
+   "B": 513.6175212713024,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:TTWofwAge91oFhZs7kpQdyrVRkmevgM88xijGvQFbKo": {
+   "sym": "TTWO",
+   "A": 0.0,
+   "B": 523.714036,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x4874845b0d4acffd896dde1e42828a543717af7f": {
+   "sym": "urmom",
+   "A": 0.0,
+   "B": -741.3748308497683,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x1b5dbec5a638605343e1774a2dc30851ed5146f3": {
+   "sym": "HUANG",
+   "A": 0.0,
+   "B": -0.6498308665712784,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x8e859dbdfbfd2df6a99870e2871eaa58e8784e05": {
+   "sym": "NEST",
+   "A": 0.0,
+   "B": -87.43663530663673,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x43e104e8a7fc2bfd50870612cc77674bbb877777": {
+   "sym": "WSBCZ",
+   "A": 0.0,
+   "B": -540.2828344747411,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xe5e6af2926c00f8351fc7250bf9b039689d301c5": {
+   "sym": "哈基米",
+   "A": 0.0,
+   "B": -609.20837814138,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x82ec31d69b3c289e541b50e30681fd1acad24444": {
+   "sym": "哈基米",
+   "A": 0.0,
+   "B": 1953.6593275046705,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x3e17ee3b1895dd1a7cf993a89769c5e029584444": {
+   "sym": "Freedom of Money",
+   "A": 0.0,
+   "B": -6811.815335915067,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xf21da93386876681da1c8f10b4cf30b508034444": {
+   "sym": "奶蛙",
+   "A": 0.0,
+   "B": -1073.2082822394373,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x8256762eac0a1182931c155eade0ad2d14777777": {
+   "sym": "布鲁斯",
+   "A": 0.0,
+   "B": -585.2816619876843,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x5422663e07d6fc217b0af4532fb1a6c9c7de5555": {
+   "sym": "asd",
+   "A": 0.0,
+   "B": -2216.1954656361195,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xbcc948e70f1d5dcdc8986147257bf4b6c40105f1": {
+   "sym": "PAWSINU",
+   "A": 0.0,
+   "B": -1307.7962283350046,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xe1e93e92c0c2aff2dc4d7d4a8b250d973cad4444": {
+   "sym": "恶俗企鹅",
+   "A": 0.0,
+   "B": -2181.16806680629,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x55e73a66948d49883514e70a4a594b7cc4a87777": {
+   "sym": "旺财",
+   "A": 0.0,
+   "B": 910.6214363646718,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x04e99a853a04965c74348c18593096f394b8cc27": {
+   "sym": "招财",
+   "A": 0.0,
+   "B": 612.8098824814249,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xefab538cf3c29237a47c6afb145d50ddf204a0a3": {
+   "sym": "UFG",
+   "A": 0.0,
+   "B": -667.5996147021935,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x9212cf1f9f4a9c69bb010146ba5b0725169d4444": {
+   "sym": "bibi",
+   "A": 0.0,
+   "B": 80.8919726306267,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Ev1HG5CMhWmrdBEqUFM7yJbv8NqWHUN3fiJxPQbNA6dG": {
+   "sym": "CLUG",
+   "A": 0.0,
+   "B": -1262.278514475418,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x7023b821f6203e3b8502d0b81ad3e5a30f3b1199": {
+   "sym": "PBL",
+   "A": 0.0,
+   "B": -728.7485581659367,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xac9a8dc5b9bf3f87bc0b7e05b1b5bd420a776e06": {
+   "sym": "p402",
+   "A": 0.0,
+   "B": -577.7609928500791,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xb934cabf87781f7eb13265de4cb2ce090d00c4e3": {
+   "sym": "SURPLUS",
+   "A": 0.0,
+   "B": -535.5579820522506,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x86f09c5a8f436bdd2e7ee162198ae4a0fa9cd056": {
+   "sym": "D",
+   "A": 0.0,
+   "B": -618.3066212189555,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xa23af594e022bce6e644418acfeffc8d84d67777": {
+   "sym": "BNC",
+   "A": 0.0,
+   "B": 578.3358415674262,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xd0bc8ab397851ecfa58009d03bbc1a41fc764444": {
+   "sym": "币有",
+   "A": -501.7216854999503,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x03c59bbf8ba49ce79831403b86acbc40d3167777": {
+   "sym": "肥嘟嘟",
+   "A": 0.0,
+   "B": -312.94928564272846,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x8d1612b4b78ebf08cfbf01a04fa270ccbb0509a2": {
+   "sym": "RKST",
+   "A": 0.0,
+   "B": -1230.811384967095,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xa0bc5ca3339788b7861dc5a27e6780295c422dbf": {
+   "sym": "paired",
+   "A": 0.0,
+   "B": -0.8788939999999457,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x2ea98073e7c3b0781f8cec3690eacb8f5c83507d": {
+   "sym": "WHLR",
+   "A": 0.0,
+   "B": -1488.273795821278,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x7f129314373451f54a9edbda701d4475745f95d3": {
+   "sym": "VECTIS",
+   "A": 0.0,
+   "B": 7201.857263510856,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xe6f07ee32dad9dd9bd0986a4b4a8ef6819ba7777": {
+   "sym": "我的刀盾",
+   "A": 0.0,
+   "B": -833.9977789183782,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:3Dfiey2bUzvik697LEeRQ2hj68dMXsgBNN5JVLUhj1ck": {
+   "sym": "SPX",
+   "A": 0.0,
+   "B": 1098.9204492179101,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp": {
+   "sym": "CARDS",
+   "A": 0.0,
+   "B": -2054.295462,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:B5ANwoWkptDv1QszdPHXjCF2gTWdo27FGLffdfXzzoe6": {
+   "sym": "POKEMON",
+   "A": 0.0,
+   "B": -2054.9171837036574,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x28d9d4f4fbe7eb714c127c1b3ad8deff3062fa3c": {
+   "sym": "哈基米",
+   "A": 0.0,
+   "B": 612.2461875040331,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x532c5583671870723ceef573600208af49c87c54": {
+   "sym": "CNPY",
+   "A": 0.0,
+   "B": -1500.613538046102,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xa184d5ad47c9e756117c6590371bee0d0d477777": {
+   "sym": "奶蛙",
+   "A": 0.0,
+   "B": -976.6275871371759,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xf3525965a4ad3ca0ac13f4d2f237113691194444": {
+   "sym": "熊猫头",
+   "A": 0.0,
+   "B": -9492.911994301321,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:AL63Th2HZAjHzU5hvRiqsDumfYp3CEnZUQaFSDnVotQn": {
+   "sym": "Hashcash",
+   "A": 0.0,
+   "B": 501.48101679488,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:PerPsCe2SJ7Q25CN4R5TTX4fmBdmknE2hQmqCt96fHL": {
+   "sym": "PERPSPAD",
+   "A": 0.0,
+   "B": -597.45963416365,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:13i7SfDDzg3t4MQnfZNtFKptHpv8HR2eaGRMfetSpump": {
+   "sym": "熊猫",
+   "A": 0.0,
+   "B": -1177.9894065379501,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x133b4edb4e8c4a24e9aa1a9de4cea2ffd8bf53d7": {
+   "sym": "solmane",
+   "A": 0.0,
+   "B": -1.4184849999999187,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x82d79caa83412810b82168c9619d0fea2125e887": {
+   "sym": "Homeless",
+   "A": 0.0,
+   "B": -0.8528209813430294,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x11b70d0243baf75e85ce03201a92b5b7c33beb59": {
+   "sym": "ROBIN",
+   "A": 0.0,
+   "B": -1136.7959928442644,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x254ccfd4241f46d91b6b0715d1fb3bfb8386d833": {
+   "sym": "BASIS",
+   "A": 0.0,
+   "B": -515.4591755327057,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xfd07342e8a2619f3185bf4751e2c231dc4baca18": {
+   "sym": "RADISH",
+   "A": 0.0,
+   "B": 613.7324072326714,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x1ec871553be07dc68ec1661c32eca7e2e46e1e18": {
+   "sym": "STONKS",
+   "A": 0.0,
+   "B": -1433.250785271351,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x23acfab04106a21af0ae1643b74cfec3c9aac181": {
+   "sym": "win",
+   "A": 0.0,
+   "B": -1058.037429139231,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x9a092a73a6155ad8deb6ee696653db0abd70ffff": {
+   "sym": "奶蛙",
+   "A": 0.0,
+   "B": -521.566536802363,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:FNpcJMsGFgDgcr2GSgWem1cEJ7H9ciVZbL7TDUg9pump": {
+   "sym": "lunarfang",
+   "A": 0.0,
+   "B": -117.68317446276001,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:poNSfquKq512ApeYjVghwViSun4x1MhCqHVH2Paq4jN": {
+   "sym": "PONS",
+   "A": 0.0,
+   "B": -1015.197797,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:8pokexUyNvdEUJNZ6N99Uodyz874fe7HNT5foTvkE9A5": {
+   "sym": "POONS",
+   "A": 0.0,
+   "B": -1015.197797,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:2B8FUhALdc44os6jVLje6mjMuW8R1KX1U9Nz22Bipump": {
+   "sym": "IDIOT",
+   "A": 0.0,
+   "B": 678.3945947575,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x218d0dc56476b05f131bd6cc82b80c7b052fa9b1": {
+   "sym": "BELL",
+   "A": 0.0,
+   "B": 7486.163464526739,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3999f2c02c2c832c08510050d47399581fee914c": {
+   "sym": "HOME",
+   "A": 0.0,
+   "B": 620.1667616634977,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3830b1e3efe39365d1a89c6930bbc8c00f675241": {
+   "sym": "Homeless",
+   "A": 0.0,
+   "B": 744.1850868941598,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x937eadf48ec0c625729f7b2023a51c67637d88fb": {
+   "sym": "RENT",
+   "A": 0.0,
+   "B": 743.9843613668037,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x7ab96eacdeb43e95565e4a4f741089a3d8425eb0": {
+   "sym": "Neegy",
+   "A": 0.0,
+   "B": 1342.4298186479864,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xfa7ad7823b36df33eb3bec330962b506aec37365": {
+   "sym": "AI",
+   "A": 0.0,
+   "B": 26.067444544282125,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3d9b15aeaf8e6fd90c30a0f247c18c985be25d04": {
+   "sym": "SPACEBALLS",
+   "A": 0.0,
+   "B": 618.677806725,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xab093def657f15df31b33922a95e047add645b29": {
+   "sym": "SHROOM",
+   "A": 0.0,
+   "B": -609.6274540856523,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x5fd86da9b05abe396fe9d02a4a213a7c00556503": {
+   "sym": "MRNAB",
+   "A": 0.0,
+   "B": 2996.354663263883,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x72b72f0741aebc32adf66021ea54cab2d95e7777": {
+   "sym": "Mprosevir",
+   "A": 0.0,
+   "B": 4.166450346738088,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xa8f49424cdec24073581a2d44c0971fd17f77777": {
+   "sym": "肥嘟嘟",
+   "A": 0.0,
+   "B": -549.5582280732618,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6sPYBcVxbudw4V2bgDrGvtAQ38mccTtcVUasEDhZ78qt": {
+   "sym": "ETF",
+   "A": 0.0,
+   "B": 1332.5618608149002,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xb27339261475ef2724095f166b46e34223b13489": {
+   "sym": "HUBRIS",
+   "A": 0.0,
+   "B": -819.0875122041393,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x47f82b772d195bd10029a484b8626de300a57777": {
+   "sym": "CUTE",
+   "A": 0.0,
+   "B": 502.1269704,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xd1743c5101569730596c17e1dacfbaa474eb7777": {
+   "sym": "CUTE",
+   "A": 0.0,
+   "B": -644.4583971319416,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x4f06dba806d66e1caeb37516c0f7a28728067777": {
+   "sym": "HOMER",
+   "A": 0.0,
+   "B": 708.6052992959108,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x5f6fd60ad6cd8751b4c521bc00fa02abfeca4444": {
+   "sym": "背手负鼠",
+   "A": 0.0,
+   "B": 751.8817845,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x8b7abc1c0f2e6c0b76bc4fd0f7190f67d72e7777": {
+   "sym": "老吴",
+   "A": 0.0,
+   "B": -107.20234834835992,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:5acQsGbF6LT7JxxGS5UPZ6Lj2hkK8buhiCR1V16cpump": {
+   "sym": "UPTOOMUCH",
+   "A": 0.0,
+   "B": 516.02762926298,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:739dnZEG4yaBWFsY8L8ZwrfhGG6dhtCSercW8Umspump": {
+   "sym": "CLAW",
+   "A": 0.0,
+   "B": 748.69003423032,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:EbT2jpoeRJVFNWAFJE97EGfQF3iwHsEY8sh17fGbL5ER": {
+   "sym": "ZDOG",
+   "A": 0.0,
+   "B": -1637.7696937456428,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:HGE9j5vuTzZWqvjZXjuNb5WxQKDUHY8QFvCXVUKppump": {
+   "sym": "DIG",
+   "A": 0.0,
+   "B": 637.44867669756,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x640c04ca09c5c5140e62fef42c59e3afdbbd4444": {
+   "sym": "我的刀盾",
+   "A": 0.0,
+   "B": -1480.3373390093839,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump": {
+   "sym": "Fartcoin ",
+   "A": 0.0,
+   "B": -1061.196487,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xe8ffd7e24187f72afb08d75b1bb13088a989a791": {
+   "sym": "DELTA",
+   "A": 0.0,
+   "B": 1540.388651487355,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xb2acf3ae051c7f0b0b8de90cbb4ed99312574444": {
+   "sym": "共建",
+   "A": 0.0,
+   "B": -1102.8535933465598,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xad634fe25355663b7457c414cbe7cd431e6c9980": {
+   "sym": "KINAL",
+   "A": 0.0,
+   "B": -469.41403772206684,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x63d9b8830255ba8ceaf3958e6f2906e52b424444": {
+   "sym": "噜噜",
+   "A": 0.0,
+   "B": 1475.3075093962705,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x4a6eec8a30b49d289b9fc865fd374b4d61eab8fb": {
+   "sym": "Liluni",
+   "A": 0.0,
+   "B": 1895.602167286052,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xed5a169765f9f447026fa27add2890b7a8bf8888": {
+   "sym": "Bonke",
+   "A": 0.0,
+   "B": 755.19505,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Cj3upTXz6cYCP1TLbyF5AseKX4hqaWK7eiRqR7uu6npU": {
+   "sym": "QCAT",
+   "A": 0.0,
+   "B": 500.4455334957,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:EEpng77ZPn9FbgbT4xsRjwuxNCcMBYq3HTwEscyTpump": {
+   "sym": "HeeHaw",
+   "A": 0.0,
+   "B": -104.83549913623006,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:CGMVxtvLpjMarSRRq6adrx7px4ducKqSp1yhf94ZA847": {
+   "sym": "URCOIN",
+   "A": 0.0,
+   "B": 1270.12380244406,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:HwCHu7MJVq6KFAtFYqtbuvnFfzuKXfsbgU14nWw8K1TK": {
+   "sym": "MANGO",
+   "A": 0.0,
+   "B": 513.77333323992,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x274598d046ecfff7728690bac353dcf460659450": {
+   "sym": "SIRIUS",
+   "A": 0.0,
+   "B": -541.9516092974353,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x298348d5b2e45c774e3ee4f1a0924071dfbdc8c7": {
+   "sym": "swappy",
+   "A": 0.0,
+   "B": -937.594828389877,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3ad14f0d3f2dfb85bd159fa29eb424e400930f4a": {
+   "sym": "HOME",
+   "A": 0.0,
+   "B": 610.182872328172,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:2u3ufZ5defxwPXMixvvQpSs68PDNzHTdE52t9Crspump": {
+   "sym": "BLOXWAP",
+   "A": 0.0,
+   "B": 2076.67470350467,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x58ae3485bbab4951643ba064850229d7b5cb055b": {
+   "sym": "DONSENSE",
+   "A": 785.7461448885147,
+   "B": -8952.320226056017,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x07ebb29a38fbcb41563817e5e19f2cec619c90d2": {
+   "sym": "BUN",
+   "A": 0.0,
+   "B": -1176.2756657549994,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:2c1KjiyQow66QfsnCtoyuqfo3AuxgpBMEoAq5oiiXqdu": {
+   "sym": "Chiikawa",
+   "A": 0.0,
+   "B": 516.3395648814,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:CB9dDufT3ZuQXqqSfa1c5kY935TEreyBw9XJXxHKpump": {
+   "sym": "USDUC",
+   "A": 0.0,
+   "B": -1284.11421757354,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:2Tu8xDmYVX3huNY5GxYRjbx1KzUDZMquLaJbcvPYT1Qx": {
+   "sym": "SOLCAT",
+   "A": 0.0,
+   "B": -529.14190660898,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": {
+   "sym": "TripleT",
+   "A": 0.0,
+   "B": 6235.001539224259,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xff270c0246b44e016e56f7727c10caa336fe65c5": {
+   "sym": "DONSENSE",
+   "A": 0.0,
+   "B": 609.67192292325,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:FCpqXfA66C8D7bTAu5SS2hEHd2WBB9tN8MBYtGw9FBpm": {
+   "sym": "F03",
+   "A": 0.0,
+   "B": 764.9451542193265,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:HuJ1Er8u39Fs5zhnD3TnoJSv6J3VV5KkNf3EabDHpump": {
+   "sym": "DONSENSE",
+   "A": 0.0,
+   "B": 364.0632685816,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x1309423f8c565dcee5102b7936a4e8710d0be00f": {
+   "sym": "NUKE",
+   "A": 0.0,
+   "B": -1045.8427969696968,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec": {
+   "sym": "NVDA",
+   "A": 0.0,
+   "B": -4992.406975487744,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xc8282649246dfc10b685dee3d1aa132b1822ffff": {
+   "sym": "大狗叫",
+   "A": 0.0,
+   "B": 738.1294439094343,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:PreZad18qfPtbxNpMtMuAuX2zVpvkEU8DnJx56faCWd": {
+   "sym": "FIGUREAI",
+   "A": 0.0,
+   "B": 508.946711,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xdae6d8861ce15b5a01a85e12d202e03e7f223f53": {
+   "sym": "LEDO",
+   "A": 0.0,
+   "B": -958.4687112267094,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x18e674231a58c239dc7daedcffe15ec3a24cff5c": {
+   "sym": "HOOKR",
+   "A": 0.0,
+   "B": 2984.949472428,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x3aebd0f979c5c20ea8de568105e91c17f2fa4444": {
+   "sym": "布鲁斯",
+   "A": 0.0,
+   "B": 934.223338125,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:G7nMQmtag4KQ4Lcs2n8hS9mf3Rya6KKwSPQuVPtk4zA5": {
+   "sym": "AICOIN",
+   "A": 523.2565070214548,
+   "B": -1816.52427612921,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xe2d8d45c7031703dff035dc01b7fab8f208cfab1": {
+   "sym": "KERMIT",
+   "A": 0.0,
+   "B": -614.6248080808081,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x0000000005aca17e8bd5779fc87e13cb433aed24": {
+   "sym": "NUKE",
+   "A": 0.0,
+   "B": -2118.6092765306125,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x2f9fbef6882b719a7e2a611f6a9ab12404397777": {
+   "sym": "Heyi Health",
+   "A": 0.0,
+   "B": 597.832883631858,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xe1b93d9e3f11d11b629aa6afd0fc7a4310b97777": {
+   "sym": "唐僧肉",
+   "A": 0.0,
+   "B": 524.517642630701,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xc60ba256b44334a0cd2c7242e98b88f031abb006": {
+   "sym": "V4",
+   "A": 0.0,
+   "B": -3010.35593734197,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x1df9cfa601b7db3f3e62035763aca16a0ad57777": {
+   "sym": "小老费",
+   "A": 0.0,
+   "B": 68.02628526914452,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x15d36b6a28d8327abc7afabf0f106ae2c9af5c4d": {
+   "sym": "PARE",
+   "A": 0.0,
+   "B": -1876.5036472063384,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xe7fa82b8960d8f6f0487969358ef236c80bc3d2f": {
+   "sym": "Cubie",
+   "A": 0.0,
+   "B": 587.2058775,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x7f2d4923517f9bde286516b13e921e2e79b37777": {
+   "sym": "Healthcoin",
+   "A": 0.0,
+   "B": 8.367863210028645,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x7ef9be951daa9633f749fb3f4329274e0b367777": {
+   "sym": "pill",
+   "A": 0.0,
+   "B": 52.26805869269356,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x02992d1259a33dd8aa284ac37853f2101c1d7777": {
+   "sym": "LOY-002",
+   "A": 0.0,
+   "B": 747.5144345101588,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:4PoWKTDpcZvptTr687Bg3c7Jg7YD79Q9opr8KdaCPeZT": {
+   "sym": "BAZINGA",
+   "A": 0.0,
+   "B": -517.0957537203495,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x8c52ce23ae040541138c9d06cf98bbd5fec26ec0": {
+   "sym": "SLX",
+   "A": 0.0,
+   "B": 807.72540255,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xeed8013fde995822293824fd6802c422de4b3d61": {
+   "sym": "HATCH",
+   "A": 0.0,
+   "B": -505.8647245913167,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x1e6ea1e89151cdc8443968bf047cfa3177181e18": {
+   "sym": "GASOLINU",
+   "A": 0.0,
+   "B": -6511.451161945852,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x8554d38b95e4f7ca11d391008627df30b2b07777": {
+   "sym": "PIZZA",
+   "A": 0.0,
+   "B": -548.1460232941373,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:49nkLrXi8nCZBVKsShDNasEtPe4Vn1mx9Xbr3kTa8pTL": {
+   "sym": "App",
+   "A": 0.0,
+   "B": 521.66439156051,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:GPzpoXpD74E2C4CJNayuoyBqPQJEsPtdse3nhntrpump": {
+   "sym": "LOOKSMAX",
+   "A": 0.0,
+   "B": 1393.80769046825,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:EygStH4gHv1h4E8w4raYv6NGsrDiij3nbfCc26iTpump": {
+   "sym": "LARP",
+   "A": 0.0,
+   "B": 764.99888071348,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x114ff3597943413b686bcb749b2c780339017777": {
+   "sym": "人参",
+   "A": 0.0,
+   "B": 597.3668669137018,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6zj2Wx84hNrY35S5ndCr7LCkrCEQaku5bLw9CTk7Hr3A": {
+   "sym": "URMOM",
+   "A": 0.0,
+   "B": 506.39323056592326,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:H74CYmXgMkYHYuSRsZt6RJb4NYp2u72Vw8BS5huApump": {
+   "sym": "LMAO!",
+   "A": 0.0,
+   "B": -620.47667524656,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x8cd87f0cd1e44db5357f266d748825afb65d7777": {
+   "sym": "🦋",
+   "A": 0.0,
+   "B": 203.45997392958031,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x7a5e6dbca8fb9c517243ce88d0961c008cb37777": {
+   "sym": "🦋",
+   "A": 0.0,
+   "B": 747.3452761974316,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:9Ay6YpwhmYVicrY34eyJTYyV43naxL13VGh5kUX9pump": {
+   "sym": "BUDDY",
+   "A": 0.0,
+   "B": 721.27489265952,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3b4a0048a00787a644932cd648faa043410c163e": {
+   "sym": "SIRIUS",
+   "A": 0.0,
+   "B": -833.194592,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x2103faa9d1762e27a716c61718b3acf3ec1f9bf1": {
+   "sym": "FOX",
+   "A": 0.0,
+   "B": -1291.1050361799603,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:BjkBHfgn7VPwz1AEFNWN4eBdg2MgXmgRVmzKYHu6H2uC": {
+   "sym": "BUFO",
+   "A": 0.0,
+   "B": 4.229762012008052,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:FAZFZHPnUx5p9LCL76zbZ8HuchrsnCBbK7Xjaxx68AxW": {
+   "sym": "CASHCOW",
+   "A": 0.0,
+   "B": 525.979244,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:HmJDgky11u77hpBss6D8sjNpYPD5B6fWgSVDj58jpump": {
+   "sym": "SOLCAT",
+   "A": 0.0,
+   "B": -15004.031881770537,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x0d6b6f604c1bf5b3533c445334bb4e1044145688": {
+   "sym": "SMK2",
+   "A": 0.0,
+   "B": -3420.7277569705457,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xd21fc4fcbe84620b1439c5c9896fc448c5f57fe2": {
+   "sym": "AICOIN",
+   "A": 0.0,
+   "B": 733.79038728699,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x45242320dbb855eea8fd36804c6487e10e97fcf9": {
+   "sym": "TENDIES",
+   "A": 0.0,
+   "B": 2446.751043,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x0187747831eb5bd0fab06ba81a0ae79b1b217777": {
+   "sym": "共建",
+   "A": 0.0,
+   "B": 1447.40013523875,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x5d78989126459d6154ed5ecad430d8c325b54df5": {
+   "sym": "牛来",
+   "A": 0.0,
+   "B": 609.6395399496503,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:EdsFuTw5W18iLpXdrbBS336iacLVd3fCEoDfoutFMbG7": {
+   "sym": "AICOIN",
+   "A": -370.2437446939837,
+   "B": 1007.5741900056416,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x26407bd603238d7b3d0cd7d479058b08972ed8f0": {
+   "sym": "PSN",
+   "A": 0.0,
+   "B": 605.4048,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xfe189e97832da1573e4e4ff034f4ffc3a15c7777": {
+   "sym": "MarsCoin",
+   "A": 0.0,
+   "B": 730.9139405942979,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:7AxHfQjwSTwU4oDFHJtEV3XbHbvZk4D1zsKfdUsf2urm": {
+   "sym": "AGI",
+   "A": 0.0,
+   "B": 728.0040228756778,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x6f35bc749c16968d764c23f2f2e049ca80d68976": {
+   "sym": "ZORDI",
+   "A": 0.0,
+   "B": 598.81667175,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3b736f237b83b250270471a7d164c4c1ce9efb00": {
+   "sym": "AICoin",
+   "A": 0.0,
+   "B": -551.0153363022955,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x574e8afe73e35ac0f011be9f76127e0a936ece49": {
+   "sym": "OBIT",
+   "A": 0.0,
+   "B": 598.81187025,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x330990dae53bca4c5811c5362b44c33a47db7777": {
+   "sym": "ASTEROID",
+   "A": 0.0,
+   "B": 721.8626849545857,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:A8ndQbzKjh5c4c9JKZJDRvAdWc5cejJu2udnLwR7JHRp": {
+   "sym": "ALTCOIN",
+   "A": 521.6262985923661,
+   "B": -521.7823053377078,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:XsqE9cRRpzxcGKDXj1BJ7Xmg4GRhZoyY1KpmGSxAWT2": {
+   "sym": "MCDx",
+   "A": 0.0,
+   "B": 11.572939940040044,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:7g8t3VNvXWoPHF6gbSkHG9PdD6U3dd1oXHLMkb69vXqn": {
+   "sym": "McCoin",
+   "A": 0.0,
+   "B": -510.05789305996,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xac3d4ea57cbcd9d2605525e70036c98f0618a56e": {
+   "sym": "motion",
+   "A": 0.0,
+   "B": -521.600936,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:ECpAiXL3B4v1qLbHu8t61rU8JkGRxfTm5upvPY4VcoVH": {
+   "sym": "ELONCOIN",
+   "A": 0.0,
+   "B": -172.77504019443666,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Xsa62P5mvPszXL1krVUnU5ar38bBSVcWAB6fmPCo5Zu": {
+   "sym": "METAx",
+   "A": 0.0,
+   "B": 1155.8044810000001,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x72b1123c0ebe8eb86234c631909ec078e0bf1e18": {
+   "sym": "VENUSCOIN",
+   "A": 0.0,
+   "B": -523.3359593095242,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:EXinYuNbxamDtbpkqR6RQJ9XWgUb5y2rCBMkAWxEazYt": {
+   "sym": "SNP500",
+   "A": 0.0,
+   "B": -536.1666830741979,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x8df62d145d97a47dc9906b933461c9ead665427f": {
+   "sym": "MUCHFUN",
+   "A": 0.0,
+   "B": -944.0341131182041,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xf23e4a84a950e9adae4b95468a4857ca34ce7777": {
+   "sym": "SATURN",
+   "A": 0.0,
+   "B": -1148.559794431722,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x4154b19017a63d054ad1888bbde1e188253a7777": {
+   "sym": "RANDY",
+   "A": 0.0,
+   "B": -642.4354501705137,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xf49725118cb0707b8706ffffe895f3ab16da7777": {
+   "sym": "b-money",
+   "A": 0.0,
+   "B": 1355.267050983207,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB": {
+   "sym": "USDT",
+   "A": 0.0,
+   "B": 526.25,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:3p2WhSGx6G9FimHHsoLvYYGxJTT36CNwWEPmZRveCYMR": {
+   "sym": "RAM",
+   "A": 0.0,
+   "B": 522.8582916250344,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump": {
+   "sym": "three",
+   "A": 0.0,
+   "B": -982.72555534886,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xb05618fe540d0be2bd193153de86a9f84de0d76a": {
+   "sym": "Figure03",
+   "A": 0.0,
+   "B": 0.8959039341139032,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:DTydkwMbfkhBnSdUEqnNjt48qoQWY5JqpPs7EFKkPQVt": {
+   "sym": "SPARKY",
+   "A": 0.0,
+   "B": -613.2217065922272,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:GBY83Bt9pCLv9sM51KoPMo41wG4udvArd6DX6HekdJPs": {
+   "sym": "SLOP",
+   "A": 0.0,
+   "B": 525.581685,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:46PGUEVZbVFSVMaHdCb8y48BMzahHBTaW5QDx3TtrNx7": {
+   "sym": "AAPLCAT",
+   "A": 0.0,
+   "B": 523.8658974136932,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xee5576fa1bcaa380e591d01245f406f3f384eb01": {
+   "sym": "DTF",
+   "A": 0.0,
+   "B": 599.2031925,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x28f85c6a4b829ed03ede2da96fd15fed94371431": {
+   "sym": "NOTHING",
+   "A": 0.0,
+   "B": 733.49118711,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x5b32971ee68b1ed6d11476760106f29d81f77f6e": {
+   "sym": "DEBT",
+   "A": 0.0,
+   "B": -1426.1039107220652,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x1eeb32722366fe4ba580ff5fe58c2de9dba37777": {
+   "sym": "不吃压力",
+   "A": 0.0,
+   "B": 144.7736596859745,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:2dPhpcKMvbM2QKfG6bRNmFzBir3vi3BeaVe3MwfbnNzg": {
+   "sym": "AMC",
+   "A": 0.0,
+   "B": -547.7088845289286,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xd24688a1d530f648aed86a835aca8ad6a7e61e18": {
+   "sym": "CLANKER",
+   "A": 0.0,
+   "B": -7780.955593522975,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xc474681da175c5dd926906cd4605c77f25e17777": {
+   "sym": "小流浪驿站",
+   "A": 0.0,
+   "B": 598.3428308388187,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:8K5X85PAJHAAVSvYaAzgVPPAPsqqHmvx16ZyBiscYF8L": {
+   "sym": "CTO",
+   "A": 0.0,
+   "B": 1042.72771653583,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:XsfCC9VL4DamVGNgdJpfLXB3sBVa158Gbx8sh7NzmTk": {
+   "sym": "VIDAx",
+   "A": 0.0,
+   "B": 527.15,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:G83AcDnj8j8P4JvoB35p9WHsvEfKyfSkLkNBviAxEmsh": {
+   "sym": "FRIES",
+   "A": 0.0,
+   "B": 521.8296029326217,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:4ikwYoNvoGEwtMbziUyYBTz1zRM6nmxspsfw9G7Bpump": {
+   "sym": "crypto",
+   "A": 0.0,
+   "B": 1514.97472969985,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xafe41f4356c24f716111de1fbbc84e061d291e18": {
+   "sym": "CACHE",
+   "A": 0.0,
+   "B": -1300.703886997479,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:BFgdzMkTPdKKJeTipv2njtDEwhKxkgFueJQfJGt1jups": {
+   "sym": "URANUS",
+   "A": 0.0,
+   "B": 793.042406,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:9nxjeDZ85iyvmoyfEX1PNKMEgMNpZcGtbSZa1AzCdZtK": {
+   "sym": "UHI",
+   "A": 0.0,
+   "B": 521.714984,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x03e17233c5f298a0016c8f4212e2026878a07777": {
+   "sym": "Yellow",
+   "A": 0.0,
+   "B": -1046.302535818862,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x492984696ab179d03f7e5839da39cf6b181d7777": {
+   "sym": "爆金币",
+   "A": 0.0,
+   "B": -522.4811123194964,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xaa0b48defde440b8445ba45db88cb076cf261e18": {
+   "sym": "TAIWAN",
+   "A": 0.0,
+   "B": 1201.1440019135387,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x36cc8af96b7dc5363fb25355b52d88ec44e146d1": {
+   "sym": "attention",
+   "A": -753.2881865175012,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x90976fef92095c7b3157f579c59846373d637777": {
+   "sym": "猫和老鼠",
+   "A": 0.0,
+   "B": -708.8326300824697,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6baGyq4HLbUn93MQUGFqBktpXP8BRjpoxSsAap4ppump": {
+   "sym": "LEVI",
+   "A": 0.0,
+   "B": 46.41686054869001,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xf074730b6ab97e5630e4e602665ac6ce7055ca1a": {
+   "sym": "NODAL",
+   "A": 0.0,
+   "B": -1106.630902050903,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x0e0d2c89a5a019fe1cf762e5e33187631dacc21b": {
+   "sym": "CHUMP",
+   "A": 0.0,
+   "B": -2588.3299636724946,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xedaee44320107caa714baaec486261a87f27022d": {
+   "sym": "PONGO",
+   "A": 0.0,
+   "B": -512.5685849604596,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x6f1c7236b782e4c68bff6468488651ce74c87777": {
+   "sym": "attention",
+   "A": 0.0,
+   "B": -502.1831160303831,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x7dde7b842ddb063d74064868a6fe42c1c8897777": {
+   "sym": "MEMES",
+   "A": 0.0,
+   "B": 741.927635331192,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x9141b7e4fae2bb95ef6117dcf1887caee7ade4ad": {
+   "sym": "ANON",
+   "A": 0.0,
+   "B": 84.01803801023345,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xa5c420fb659e953418c3e434067c3360dad47777": {
+   "sym": "HTW",
+   "A": 0.0,
+   "B": 5.45943539889538,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xb69ac7929c192a42ac2c8bf8f4d00f17e9987777": {
+   "sym": "Hold",
+   "A": 0.0,
+   "B": 179.73015846032263,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:9nR2fjDsbSpQPcWmK8zz1HhKA1hQ7Zj7Gvb5YoEppump": {
+   "sym": "Addog",
+   "A": 0.0,
+   "B": -17.46320689510992,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:9BFw5KMWpBfzbEKh7qtp5U6hXRVZ6DqykZGV1BkFpump": {
+   "sym": "DOGE-1",
+   "A": 0.0,
+   "B": 1043.931521628,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xbcef005602d14cdbcff7c2bba7927c00c7ba20ed": {
+   "sym": "hfun",
+   "A": 0.0,
+   "B": -564.352334737047,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xe9e72622ee66d5684a36f9b61e9f90a90d2628f8": {
+   "sym": "BONDIN",
+   "A": 0.0,
+   "B": 322.51365664357013,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:HtTYHz1Kf3rrQo6AqDLmss7gq5WrkWAaXn3tupUZbonk": {
+   "sym": "KORI",
+   "A": 0.0,
+   "B": -350.6989043149696,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:7JQhJ2D5TyrqYnodyxTPcfDWS56curqbQXMrAXKKZGj": {
+   "sym": "AI",
+   "A": 0.0,
+   "B": 524.8395849629024,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh": {
+   "sym": "NVDAx",
+   "A": 0.0,
+   "B": -240.91329916888003,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Eu8qFQrtyRdTLmjn42vnuVCY26fsZPSbkbyVo31t4xFJ": {
+   "sym": "RICKROLL",
+   "A": 0.0,
+   "B": 1063.42810499024,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:CbyTNf7UPzvewHh4Zp6umogM2RWahhmGRJWLJnPwpump": {
+   "sym": "biketyson",
+   "A": 0.0,
+   "B": 522.28580997182,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x45a6a778b5556ce7e722ccf4a6044a3a97c7bcd8": {
+   "sym": "SBS",
+   "A": 0.0,
+   "B": 59.304701337570236,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:C5nG72gUFJz6wewcgTPjcBmpSq4BwFLHy5j8heo9d7rZ": {
+   "sym": "USDC",
+   "A": 0.0,
+   "B": -745.7550139178402,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x361f30ab5293702c538ef744b3633f48850e851a": {
+   "sym": "LEV7",
+   "A": 0.0,
+   "B": 713.00627937,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xec5420866291ff46a85216c022deba1838d37777": {
+   "sym": "BBW",
+   "A": 0.0,
+   "B": -515.5254711427126,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:H3f4jYE3tEY8JWve2tRJYzqZpAHEHPihJkGQA5BCqqkn": {
+   "sym": "FOMO",
+   "A": 0.0,
+   "B": -1180.2862309274315,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:A4j77ZgCEW3i4k94jBDQY5XwPikBB41WYi2vCQqSpump": {
+   "sym": "BTRC",
+   "A": 0.0,
+   "B": 700.50249944184,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xd1632dfcb716c531ed8bec15a4586cd6f5a91e18": {
+   "sym": "LIQLORACLE",
+   "A": -527.7241033604804,
+   "B": -529.4448280222692,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x055650555be80649397084cd3f8a09b4350e8612": {
+   "sym": "BUNEE",
+   "A": 0.0,
+   "B": -530.0643120210027,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xc1c7679e3eda3d0949a879e125765ddea302e6a3": {
+   "sym": "NODAL",
+   "A": 0.0,
+   "B": 1805.189166,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xee49e10d8d3c7c94aa9f494e76a441cafd934a7f": {
+   "sym": "RDOG",
+   "A": 0.0,
+   "B": -748.6831111294641,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xbeea1d618e533a387d941f58a7d4c9b7bd377777": {
+   "sym": "牛来",
+   "A": 0.0,
+   "B": 987.2506001122499,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:5Z1xHaFjMUDmnmBGi6ckvZXEq4oSYNjkEdLyXvzqVG1V": {
+   "sym": "ANALOS",
+   "A": 0.0,
+   "B": -1164.10251750988,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x580de64e24e26324a51616d89322e1134093d3b2": {
+   "sym": "VALLE",
+   "A": 0.0,
+   "B": 612.7536195,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x7ecb3cb7812727723ce297794fdb573391f67777": {
+   "sym": "dreambigger",
+   "A": 653.6353763012371,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x05c102c9165856132fa4d11d6865ee2fa9697777": {
+   "sym": "敢于梦想",
+   "A": 0.0,
+   "B": 727.4437422401619,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xac3041c3e7c6d09df19fec204a15713755207777": {
+   "sym": "qCAT",
+   "A": 0.0,
+   "B": -74.87039330755465,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:752meQjs65b2c9wu49kd35tT9Y5AHMQ8haPLcyyd8XrT": {
+   "sym": "zolana",
+   "A": 0.0,
+   "B": -3498.0588924342583,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x98a2a6ff3326e102213e7be76d8766edacf5c370": {
+   "sym": "BUDDY",
+   "A": 0.0,
+   "B": 123.2885061507767,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x9936403a9cc72cf306063e3496ea387428a3aecd": {
+   "sym": "CINEMA",
+   "A": 0.0,
+   "B": 1220.91962641011,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:75tWrvyvdWBPEf9tfwekU3LxxoGZmvB2F565mRecemE6": {
+   "sym": "CHIP",
+   "A": 0.0,
+   "B": -767.09608916888,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:abitX72sqnpQD3keF9eFaWCyy2RV2UqYtmq1M6Xpump": {
+   "sym": "HOOD",
+   "A": 0.0,
+   "B": 1065.2368893033,
+   "C": 0.0,
+   "D": 0.0
+  }
+ },
+ "gflow_prev": {
+  "robinhood:0x0c5453edca198471fc39edb9156d9627caae04bf": {
+   "A": 0.0,
+   "B": -1.3952139999998963,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x09b3d5a233004cd2e5fa5133311356ca3c8431dc": {
+   "A": 12.163518481877645,
+   "B": -4535.402588621313,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x82cb7613d4ef9d8df7e50fad2271c260a0b0c96e": {
+   "A": 0.0,
+   "B": 726.4285004974585,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xe462da1b17d0ab6f54adeca8ae1e5da31918bffe": {
+   "A": 0.0,
+   "B": 197.60639691000006,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x117cc2133c37b721f49de2a7a74833232b3b4c0c": {
+   "A": 0.0,
+   "B": -508.2798779389695,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x9e92bbf2017bbfb7a06c975ca30e268cd2e57777": {
+   "A": 0.0,
+   "B": -2181.7469023219874,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xb17c14ef132cfae1e22af3a539c402daf21d7777": {
+   "A": 0.0,
+   "B": -1088.7469352210107,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x84c104d7b6c5e646937de8cd1729525276a87777": {
+   "A": 0.0,
+   "B": -178.17868259766567,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x2ab8a4dd2191989ac2898006df350b236d2b7777": {
+   "A": 0.0,
+   "B": -2319.1115195575244,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R": {
+   "A": 0.0,
+   "B": -5627.471343773105,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ": {
+   "A": 0.0,
+   "B": 591.0000449702752,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:CTPoyCwkjMvoJwU4xvZZqoD8tiYk6yDchySiN5gGpump": {
+   "A": 0.0,
+   "B": -2655.06628274157,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Pren1FvFX6J3E4kXhJuCiAD5aDmGEb7qJRncwA8Lkhw": {
+   "A": 154.99154799999997,
+   "B": -5354.94476266226,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:8SKrQVfmiNsP6K8Wg9amMAM5uQUayoveiawFfpZbgFgn": {
+   "A": 0.0,
+   "B": -1278.5769066491143,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xb63f5cca37b7886d731af9c868350d7d9bd9af4f": {
+   "A": 0.0,
+   "B": -815.44778155,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:H8AAs5YU9HhwCpRH48dJqdJft6gJAGhCXZKybfHFEuTc": {
+   "A": 0.0,
+   "B": -5388.06764584393,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:So11111111111111111111111111111111111111112": {
+   "A": -683.3136210000001,
+   "B": -3923.5971310000004,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn": {
+   "A": 0.0,
+   "B": -1282.7372413407998,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:C2ncc5hGcXoF3rX4G9gfnP5KY9ieWvTJ7gtzuUpFRGJa": {
+   "A": 0.0,
+   "B": -526.366443,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:ANM35KbUcfKdEVBXzSjZBoT6ceSwYRs3fuc79fp7kRqP": {
+   "A": 0.0,
+   "B": -1069.5575250134702,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xc71d692ff5323d818b425a9536301c5147ed3a6b": {
+   "A": 0.0,
+   "B": -1122.821263156831,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x12d5ee7917ca430073c3a638ee1e6f0648a98a01": {
+   "A": 0.0,
+   "B": 1412.889186314191,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x9e88da78e13755bea9a4988c987849794ec3f5e8": {
+   "A": 0.0,
+   "B": -231.40757187652787,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xeb8cd1f381b6c1a2248e98f6aba1d1167ffe1825": {
+   "A": 0.0,
+   "B": -1322.9368745035072,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x95a7ced47a4533cc23c08209a6d26352103460d4": {
+   "A": 0.0,
+   "B": 613.550421,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xd976b2ab3cf025f6136558687c174520c92b7777": {
+   "A": 0.0,
+   "B": 557.3053864420539,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x2e8c31162b855a2ffa90f6f8634643ad6f111e18": {
+   "A": 0.0,
+   "B": 29155.471237693946,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xf3cf3416415d8daf65db5217a8d848000226107e": {
+   "A": 0.0,
+   "B": -519.6071808173948,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3e208dc63cc0ef2a61e401587737e4df2dc74aef": {
+   "A": 0.0,
+   "B": 406.67321275526365,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xf2ec508422174ee564de98187db9359d318afb6b": {
+   "A": 0.0,
+   "B": 612.3374798009409,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xa8871d3e017ec945c585d401c92656a7e29a7777": {
+   "A": 0.0,
+   "B": 605.8282997733245,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:98sMhvDwXj1RQi5c5Mndm3vPe9cBqPrbLaufMXFNMh5g": {
+   "A": 0.0,
+   "B": 1619.6014187233995,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:B2or5WpZMW1MYzKqyicAzXTpgb6Rp4Bsc9vkRxn5LiDN": {
+   "A": 0.0,
+   "B": 519.1130226927974,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump": {
+   "A": 0.0,
+   "B": -4247.75916846014,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x5759a852243a56a48853af1d28fd4e0f33747c9b": {
+   "A": 0.0,
+   "B": 638.9970046210237,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x62c71cd34a52c30d894419cbcc55db2afa8032ea": {
+   "A": 0.0,
+   "B": -2537.295131346088,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xf05babb8172bea20e974b458c593399be11250dd": {
+   "A": 0.0,
+   "B": -520.1623625951971,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x9a3e2b85a5322131fa1b6968e3538890687a94e1": {
+   "A": 0.0,
+   "B": 811.18598715,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x69c68e4c00c6f6e4ac027300293a879be1e11e18": {
+   "A": 0.0,
+   "B": -2441.310123692775,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xd9db30bb0d2b8d2eae3826a1372117e058791e18": {
+   "A": 0.0,
+   "B": 7918.456697745361,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x556b78e745aefe48bc69e0c7c2775d7e03b27777": {
+   "A": 0.0,
+   "B": -150.5414207219991,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x872a3301465fe098171df2524df2ebd5798c7777": {
+   "A": 0.0,
+   "B": -1103.1547945732386,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS": {
+   "A": 0.0,
+   "B": -3150.522497700444,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF": {
+   "A": 521.113719,
+   "B": -3806.9862456353403,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:7tWFogvm3EyPmHsGMrQBiw1wBpXxdF88dZW5HkeTL4tH": {
+   "A": 0.0,
+   "B": -2605.9921215015124,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": {
+   "A": 0.0,
+   "B": -18757.06548708046,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Aigf5pKPyZW8nzxCrHEisE4tZMiUhFpKie8mYE7cmj6c": {
+   "A": 0.0,
+   "B": 513.5809613704,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR": {
+   "A": 0.0,
+   "B": -2193.49629589891,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
+   "A": 0.0,
+   "B": 2643.6609694692,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x14623dd0784cb5c484f8935c7c218d110332b538": {
+   "A": 0.0,
+   "B": -1401.6533030640708,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x9411910f947b2d178ce5cc71d5f6e15b0e033798": {
+   "A": 0.0,
+   "B": -406.04539567911354,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xad4ee775920441d9555a3ed0ab24bcb3e34e9460": {
+   "A": 0.0,
+   "B": 737.91768897,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x451b42a15100c340ca12f7c66de06fac5ea2d751": {
+   "A": 0.0,
+   "B": -1884.3076575757575,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x9e94c8b5a0caeda5d0471c3a9f5ed4f3519d88c7": {
+   "A": 0.0,
+   "B": 615.07400625,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xb9972ca7188e511174947e3936a5315ac7073277": {
+   "A": 0.0,
+   "B": -3463.8226767938168,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x9d7d4d0e0c41fa6bc1e30ddf8645d8f83c101e18": {
+   "A": 0.0,
+   "B": 2221.331109535183,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x86df20937c45d2aacac6f6eed5d0a891b3887777": {
+   "A": 0.0,
+   "B": -3590.331171417991,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x135b978ddbdcb41afce5dcc1a88640568d677777": {
+   "A": 0.0,
+   "B": -1888.6952841736706,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x205812cdbed920aff76c6580abd681a46d11efc7": {
+   "A": 0.0,
+   "B": -479.27218728796174,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x4c42e2217b4c28ab0df322373dd25e974a024444": {
+   "A": 0.0,
+   "B": 113.3712411729091,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:C8Sno3qvRqWGja6fQAxzDMyzdrfZ7dLzyZKTD9fLiHie": {
+   "A": 0.0,
+   "B": -703.1358239224028,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:5hwVC2mhDQw1XzdALnXCFYeVF8G9iJWeJ4LumjwSTHix": {
+   "A": 0.0,
+   "B": 525.987,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8": {
+   "A": 0.0,
+   "B": 1093.5683929396998,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump": {
+   "A": 0.0,
+   "B": -567.92022559375,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6qY9nzQGrHZFhSzzqrnh5LL2dr47yqibfo42FZifaGQS": {
+   "A": 0.0,
+   "B": -581.2677214917021,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xdf600ad755c49bc191ad0e8b3305e59ff5147777": {
+   "A": 0.0,
+   "B": -2227.6902857979403,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xccfbcd3bf85d8657a6bbd10b8c81c99f13207777": {
+   "A": 0.0,
+   "B": -3530.9474960582525,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:HQHx2HJwWReMjDQMw1ZCH3w4yxBAqYZTaUHun6Lvpump": {
+   "A": 0.0,
+   "B": -526.45018774392,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3de514ada7ed28501bc0acf7a93c443b04621ebc": {
+   "A": 0.0,
+   "B": -1086.1346375388794,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3c6decf82517f4182dbc190cbb04e253fe68fe67": {
+   "A": 0.0,
+   "B": 110.64025982796625,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x05b37fb53a299a1b874a619e1c4c404d52c36f4c": {
+   "A": 0.0,
+   "B": 120.33682172017956,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xfa0653c203c4c73bf89ba357369cec6991e4d8d2": {
+   "A": 0.0,
+   "B": -591.5985853228867,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x07dcaccade1e3c034c707039bdfe02792f88ffff": {
+   "A": -977.8517695272262,
+   "B": -229.20370065361533,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:7hGgx1VtNTj193fFXXuMEkp1MRV6JbWYgMBhHRYxaxu2": {
+   "A": 0.0,
+   "B": -1061.5382192112947,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x38c4d77938821037d3a42c7da0519ee5a9158cad": {
+   "A": 0.0,
+   "B": 134.82280338285,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xa0699d0524acac87f43fbc765686c36b10ccad37": {
+   "A": 0.0,
+   "B": 1228.476942,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x98096d17e191b3da1d5f99a6d7b3584351b11e18": {
+   "A": 0.0,
+   "B": 3744.5749586112174,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xfa6d9b504848606eb9aec04ccc161d169b3f2159": {
+   "A": 0.0,
+   "B": -4011.84728645458,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:HLBm9EovjiN7H2TCZGE3vsbmadhzwvc6WhrRLBRypump": {
+   "A": 0.0,
+   "B": 1047.7434781814,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6eCJKonwXUGd31v99i8RWQatrjPNSy2KisC7LPeTPHgD": {
+   "A": 0.0,
+   "B": 528.7,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:HiY4qx8j5QuVh5UFnKyFq1DvzzDNgFkgyyhEeDXhpump": {
+   "A": 0.0,
+   "B": -50.35647591885004,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:C3CZPHy8nVZ192R4yrNBiG7asAEHc5wYmTiof7Fvpump": {
+   "A": 0.0,
+   "B": -600.24074860008,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x97216593d3b2769da6f0adeee6fb8e36da4e319f": {
+   "A": 0.0,
+   "B": -2198.556020148974,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xa3602804e096cb73bd8344afc1ff3f3390b899c5": {
+   "A": 0.0,
+   "B": 10160.192898209316,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x5e7516be1be5d4396b060908cd44c9db093c4189": {
+   "A": 0.0,
+   "B": -100.9414880697434,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x385f4f8ae47651ce5f58f5265395a669f8281e18": {
+   "A": 0.0,
+   "B": -6382.521778289823,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xf40592daacb3e5abf358789f5688c0b4f64d7777": {
+   "A": 0.0,
+   "B": -777.854443385908,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x265b3982ea730748100947f52561a4eab54affff": {
+   "A": 0.0,
+   "B": -2954.309301029167,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:4RkjwMUre2BxWfspgcuCYUe7DfPRHS4AxXWHZ92b5qQX": {
+   "A": 0.0,
+   "B": -555.3983221572,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:9BVn3Y8tPghbnGuuuxoj2mGekqgSQV1M7nALF7brpump": {
+   "A": 0.0,
+   "B": 1042.97926883904,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:4ytoC4JhuZsqyLC9jTYGxLvwGu4vELA9w4xWc4qRgHik": {
+   "A": 0.0,
+   "B": 2748.3281489744786,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x380b789970dccb4a0d81c818915db25a19b0fc80": {
+   "A": 0.0,
+   "B": -802.3082,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x2d84761120398564a77eb0512df6c9f1157c8652": {
+   "A": 0.0,
+   "B": -723.679745,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x7dbf38976f6d3b9c529e7d9484a71898b409ee6a": {
+   "A": 0.0,
+   "B": -133.73085928874616,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3dc51b3a57a2b0a26c2d2a316cdc0902494ed930": {
+   "A": 0.0,
+   "B": -0.7328228925875919,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e": {
+   "A": 0.0,
+   "B": 22.68922454227095,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x47a685a5234b7f02fcac2704b7e458e52fa509b2": {
+   "A": 0.0,
+   "B": 613.13375334321,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x18acb55d1151e324371c42642d3429b0eefc69f0": {
+   "A": 0.0,
+   "B": 1856.1336318786089,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x01a51df93fc9768470abd4637d3498bb83a71b43": {
+   "A": 0.0,
+   "B": -208.21024651000005,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x35900d68794903aa6fe2eb4ebe715da82206fda8": {
+   "A": 0.0,
+   "B": 605.4742234646,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:JE8zmsKRivXggZsJxXHBdCkako85YawNtU5hqS4upump": {
+   "A": 0.0,
+   "B": 2817.06122405754,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:F5PYCFQdD7EWfwBabtxiKTmRAJBCH4AxDZApt4fZpump": {
+   "A": 0.0,
+   "B": -0.33078687109991733,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xcba87c79a508ddcfb26c814380d111226ebc6b52": {
+   "A": 0.0,
+   "B": -1.118398874439663,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x5d6ef090a1461b11c9427ac319260122d1c61e18": {
+   "A": 0.0,
+   "B": 2231.735608501989,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Lyi47medADEVDd5hxJo1mbxhnBct841sFpcGRyHTuwp": {
+   "A": 0.0,
+   "B": -1664.4763050000001,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xdbf10a3fa8ae05c4999d631cc5ed45fcfa0383e9": {
+   "A": 0.0,
+   "B": -677.4416292689438,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x507b6f349a80114097a67b8b4677367acc15b220": {
+   "A": 0.0,
+   "B": 1137.9845583953954,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xc269d59a0d608ea0bd672f2f4616c372d8554444": {
+   "A": 0.0,
+   "B": 2146.1536510193887,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x7cd4eaebed10c8197e2b18284911353518b37777": {
+   "A": 0.0,
+   "B": 165.84940470941547,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xaca7781415dbe89ed3f8be1150eb8c69d5477777": {
+   "A": 0.0,
+   "B": -1903.7603235080055,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x02fca66c1d1afb4e2a7884261eb00f63598a7436": {
+   "A": 0.0,
+   "B": 1007.9292275230259,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xeeb56b0b7ac901835a78b008c9d3c73615d87777": {
+   "A": 0.0,
+   "B": 501.6748396869353,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:DVxaAXi3L2NMgqpBqYmuVJkSK4bVJ1JgjvTmQgTpump": {
+   "A": 0.0,
+   "B": -708.42750631305,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:8VNFMjSrZSex9J5ji5g8rAhZLgwo78MTXgTASD17TLiU": {
+   "A": 0.0,
+   "B": 73.60412898199263,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:vAddewUHuYgRDrL6n3kXtBXMT635evJz8K93j6Wm1Ba": {
+   "A": 0.0,
+   "B": 663.56398790615,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:3ZaTieuhk4LmWUEJpp9xUyhEmhaAGojmGurLLiURH6PS": {
+   "A": 0.0,
+   "B": 629.0911764734601,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x6b1d42927b1a84ec28fa88d4fc6fa7af404966be": {
+   "A": 0.0,
+   "B": 6336.046546213721,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xd7321801caae694090694ff55a9323139f043b88": {
+   "A": 0.0,
+   "B": -851.94412912967,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x420393b70a34d6aef855ef56e87d4d4161f27c27": {
+   "A": 0.0,
+   "B": -1266.7686689125508,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x2c1862c40f21608461abb6a430ea03e06058aec3": {
+   "A": 0.0,
+   "B": -214.94999900000005,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x8b3e3ba1a55b939f93f0a205f94520b9468e17f8": {
+   "A": 0.0,
+   "B": 858.27594897,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xe0514a254b465c8c804f77230fb1059f84b21e18": {
+   "A": 0.0,
+   "B": -526.3030836952903,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x292655a45d04ca013c637694447ec94ca4be7777": {
+   "A": 0.0,
+   "B": -225.9756916189708,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:udPEzBjbGMzYZbuLtByqLYhc4TEs6EebG8R7fwdpump": {
+   "A": 0.0,
+   "B": -518.46899989419,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:eL5fUxj2J4CiQsmW85k5FG9DvuQjjUoBHoQBi2Kpump": {
+   "A": 0.0,
+   "B": 6252.08638581085,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:7ssJZGFT3twGqeYA1kvpoMWwZYvMZvrMEbjRaWgg46BL": {
+   "A": 0.0,
+   "B": -1033.99510368349,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": {
+   "A": 0.0,
+   "B": -9148.726002838981,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xe1e5f00a9b0255ca4df85b3130ee0f77d15acc2d": {
+   "A": 109.5068743400002,
+   "B": -16868.418473153066,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xca9c78dd337a67f6e0077f65f5e9218719d30edf": {
+   "A": 0.0,
+   "B": 893.248950721185,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x2474acef22fc4f7546a6dfd71927c57ad4144648": {
+   "A": 0.0,
+   "B": -729.5108120852819,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x8e62f281f282686fca6dcb39288069a93fc23f1c": {
+   "A": 0.0,
+   "B": -502.0264802187453,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x4ef9d3062c7f6eba4aae4990c5036598c6eff4ec": {
+   "A": 0.0,
+   "B": 1213.2885331825269,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x5d1ef6ef51ee796e952519af843877c208227777": {
+   "A": 0.0,
+   "B": 601.46110741781,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x75b364916b65f1e8959fa0210a6922c2ee237777": {
+   "A": 0.0,
+   "B": -740.245528827582,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:FYtP5AiiB4eUjVA88EeZS73PDpi7RPLusdqtXizYpump": {
+   "A": -1037.125319868,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:8NGpdSE1tZqUrvpUVqsn5Revncc6yUafk8mnAyK9fNCE": {
+   "A": 0.0,
+   "B": -594.87541394073,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:CaWZeUM4FvX9dPkjGc2xHS6tSN3qJfTWyvaG77aM5o7h": {
+   "A": 0.0,
+   "B": -2676.014250465701,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump": {
+   "A": 0.0,
+   "B": 4113.62950543328,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": {
+   "A": 0.0,
+   "B": -1096.41926308855,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:oPAiAikWTaFj9RYoRFD35ccfwhnMcB3ThgBZRHSkjTZ": {
+   "A": 0.0,
+   "B": -1847.015391,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:GhuEi5AWtZaWuAda4ysJwMTzU8oMdjiL1bz6eziptT2p": {
+   "A": 0.0,
+   "B": -2479.5891725751662,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x9b904964003848a9dfd5608885dcb366e0c21f47": {
+   "A": 0.0,
+   "B": -1413.810729,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xfa9cee6881e6be5f3bd9a3520fa3bb5fe49d763d": {
+   "A": 0.0,
+   "B": 605.544845796099,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xf5726fb3bc585039875bc9572b976f6cd8817777": {
+   "A": -1582.4307360939142,
+   "B": -1093.0306207820636,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xce70a08238083ea6b4b7e90ea73d59e0d1b77faa": {
+   "A": 0.0,
+   "B": -197.49886199999992,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x7c057788c14518dc62127dde5cd6b45cca7f1fbf": {
+   "A": 0.0,
+   "B": 736.329275,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xca52f1dd96ba5ced3dda9770223002ffa4587777": {
+   "A": 0.0,
+   "B": -517.3736960069158,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:GCa9TZMK9Q3VUSkhZgX76YAQBjqQd1dPxkBnZojFpump": {
+   "A": 0.0,
+   "B": -26.21595575925005,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:BK7S3SLaEviW28pgBECF2FMUfQtibM2DCm8xJgRK8XH9": {
+   "A": 0.0,
+   "B": 627.4506417810288,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x4b1c1725fa83d1a3effe48c992c969788cfac32a": {
+   "A": -2367.807782323282,
+   "B": -28.639961002350105,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x1ea3ffc43ee291a4373418286e9b001aebe14444": {
+   "A": 0.0,
+   "B": 10.523295984771153,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:68fn2tLABKmS7VA9Eaz3n6RfoXM3iBWUACckT9dwpump": {
+   "A": 0.0,
+   "B": 502.5564491508,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x851a8543455636c51a53889c5002e5c16d6c45f5": {
+   "A": 0.0,
+   "B": 1209.0413723422687,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xf2179e3ce2c20bd66989bc75a94df19983c22673": {
+   "A": 0.0,
+   "B": 57.612945317745016,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:taoC6xyv2v8tDLcev4uaGUgV4vdQsWJrGft2kcBRrBY": {
+   "A": 0.0,
+   "B": -1978.6568809507999,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:2pouN3by7twkiZGy5aEKYUpf78ALDpKRTNu2WsQkpkqt": {
+   "A": 0.0,
+   "B": -3609.517938419774,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x2a846aaaf896ef393ccb76398c1d96ea97374444": {
+   "A": 0.0,
+   "B": 3011.082228,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6ars8ZWUb6a4jrnHgZL54ZntwNBpEfyUyQSLwX5KU9s7": {
+   "A": 0.0,
+   "B": 1038.83439119376,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x7df5daaf80e65dfcc7a1435d9b52bcf2b5753fbe": {
+   "A": 0.0,
+   "B": -2797.964866127445,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xa9236e79eb4a2ecbe76c8c75afd251345a9242c6": {
+   "A": 0.0,
+   "B": -903.5750392591917,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x25b865486dac88b811d8600494a1f99387bb7777": {
+   "A": 0.0,
+   "B": -1472.2522769705195,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xded852de9fe9ba9b6f27f39e8e81cf851a5c79cc": {
+   "A": 0.0,
+   "B": -3081.454149,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x51fb76be80ab6daaa345d818f4e06441816b4fea": {
+   "A": 0.0,
+   "B": -1033.602141018233,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xbe98b75361935b18d688409424a869a4c3dc7401": {
+   "A": 0.0,
+   "B": -8301.157937295808,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xe77ed03b608a02829f569b0f116ec85cb7bf3cc7": {
+   "A": 0.0,
+   "B": -703.3228517168161,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xc7f2dec1dc2230a8ff811b55a2057e34df9c7777": {
+   "A": 0.0,
+   "B": 523.3140250274491,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xc9d825e83aada475bd4d38c8ca984ed746277777": {
+   "A": 0.0,
+   "B": 1517.5495085073821,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:33TdSo6P4ux6WSHV6T4y6ZddB1ufgboMwq817NT8641u": {
+   "A": 0.0,
+   "B": 513.6175212713024,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:TTWofwAge91oFhZs7kpQdyrVRkmevgM88xijGvQFbKo": {
+   "A": 0.0,
+   "B": 523.714036,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x4874845b0d4acffd896dde1e42828a543717af7f": {
+   "A": 0.0,
+   "B": -741.3748308497683,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x1b5dbec5a638605343e1774a2dc30851ed5146f3": {
+   "A": 0.0,
+   "B": -0.6498308665712784,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x8e859dbdfbfd2df6a99870e2871eaa58e8784e05": {
+   "A": 0.0,
+   "B": -87.43663530663673,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x43e104e8a7fc2bfd50870612cc77674bbb877777": {
+   "A": 0.0,
+   "B": -540.2828344747411,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xe5e6af2926c00f8351fc7250bf9b039689d301c5": {
+   "A": 0.0,
+   "B": -609.20837814138,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x82ec31d69b3c289e541b50e30681fd1acad24444": {
+   "A": 0.0,
+   "B": 1953.6593275046705,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x3e17ee3b1895dd1a7cf993a89769c5e029584444": {
+   "A": 0.0,
+   "B": -6811.815335915067,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xf21da93386876681da1c8f10b4cf30b508034444": {
+   "A": 0.0,
+   "B": -1073.2082822394373,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x8256762eac0a1182931c155eade0ad2d14777777": {
+   "A": 0.0,
+   "B": -585.2816619876843,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x5422663e07d6fc217b0af4532fb1a6c9c7de5555": {
+   "A": 0.0,
+   "B": -2216.1954656361195,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xbcc948e70f1d5dcdc8986147257bf4b6c40105f1": {
+   "A": 0.0,
+   "B": -1307.7962283350046,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xe1e93e92c0c2aff2dc4d7d4a8b250d973cad4444": {
+   "A": 0.0,
+   "B": -2181.16806680629,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x55e73a66948d49883514e70a4a594b7cc4a87777": {
+   "A": 0.0,
+   "B": 910.6214363646718,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x04e99a853a04965c74348c18593096f394b8cc27": {
+   "A": 0.0,
+   "B": 612.8098824814249,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xefab538cf3c29237a47c6afb145d50ddf204a0a3": {
+   "A": 0.0,
+   "B": -667.5996147021935,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x9212cf1f9f4a9c69bb010146ba5b0725169d4444": {
+   "A": 0.0,
+   "B": 80.8919726306267,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Ev1HG5CMhWmrdBEqUFM7yJbv8NqWHUN3fiJxPQbNA6dG": {
+   "A": 0.0,
+   "B": -1262.278514475418,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x7023b821f6203e3b8502d0b81ad3e5a30f3b1199": {
+   "A": 0.0,
+   "B": -728.7485581659367,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xac9a8dc5b9bf3f87bc0b7e05b1b5bd420a776e06": {
+   "A": 0.0,
+   "B": -577.7609928500791,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xb934cabf87781f7eb13265de4cb2ce090d00c4e3": {
+   "A": 0.0,
+   "B": -535.5579820522506,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x86f09c5a8f436bdd2e7ee162198ae4a0fa9cd056": {
+   "A": 0.0,
+   "B": -618.3066212189555,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xa23af594e022bce6e644418acfeffc8d84d67777": {
+   "A": 0.0,
+   "B": 578.3358415674262,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xd0bc8ab397851ecfa58009d03bbc1a41fc764444": {
+   "A": -501.7216854999503,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x03c59bbf8ba49ce79831403b86acbc40d3167777": {
+   "A": 0.0,
+   "B": -312.94928564272846,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x8d1612b4b78ebf08cfbf01a04fa270ccbb0509a2": {
+   "A": 0.0,
+   "B": -1230.811384967095,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xa0bc5ca3339788b7861dc5a27e6780295c422dbf": {
+   "A": 0.0,
+   "B": -0.8788939999999457,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x2ea98073e7c3b0781f8cec3690eacb8f5c83507d": {
+   "A": 0.0,
+   "B": -1488.273795821278,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x7f129314373451f54a9edbda701d4475745f95d3": {
+   "A": 0.0,
+   "B": 7201.857263510856,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xe6f07ee32dad9dd9bd0986a4b4a8ef6819ba7777": {
+   "A": 0.0,
+   "B": -833.9977789183782,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:3Dfiey2bUzvik697LEeRQ2hj68dMXsgBNN5JVLUhj1ck": {
+   "A": 0.0,
+   "B": 1098.9204492179101,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp": {
+   "A": 0.0,
+   "B": -2054.295462,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:B5ANwoWkptDv1QszdPHXjCF2gTWdo27FGLffdfXzzoe6": {
+   "A": 0.0,
+   "B": -2054.9171837036574,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x28d9d4f4fbe7eb714c127c1b3ad8deff3062fa3c": {
+   "A": 0.0,
+   "B": 612.2461875040331,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x532c5583671870723ceef573600208af49c87c54": {
+   "A": 0.0,
+   "B": -1500.613538046102,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xa184d5ad47c9e756117c6590371bee0d0d477777": {
+   "A": 0.0,
+   "B": -976.6275871371759,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xf3525965a4ad3ca0ac13f4d2f237113691194444": {
+   "A": 0.0,
+   "B": -9492.911994301321,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:AL63Th2HZAjHzU5hvRiqsDumfYp3CEnZUQaFSDnVotQn": {
+   "A": 0.0,
+   "B": 501.48101679488,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:PerPsCe2SJ7Q25CN4R5TTX4fmBdmknE2hQmqCt96fHL": {
+   "A": 0.0,
+   "B": -597.45963416365,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:13i7SfDDzg3t4MQnfZNtFKptHpv8HR2eaGRMfetSpump": {
+   "A": 0.0,
+   "B": -1177.9894065379501,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x133b4edb4e8c4a24e9aa1a9de4cea2ffd8bf53d7": {
+   "A": 0.0,
+   "B": -1.4184849999999187,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x82d79caa83412810b82168c9619d0fea2125e887": {
+   "A": 0.0,
+   "B": -0.8528209813430294,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x11b70d0243baf75e85ce03201a92b5b7c33beb59": {
+   "A": 0.0,
+   "B": -1136.7959928442644,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x254ccfd4241f46d91b6b0715d1fb3bfb8386d833": {
+   "A": 0.0,
+   "B": -515.4591755327057,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xfd07342e8a2619f3185bf4751e2c231dc4baca18": {
+   "A": 0.0,
+   "B": 613.7324072326714,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x1ec871553be07dc68ec1661c32eca7e2e46e1e18": {
+   "A": 0.0,
+   "B": -1433.250785271351,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x23acfab04106a21af0ae1643b74cfec3c9aac181": {
+   "A": 0.0,
+   "B": -1058.037429139231,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x9a092a73a6155ad8deb6ee696653db0abd70ffff": {
+   "A": 0.0,
+   "B": -521.566536802363,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:FNpcJMsGFgDgcr2GSgWem1cEJ7H9ciVZbL7TDUg9pump": {
+   "A": 0.0,
+   "B": -117.68317446276001,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:poNSfquKq512ApeYjVghwViSun4x1MhCqHVH2Paq4jN": {
+   "A": 0.0,
+   "B": -1015.197797,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:8pokexUyNvdEUJNZ6N99Uodyz874fe7HNT5foTvkE9A5": {
+   "A": 0.0,
+   "B": -1015.197797,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:2B8FUhALdc44os6jVLje6mjMuW8R1KX1U9Nz22Bipump": {
+   "A": 0.0,
+   "B": 678.3945947575,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x218d0dc56476b05f131bd6cc82b80c7b052fa9b1": {
+   "A": 0.0,
+   "B": 7486.163464526739,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3999f2c02c2c832c08510050d47399581fee914c": {
+   "A": 0.0,
+   "B": 620.1667616634977,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3830b1e3efe39365d1a89c6930bbc8c00f675241": {
+   "A": 0.0,
+   "B": 744.1850868941598,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x937eadf48ec0c625729f7b2023a51c67637d88fb": {
+   "A": 0.0,
+   "B": 743.9843613668037,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x7ab96eacdeb43e95565e4a4f741089a3d8425eb0": {
+   "A": 0.0,
+   "B": 1342.4298186479864,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xfa7ad7823b36df33eb3bec330962b506aec37365": {
+   "A": 0.0,
+   "B": 26.067444544282125,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3d9b15aeaf8e6fd90c30a0f247c18c985be25d04": {
+   "A": 0.0,
+   "B": 618.677806725,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xab093def657f15df31b33922a95e047add645b29": {
+   "A": 0.0,
+   "B": -609.6274540856523,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x5fd86da9b05abe396fe9d02a4a213a7c00556503": {
+   "A": 0.0,
+   "B": 2996.354663263883,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x72b72f0741aebc32adf66021ea54cab2d95e7777": {
+   "A": 0.0,
+   "B": 4.166450346738088,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xa8f49424cdec24073581a2d44c0971fd17f77777": {
+   "A": 0.0,
+   "B": -549.5582280732618,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6sPYBcVxbudw4V2bgDrGvtAQ38mccTtcVUasEDhZ78qt": {
+   "A": 0.0,
+   "B": 1332.5618608149002,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xb27339261475ef2724095f166b46e34223b13489": {
+   "A": 0.0,
+   "B": -819.0875122041393,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x47f82b772d195bd10029a484b8626de300a57777": {
+   "A": 0.0,
+   "B": 502.1269704,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xd1743c5101569730596c17e1dacfbaa474eb7777": {
+   "A": 0.0,
+   "B": -644.4583971319416,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x4f06dba806d66e1caeb37516c0f7a28728067777": {
+   "A": 0.0,
+   "B": 708.6052992959108,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x5f6fd60ad6cd8751b4c521bc00fa02abfeca4444": {
+   "A": 0.0,
+   "B": 751.8817845,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x8b7abc1c0f2e6c0b76bc4fd0f7190f67d72e7777": {
+   "A": 0.0,
+   "B": -107.20234834835992,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:5acQsGbF6LT7JxxGS5UPZ6Lj2hkK8buhiCR1V16cpump": {
+   "A": 0.0,
+   "B": 516.02762926298,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:739dnZEG4yaBWFsY8L8ZwrfhGG6dhtCSercW8Umspump": {
+   "A": 0.0,
+   "B": 748.69003423032,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:EbT2jpoeRJVFNWAFJE97EGfQF3iwHsEY8sh17fGbL5ER": {
+   "A": 0.0,
+   "B": -1637.7696937456428,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:HGE9j5vuTzZWqvjZXjuNb5WxQKDUHY8QFvCXVUKppump": {
+   "A": 0.0,
+   "B": 637.44867669756,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x640c04ca09c5c5140e62fef42c59e3afdbbd4444": {
+   "A": 0.0,
+   "B": -1480.3373390093839,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump": {
+   "A": 0.0,
+   "B": -1061.196487,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xe8ffd7e24187f72afb08d75b1bb13088a989a791": {
+   "A": 0.0,
+   "B": 1540.388651487355,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xb2acf3ae051c7f0b0b8de90cbb4ed99312574444": {
+   "A": 0.0,
+   "B": -1102.8535933465598,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xad634fe25355663b7457c414cbe7cd431e6c9980": {
+   "A": 0.0,
+   "B": -469.41403772206684,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x63d9b8830255ba8ceaf3958e6f2906e52b424444": {
+   "A": 0.0,
+   "B": 1475.3075093962705,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x4a6eec8a30b49d289b9fc865fd374b4d61eab8fb": {
+   "A": 0.0,
+   "B": 1895.602167286052,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xed5a169765f9f447026fa27add2890b7a8bf8888": {
+   "A": 0.0,
+   "B": 755.19505,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Cj3upTXz6cYCP1TLbyF5AseKX4hqaWK7eiRqR7uu6npU": {
+   "A": 0.0,
+   "B": 500.4455334957,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:EEpng77ZPn9FbgbT4xsRjwuxNCcMBYq3HTwEscyTpump": {
+   "A": 0.0,
+   "B": -104.83549913623006,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:CGMVxtvLpjMarSRRq6adrx7px4ducKqSp1yhf94ZA847": {
+   "A": 0.0,
+   "B": 1270.12380244406,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:HwCHu7MJVq6KFAtFYqtbuvnFfzuKXfsbgU14nWw8K1TK": {
+   "A": 0.0,
+   "B": 513.77333323992,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x274598d046ecfff7728690bac353dcf460659450": {
+   "A": 0.0,
+   "B": -541.9516092974353,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x298348d5b2e45c774e3ee4f1a0924071dfbdc8c7": {
+   "A": 0.0,
+   "B": -937.594828389877,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3ad14f0d3f2dfb85bd159fa29eb424e400930f4a": {
+   "A": 0.0,
+   "B": 610.182872328172,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:2u3ufZ5defxwPXMixvvQpSs68PDNzHTdE52t9Crspump": {
+   "A": 0.0,
+   "B": 2076.67470350467,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x58ae3485bbab4951643ba064850229d7b5cb055b": {
+   "A": 785.7461448885147,
+   "B": -8952.320226056017,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x07ebb29a38fbcb41563817e5e19f2cec619c90d2": {
+   "A": 0.0,
+   "B": -1176.2756657549994,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:2c1KjiyQow66QfsnCtoyuqfo3AuxgpBMEoAq5oiiXqdu": {
+   "A": 0.0,
+   "B": 516.3395648814,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:CB9dDufT3ZuQXqqSfa1c5kY935TEreyBw9XJXxHKpump": {
+   "A": 0.0,
+   "B": -1284.11421757354,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:2Tu8xDmYVX3huNY5GxYRjbx1KzUDZMquLaJbcvPYT1Qx": {
+   "A": 0.0,
+   "B": -529.14190660898,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": {
+   "A": 0.0,
+   "B": 6235.001539224259,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xff270c0246b44e016e56f7727c10caa336fe65c5": {
+   "A": 0.0,
+   "B": 609.67192292325,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:FCpqXfA66C8D7bTAu5SS2hEHd2WBB9tN8MBYtGw9FBpm": {
+   "A": 0.0,
+   "B": 764.9451542193265,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:HuJ1Er8u39Fs5zhnD3TnoJSv6J3VV5KkNf3EabDHpump": {
+   "A": 0.0,
+   "B": 364.0632685816,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x1309423f8c565dcee5102b7936a4e8710d0be00f": {
+   "A": 0.0,
+   "B": -1045.8427969696968,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec": {
+   "A": 0.0,
+   "B": -4992.406975487744,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xc8282649246dfc10b685dee3d1aa132b1822ffff": {
+   "A": 0.0,
+   "B": 738.1294439094343,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:PreZad18qfPtbxNpMtMuAuX2zVpvkEU8DnJx56faCWd": {
+   "A": 0.0,
+   "B": 508.946711,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xdae6d8861ce15b5a01a85e12d202e03e7f223f53": {
+   "A": 0.0,
+   "B": -958.4687112267094,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x18e674231a58c239dc7daedcffe15ec3a24cff5c": {
+   "A": 0.0,
+   "B": 2984.949472428,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x3aebd0f979c5c20ea8de568105e91c17f2fa4444": {
+   "A": 0.0,
+   "B": 934.223338125,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:G7nMQmtag4KQ4Lcs2n8hS9mf3Rya6KKwSPQuVPtk4zA5": {
+   "A": 523.2565070214548,
+   "B": -1816.52427612921,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xe2d8d45c7031703dff035dc01b7fab8f208cfab1": {
+   "A": 0.0,
+   "B": -614.6248080808081,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x0000000005aca17e8bd5779fc87e13cb433aed24": {
+   "A": 0.0,
+   "B": -2118.6092765306125,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x2f9fbef6882b719a7e2a611f6a9ab12404397777": {
+   "A": 0.0,
+   "B": 597.832883631858,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xe1b93d9e3f11d11b629aa6afd0fc7a4310b97777": {
+   "A": 0.0,
+   "B": 524.517642630701,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xc60ba256b44334a0cd2c7242e98b88f031abb006": {
+   "A": 0.0,
+   "B": -3010.35593734197,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x1df9cfa601b7db3f3e62035763aca16a0ad57777": {
+   "A": 0.0,
+   "B": 68.02628526914452,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x15d36b6a28d8327abc7afabf0f106ae2c9af5c4d": {
+   "A": 0.0,
+   "B": -1876.5036472063384,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xe7fa82b8960d8f6f0487969358ef236c80bc3d2f": {
+   "A": 0.0,
+   "B": 587.2058775,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x7f2d4923517f9bde286516b13e921e2e79b37777": {
+   "A": 0.0,
+   "B": 8.367863210028645,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x7ef9be951daa9633f749fb3f4329274e0b367777": {
+   "A": 0.0,
+   "B": 52.26805869269356,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x02992d1259a33dd8aa284ac37853f2101c1d7777": {
+   "A": 0.0,
+   "B": 747.5144345101588,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:4PoWKTDpcZvptTr687Bg3c7Jg7YD79Q9opr8KdaCPeZT": {
+   "A": 0.0,
+   "B": -517.0957537203495,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x8c52ce23ae040541138c9d06cf98bbd5fec26ec0": {
+   "A": 0.0,
+   "B": 807.72540255,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xeed8013fde995822293824fd6802c422de4b3d61": {
+   "A": 0.0,
+   "B": -505.8647245913167,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x1e6ea1e89151cdc8443968bf047cfa3177181e18": {
+   "A": 0.0,
+   "B": -6511.451161945852,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x8554d38b95e4f7ca11d391008627df30b2b07777": {
+   "A": 0.0,
+   "B": -548.1460232941373,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:49nkLrXi8nCZBVKsShDNasEtPe4Vn1mx9Xbr3kTa8pTL": {
+   "A": 0.0,
+   "B": 521.66439156051,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:GPzpoXpD74E2C4CJNayuoyBqPQJEsPtdse3nhntrpump": {
+   "A": 0.0,
+   "B": 1393.80769046825,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:EygStH4gHv1h4E8w4raYv6NGsrDiij3nbfCc26iTpump": {
+   "A": 0.0,
+   "B": 764.99888071348,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x114ff3597943413b686bcb749b2c780339017777": {
+   "A": 0.0,
+   "B": 597.3668669137018,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6zj2Wx84hNrY35S5ndCr7LCkrCEQaku5bLw9CTk7Hr3A": {
+   "A": 0.0,
+   "B": 506.39323056592326,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:H74CYmXgMkYHYuSRsZt6RJb4NYp2u72Vw8BS5huApump": {
+   "A": 0.0,
+   "B": -620.47667524656,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x8cd87f0cd1e44db5357f266d748825afb65d7777": {
+   "A": 0.0,
+   "B": 203.45997392958031,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x7a5e6dbca8fb9c517243ce88d0961c008cb37777": {
+   "A": 0.0,
+   "B": 747.3452761974316,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:9Ay6YpwhmYVicrY34eyJTYyV43naxL13VGh5kUX9pump": {
+   "A": 0.0,
+   "B": 721.27489265952,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3b4a0048a00787a644932cd648faa043410c163e": {
+   "A": 0.0,
+   "B": -833.194592,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x2103faa9d1762e27a716c61718b3acf3ec1f9bf1": {
+   "A": 0.0,
+   "B": -1291.1050361799603,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:BjkBHfgn7VPwz1AEFNWN4eBdg2MgXmgRVmzKYHu6H2uC": {
+   "A": 0.0,
+   "B": 4.229762012008052,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:FAZFZHPnUx5p9LCL76zbZ8HuchrsnCBbK7Xjaxx68AxW": {
+   "A": 0.0,
+   "B": 525.979244,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:HmJDgky11u77hpBss6D8sjNpYPD5B6fWgSVDj58jpump": {
+   "A": 0.0,
+   "B": -15004.031881770537,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x0d6b6f604c1bf5b3533c445334bb4e1044145688": {
+   "A": 0.0,
+   "B": -3420.7277569705457,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xd21fc4fcbe84620b1439c5c9896fc448c5f57fe2": {
+   "A": 0.0,
+   "B": 733.79038728699,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x45242320dbb855eea8fd36804c6487e10e97fcf9": {
+   "A": 0.0,
+   "B": 2446.751043,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x0187747831eb5bd0fab06ba81a0ae79b1b217777": {
+   "A": 0.0,
+   "B": 1447.40013523875,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x5d78989126459d6154ed5ecad430d8c325b54df5": {
+   "A": 0.0,
+   "B": 609.6395399496503,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:EdsFuTw5W18iLpXdrbBS336iacLVd3fCEoDfoutFMbG7": {
+   "A": -370.2437446939837,
+   "B": 1007.5741900056416,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x26407bd603238d7b3d0cd7d479058b08972ed8f0": {
+   "A": 0.0,
+   "B": 605.4048,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xfe189e97832da1573e4e4ff034f4ffc3a15c7777": {
+   "A": 0.0,
+   "B": 730.9139405942979,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:7AxHfQjwSTwU4oDFHJtEV3XbHbvZk4D1zsKfdUsf2urm": {
+   "A": 0.0,
+   "B": 728.0040228756778,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x6f35bc749c16968d764c23f2f2e049ca80d68976": {
+   "A": 0.0,
+   "B": 598.81667175,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3b736f237b83b250270471a7d164c4c1ce9efb00": {
+   "A": 0.0,
+   "B": -551.0153363022955,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x574e8afe73e35ac0f011be9f76127e0a936ece49": {
+   "A": 0.0,
+   "B": 598.81187025,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x330990dae53bca4c5811c5362b44c33a47db7777": {
+   "A": 0.0,
+   "B": 721.8626849545857,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:A8ndQbzKjh5c4c9JKZJDRvAdWc5cejJu2udnLwR7JHRp": {
+   "A": 521.6262985923661,
+   "B": -521.7823053377078,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:XsqE9cRRpzxcGKDXj1BJ7Xmg4GRhZoyY1KpmGSxAWT2": {
+   "A": 0.0,
+   "B": 11.572939940040044,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:7g8t3VNvXWoPHF6gbSkHG9PdD6U3dd1oXHLMkb69vXqn": {
+   "A": 0.0,
+   "B": -510.05789305996,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xac3d4ea57cbcd9d2605525e70036c98f0618a56e": {
+   "A": 0.0,
+   "B": -521.600936,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:ECpAiXL3B4v1qLbHu8t61rU8JkGRxfTm5upvPY4VcoVH": {
+   "A": 0.0,
+   "B": -172.77504019443666,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Xsa62P5mvPszXL1krVUnU5ar38bBSVcWAB6fmPCo5Zu": {
+   "A": 0.0,
+   "B": 1155.8044810000001,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x72b1123c0ebe8eb86234c631909ec078e0bf1e18": {
+   "A": 0.0,
+   "B": -523.3359593095242,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:EXinYuNbxamDtbpkqR6RQJ9XWgUb5y2rCBMkAWxEazYt": {
+   "A": 0.0,
+   "B": -536.1666830741979,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x8df62d145d97a47dc9906b933461c9ead665427f": {
+   "A": 0.0,
+   "B": -944.0341131182041,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xf23e4a84a950e9adae4b95468a4857ca34ce7777": {
+   "A": 0.0,
+   "B": -1148.559794431722,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x4154b19017a63d054ad1888bbde1e188253a7777": {
+   "A": 0.0,
+   "B": -642.4354501705137,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xf49725118cb0707b8706ffffe895f3ab16da7777": {
+   "A": 0.0,
+   "B": 1355.267050983207,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB": {
+   "A": 0.0,
+   "B": 526.25,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:3p2WhSGx6G9FimHHsoLvYYGxJTT36CNwWEPmZRveCYMR": {
+   "A": 0.0,
+   "B": 522.8582916250344,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump": {
+   "A": 0.0,
+   "B": -982.72555534886,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xb05618fe540d0be2bd193153de86a9f84de0d76a": {
+   "A": 0.0,
+   "B": 0.8959039341139032,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:DTydkwMbfkhBnSdUEqnNjt48qoQWY5JqpPs7EFKkPQVt": {
+   "A": 0.0,
+   "B": -613.2217065922272,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:GBY83Bt9pCLv9sM51KoPMo41wG4udvArd6DX6HekdJPs": {
+   "A": 0.0,
+   "B": 525.581685,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:46PGUEVZbVFSVMaHdCb8y48BMzahHBTaW5QDx3TtrNx7": {
+   "A": 0.0,
+   "B": 523.8658974136932,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xee5576fa1bcaa380e591d01245f406f3f384eb01": {
+   "A": 0.0,
+   "B": 599.2031925,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x28f85c6a4b829ed03ede2da96fd15fed94371431": {
+   "A": 0.0,
+   "B": 733.49118711,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x5b32971ee68b1ed6d11476760106f29d81f77f6e": {
+   "A": 0.0,
+   "B": -1426.1039107220652,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x1eeb32722366fe4ba580ff5fe58c2de9dba37777": {
+   "A": 0.0,
+   "B": 144.7736596859745,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:2dPhpcKMvbM2QKfG6bRNmFzBir3vi3BeaVe3MwfbnNzg": {
+   "A": 0.0,
+   "B": -547.7088845289286,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xd24688a1d530f648aed86a835aca8ad6a7e61e18": {
+   "A": 0.0,
+   "B": -7780.955593522975,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xc474681da175c5dd926906cd4605c77f25e17777": {
+   "A": 0.0,
+   "B": 598.3428308388187,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:8K5X85PAJHAAVSvYaAzgVPPAPsqqHmvx16ZyBiscYF8L": {
+   "A": 0.0,
+   "B": 1042.72771653583,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:XsfCC9VL4DamVGNgdJpfLXB3sBVa158Gbx8sh7NzmTk": {
+   "A": 0.0,
+   "B": 527.15,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:G83AcDnj8j8P4JvoB35p9WHsvEfKyfSkLkNBviAxEmsh": {
+   "A": 0.0,
+   "B": 521.8296029326217,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:4ikwYoNvoGEwtMbziUyYBTz1zRM6nmxspsfw9G7Bpump": {
+   "A": 0.0,
+   "B": 1514.97472969985,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xafe41f4356c24f716111de1fbbc84e061d291e18": {
+   "A": 0.0,
+   "B": -1300.703886997479,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:BFgdzMkTPdKKJeTipv2njtDEwhKxkgFueJQfJGt1jups": {
+   "A": 0.0,
+   "B": 793.042406,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:9nxjeDZ85iyvmoyfEX1PNKMEgMNpZcGtbSZa1AzCdZtK": {
+   "A": 0.0,
+   "B": 521.714984,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x03e17233c5f298a0016c8f4212e2026878a07777": {
+   "A": 0.0,
+   "B": -1046.302535818862,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x492984696ab179d03f7e5839da39cf6b181d7777": {
+   "A": 0.0,
+   "B": -522.4811123194964,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xaa0b48defde440b8445ba45db88cb076cf261e18": {
+   "A": 0.0,
+   "B": 1201.1440019135387,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x36cc8af96b7dc5363fb25355b52d88ec44e146d1": {
+   "A": -753.2881865175012,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x90976fef92095c7b3157f579c59846373d637777": {
+   "A": 0.0,
+   "B": -708.8326300824697,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6baGyq4HLbUn93MQUGFqBktpXP8BRjpoxSsAap4ppump": {
+   "A": 0.0,
+   "B": 46.41686054869001,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xf074730b6ab97e5630e4e602665ac6ce7055ca1a": {
+   "A": 0.0,
+   "B": -1106.630902050903,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x0e0d2c89a5a019fe1cf762e5e33187631dacc21b": {
+   "A": 0.0,
+   "B": -2588.3299636724946,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xedaee44320107caa714baaec486261a87f27022d": {
+   "A": 0.0,
+   "B": -512.5685849604596,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x6f1c7236b782e4c68bff6468488651ce74c87777": {
+   "A": 0.0,
+   "B": -502.1831160303831,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x7dde7b842ddb063d74064868a6fe42c1c8897777": {
+   "A": 0.0,
+   "B": 741.927635331192,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x9141b7e4fae2bb95ef6117dcf1887caee7ade4ad": {
+   "A": 0.0,
+   "B": 84.01803801023345,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xa5c420fb659e953418c3e434067c3360dad47777": {
+   "A": 0.0,
+   "B": 5.45943539889538,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xb69ac7929c192a42ac2c8bf8f4d00f17e9987777": {
+   "A": 0.0,
+   "B": 179.73015846032263,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:9nR2fjDsbSpQPcWmK8zz1HhKA1hQ7Zj7Gvb5YoEppump": {
+   "A": 0.0,
+   "B": -17.46320689510992,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:9BFw5KMWpBfzbEKh7qtp5U6hXRVZ6DqykZGV1BkFpump": {
+   "A": 0.0,
+   "B": 1043.931521628,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xbcef005602d14cdbcff7c2bba7927c00c7ba20ed": {
+   "A": 0.0,
+   "B": -564.352334737047,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xe9e72622ee66d5684a36f9b61e9f90a90d2628f8": {
+   "A": 0.0,
+   "B": 322.51365664357013,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:HtTYHz1Kf3rrQo6AqDLmss7gq5WrkWAaXn3tupUZbonk": {
+   "A": 0.0,
+   "B": -350.6989043149696,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:7JQhJ2D5TyrqYnodyxTPcfDWS56curqbQXMrAXKKZGj": {
+   "A": 0.0,
+   "B": 524.8395849629024,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh": {
+   "A": 0.0,
+   "B": -240.91329916888003,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Eu8qFQrtyRdTLmjn42vnuVCY26fsZPSbkbyVo31t4xFJ": {
+   "A": 0.0,
+   "B": 1063.42810499024,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:CbyTNf7UPzvewHh4Zp6umogM2RWahhmGRJWLJnPwpump": {
+   "A": 0.0,
+   "B": 522.28580997182,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x45a6a778b5556ce7e722ccf4a6044a3a97c7bcd8": {
+   "A": 0.0,
+   "B": 59.304701337570236,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:C5nG72gUFJz6wewcgTPjcBmpSq4BwFLHy5j8heo9d7rZ": {
+   "A": 0.0,
+   "B": -745.7550139178402,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x361f30ab5293702c538ef744b3633f48850e851a": {
+   "A": 0.0,
+   "B": 713.00627937,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xec5420866291ff46a85216c022deba1838d37777": {
+   "A": 0.0,
+   "B": -515.5254711427126,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:H3f4jYE3tEY8JWve2tRJYzqZpAHEHPihJkGQA5BCqqkn": {
+   "A": 0.0,
+   "B": -1180.2862309274315,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:A4j77ZgCEW3i4k94jBDQY5XwPikBB41WYi2vCQqSpump": {
+   "A": 0.0,
+   "B": 700.50249944184,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xd1632dfcb716c531ed8bec15a4586cd6f5a91e18": {
+   "A": -527.7241033604804,
+   "B": -529.4448280222692,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x055650555be80649397084cd3f8a09b4350e8612": {
+   "A": 0.0,
+   "B": -530.0643120210027,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xc1c7679e3eda3d0949a879e125765ddea302e6a3": {
+   "A": 0.0,
+   "B": 1805.189166,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xee49e10d8d3c7c94aa9f494e76a441cafd934a7f": {
+   "A": 0.0,
+   "B": -748.6831111294641,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xbeea1d618e533a387d941f58a7d4c9b7bd377777": {
+   "A": 0.0,
+   "B": 987.2506001122499,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:5Z1xHaFjMUDmnmBGi6ckvZXEq4oSYNjkEdLyXvzqVG1V": {
+   "A": 0.0,
+   "B": -1164.10251750988,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x580de64e24e26324a51616d89322e1134093d3b2": {
+   "A": 0.0,
+   "B": 612.7536195,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x7ecb3cb7812727723ce297794fdb573391f67777": {
+   "A": 653.6353763012371,
+   "B": 0.0,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x05c102c9165856132fa4d11d6865ee2fa9697777": {
+   "A": 0.0,
+   "B": 727.4437422401619,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xac3041c3e7c6d09df19fec204a15713755207777": {
+   "A": 0.0,
+   "B": -74.87039330755465,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:752meQjs65b2c9wu49kd35tT9Y5AHMQ8haPLcyyd8XrT": {
+   "A": 0.0,
+   "B": -3498.0588924342583,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x98a2a6ff3326e102213e7be76d8766edacf5c370": {
+   "A": 0.0,
+   "B": 123.2885061507767,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x9936403a9cc72cf306063e3496ea387428a3aecd": {
+   "A": 0.0,
+   "B": 1220.91962641011,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:75tWrvyvdWBPEf9tfwekU3LxxoGZmvB2F565mRecemE6": {
+   "A": 0.0,
+   "B": -767.09608916888,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:abitX72sqnpQD3keF9eFaWCyy2RV2UqYtmq1M6Xpump": {
+   "A": 0.0,
+   "B": 1065.2368893033,
+   "C": 0.0,
+   "D": 0.0
+  }
+ }
+}

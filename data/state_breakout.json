@@ -1,0 +1,231 @@
+{
+ "robinhood:0x7df5daaf80e65dfcc7a1435d9b52bcf2b5753fbe": {
+  "ts": "2026-09-06 12:07:06 +0700",
+  "breakout_ts": 1788652800,
+  "breakout_px": 0.0071776482,
+  "pre": [
+   {
+    "address": "0x16d1ff31d9302109a64f3bd66526e063f468eb87",
+    "tags": [],
+    "buy": 47757.72073205666,
+    "sell": 0.0,
+    "real": 0.0,
+    "hold_pct": 1.5650542388560704,
+    "entry_px": 0.0027942001,
+    "x_now": 0.9458616796986014,
+    "delta_min": 40,
+    "smart": false,
+    "verdict": "early (belum terbukti)"
+   },
+   {
+    "address": "0x3dcc7c30cc73aa175e14c83cb70ef66186eac327",
+    "tags": [
+     "gmgn",
+     "fomo"
+    ],
+    "buy": 36141.79860773415,
+    "sell": 0.0,
+    "real": 0.0,
+    "hold_pct": 0.7215610962883809,
+    "entry_px": 0.0058237134,
+    "x_now": 0.4538215771401114,
+    "delta_min": 91,
+    "smart": false,
+    "verdict": "early (belum terbukti)"
+   },
+   {
+    "address": "0x336f6beca25aed6bc4b4f9e6ef5b3eb415aeca67",
+    "tags": [],
+    "buy": 21665.012924439594,
+    "sell": 34906.697189054976,
+    "real": 22467.54185269536,
+    "hold_pct": 0.6224265521632558,
+    "entry_px": 0.00071818922,
+    "x_now": 3.6799867310734626,
+    "delta_min": 127,
+    "smart": false,
+    "verdict": "⭐ PRE-BREAKOUT (profit)"
+   },
+   {
+    "address": "0xdda392eb5ae5adc09950b7e89ff494f0c3675149",
+    "tags": [
+     "gmgn"
+    ],
+    "buy": 14935.587201165148,
+    "sell": 1202.3207728403386,
+    "real": 136.9250795225095,
+    "hold_pct": 0.5933790173125264,
+    "entry_px": 0.0027942001,
+    "x_now": 0.9458616796986014,
+    "delta_min": 33,
+    "smart": false,
+    "verdict": "early (belum terbukti)"
+   },
+   {
+    "address": "0x98487dc722e4a57046fb13193fcabaee320379b4",
+    "tags": [
+     "gmgn"
+    ],
+    "buy": 9369.20457,
+    "sell": 25472.20217113173,
+    "real": 20754.51982426937,
+    "hold_pct": 1.1774712705192663,
+    "entry_px": 0.00071818922,
+    "x_now": 3.6799867310734626,
+    "delta_min": 129,
+    "smart": false,
+    "verdict": "⭐ PRE-BREAKOUT (profit)"
+   },
+   {
+    "address": "0x9e10803a097f663aa8483dd4cdd5d1ff09751cce",
+    "tags": [
+     "gmgn"
+    ],
+    "buy": 5376.056004,
+    "sell": 22061.357210293303,
+    "real": 16992.170966374833,
+    "hold_pct": 1.3211086968534604,
+    "entry_px": 0.00022689022,
+    "x_now": 11.64848268911723,
+    "delta_min": 141,
+    "smart": false,
+    "verdict": "⭐ PRE-BREAKOUT (profit)"
+   },
+   {
+    "address": "0x0cfec7e628ad03ffe725050830fbcda8da2a896b",
+    "tags": [
+     "gmgn"
+    ],
+    "buy": 2925.7779375,
+    "sell": 0.0,
+    "real": 0.0,
+    "hold_pct": 0.9296289135091477,
+    "entry_px": 0.00071818922,
+    "x_now": 3.6799867310734626,
+    "delta_min": 122,
+    "smart": false,
+    "verdict": "early (belum terbukti)"
+   },
+   {
+    "address": "0x2e27296db73efa090c33823b0b637f031d1a1f97",
+    "tags": [
+     "gmgn",
+     "fomo"
+    ],
+    "buy": 1166.72787,
+    "sell": 10630.163480542862,
+    "real": 9147.802555513368,
+    "hold_pct": 0.7783578883186948,
+    "entry_px": 0.00012779557,
+    "x_now": 20.68089527672986,
+    "delta_min": 156,
+    "smart": false,
+    "verdict": "⭐ PRE-BREAKOUT (profit)"
+   },
+   {
+    "address": "0x267444d099b10fb5ed7c3cc7b7c767adca574952",
+    "tags": [],
+    "buy": 0.0,
+    "sell": 0.0,
+    "real": 0.0,
+    "hold_pct": 8.16326530612245,
+    "entry_px": 7.1532542e-06,
+    "x_now": 369.4719530587911,
+    "delta_min": 192,
+    "smart": false,
+    "verdict": "early (belum terbukti)"
+   },
+   {
+    "address": "0x2ce32664868603775e89b510d38cad301cc9a3f5",
+    "tags": [
+     "fomo"
+    ],
+    "buy": 0.0,
+    "sell": 0.0,
+    "real": 0.0,
+    "hold_pct": 1.6507647765831277,
+    "entry_px": 0.00088370544,
+    "x_now": 2.9907327491386724,
+    "delta_min": 116,
+    "smart": false,
+    "verdict": "early (belum terbukti)"
+   },
+   {
+    "address": "0x0a77e61b5ccce39f0cf6c35c3f8e30d65c2333b1",
+    "tags": [
+     "fomo"
+    ],
+    "buy": 0.0,
+    "sell": 0.0,
+    "real": 0.0,
+    "hold_pct": 1.09570849831346,
+    "entry_px": 0.0042641019,
+    "x_now": 0.6198085463201525,
+    "delta_min": 21,
+    "smart": false,
+    "verdict": "early (belum terbukti)"
+   },
+   {
+    "address": "0x4d2a92702e12a882b1701077ec1621afebfed7bf",
+    "tags": [
+     "fomo"
+    ],
+    "buy": 0.0,
+    "sell": 0.0,
+    "real": 0.0,
+    "hold_pct": 0.9625394458647164,
+    "entry_px": 0.00088370544,
+    "x_now": 2.9907327491386724,
+    "delta_min": 111,
+    "smart": false,
+    "verdict": "early (belum terbukti)"
+   },
+   {
+    "address": "0x4a99505c4a80bf63aa4351800601e873240b1bfa",
+    "tags": [
+     "fresh_wallet",
+     "fomo"
+    ],
+    "buy": 0.0,
+    "sell": 0.0,
+    "real": 0.0,
+    "hold_pct": 0.954020089783187,
+    "entry_px": 0.0024053661,
+    "x_now": 1.0987628037162411,
+    "delta_min": 81,
+    "smart": false,
+    "verdict": "early (belum terbukti)"
+   },
+   {
+    "address": "0x778a378490db74d5254444f3c2153cdd7c18d343",
+    "tags": [
+     "fomo"
+    ],
+    "buy": 0.0,
+    "sell": 0.0,
+    "real": 0.0,
+    "hold_pct": 0.8566151696403087,
+    "entry_px": 0.00022689022,
+    "x_now": 11.64848268911723,
+    "delta_min": 141,
+    "smart": false,
+    "verdict": "early (belum terbukti)"
+   },
+   {
+    "address": "0x4d41b5a303024bce506037a2964aedae3ed88f4b",
+    "tags": [
+     "fomo"
+    ],
+    "buy": 0.0,
+    "sell": 0.0,
+    "real": 0.0,
+    "hold_pct": 0.7508754285015595,
+    "entry_px": 0.00022689022,
+    "x_now": 11.64848268911723,
+    "delta_min": 141,
+    "smart": false,
+    "verdict": "early (belum terbukti)"
+   }
+  ]
+ }
+}
