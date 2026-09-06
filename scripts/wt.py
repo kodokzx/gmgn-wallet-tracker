@@ -996,6 +996,8 @@ header{padding:20px 22px 8px}h1{margin:0;font-size:20px}h1 small{color:var(--mut
 .mbox{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;width:min(880px,94vw)}
 .mhead{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap}
 .mhead b{font-size:16px}
+#newbar{position:fixed;top:0;left:0;right:0;z-index:40;background:var(--org);color:#000;
+text-align:center;padding:8px 12px;font-weight:700;cursor:pointer;display:none}
 canvas{width:100%;height:340px;display:block;background:#0a0e14;border-radius:8px}
 section{padding:8px 22px 18px}h2{font-size:15px;margin:18px 0 8px;color:var(--blu)}
 table{border-collapse:collapse;width:100%;font-size:13px}
@@ -1031,6 +1033,7 @@ padding:7px 12px;width:280px;font-size:13px}
 .score{font-weight:800}.mut{color:var(--mut)}
 @media(max-width:760px){.cards{padding:8px 12px}section{padding:8px 12px 14px}}
 </style></head><body>
+<div id="newbar" onclick="location.reload()">🔄 <span>memuat…</span></div>
 <header><h1>🐋 Wallet Tracker <small>— dashboard data aktual</small></h1>
 <div class="sub">Digenerate: <span id="gen"></span> · sumber: data/alerts.jsonl + state lokal · read-only</div></header>
 <div class="cards" id="cards"></div>
@@ -1104,7 +1107,9 @@ return `<div style="display:flex;align-items:center;gap:6px;margin:3px 0"><span 
 $("#gflowTog").onclick=()=>{const b=$("#gflowBody");const on=b.style.display==="none";
 b.style.display=on?"":"none";$("#gflowTog").textContent=on?"sembunyikan ▲":"tampilkan ▼";if(on)renderGflow();};
 let ftype="SEMUA";
-document.querySelectorAll("#feedfilters .chip").forEach(ch=>ch.onclick=()=>{document.querySelectorAll("#feedfilters .chip").forEach(c=>c.classList.remove("on"));ch.classList.add("on");ftype=ch.dataset.f;renderFeed()});
+try{ftype=localStorage.getItem("wt_ftype")||"SEMUA"}catch(e){}
+document.querySelectorAll("#feedfilters .chip").forEach(ch=>{if(ch.dataset.f===ftype)ch.classList.add("on")});
+document.querySelectorAll("#feedfilters .chip").forEach(ch=>ch.onclick=()=>{document.querySelectorAll("#feedfilters .chip").forEach(c=>c.classList.remove("on"));ch.classList.add("on");ftype=ch.dataset.f;try{localStorage.setItem("wt_ftype",ftype)}catch(e){};renderFeed()});
 $("#q").oninput=renderFeed;
 function bodyHtml(b){return esc(b||"").replace(/(https?:\/\/[^\s]+)/g,'<a class="a" href="$1" target="_blank">$1</a>').replace(/\n/g,"<br>")}
 function renderFeed(){const q=($("#q").value||"").toLowerCase();
@@ -1160,10 +1165,21 @@ return `<div class="item"><b>${esc(k)}</b> <span class="mut">snapshot ${esc(v.ts
 ${Object.entries(g).map(([gr,net])=>`<span class="${net>=0?"up":"dn"}">${gr}: ${net>=0?"+":""}${usd(net)}</span>`).join(" · ")}</div>`}).join("")
 :"belum ada snapshot (jalankan: python scripts/wt.py groups 0xTOKEN)";}
 function setChain(c){fchain=c;
+ try{localStorage.setItem("wt_fchain",c)}catch(e){}
  document.querySelectorAll("#chainbar .chip").forEach(ch=>ch.classList.toggle("on",ch.dataset.ch===c));
  renderRadar();renderGflow();renderFeed();renderWlist();renderGsnap();renderMcap();}
 document.querySelectorAll("#chainbar .chip").forEach(ch=>ch.onclick=()=>setChain(ch.dataset.ch));
-setChain(CHAINS.includes("robinhood")?"robinhood":"SEMUA");
+let savedChain="robinhood";
+try{savedChain=localStorage.getItem("wt_fchain")||savedChain}catch(e){}
+if(!CHAINS.includes(savedChain))savedChain="robinhood";
+setChain(CHAINS.includes(savedChain)?savedChain:"SEMUA");
+let myGen=DATA.generated;
+setInterval(async()=>{try{
+ const r=await fetch(location.pathname+"?t="+Date.now());
+ const m=(await r.text()).match(/"generated":\s*"([^"]+)"/);
+ if(m&&m[1]!==myGen){const b=document.getElementById("newbar");
+  b.style.display="";b.querySelector("span").textContent="Data baru tersedia ("+m[1].slice(11,16)+") — klik untuk muat ulang";}
+}catch(e){}},60000);
 function hideable(tbl,trayId){
   const tray=document.getElementById(trayId);
   const hdr=tbl.rows[0]; if(!hdr)return;
