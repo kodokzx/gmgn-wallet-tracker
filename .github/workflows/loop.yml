@@ -1,0 +1,62 @@
+name: wallet-tracker loop
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # watch tiap 5 menit (UTC)
+  workflow_dispatch: {}      # tombol jalankan manual
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wt-loop
+  cancel-in-progress: false
+
+jobs:
+  loop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install gmgn-cli
+        run: npm install -g gmgn-cli
+
+      - name: Runtime config (tanpa secret — API key lewat env)
+        run: |
+          cat > config.json <<'EOF'
+          {
+            "chains": ["robinhood", "bsc", "sol"],
+            "watchlist": [
+              {"address": "0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9", "chain": "robinhood", "note": "smart_degen"},
+              {"address": "0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c", "chain": "robinhood", "note": "smart_degen"},
+              {"address": "0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97", "chain": "robinhood", "note": "smart_degen"}
+            ]
+          }
+          EOF
+
+      - name: Watch (kumpulkan alert smart money)
+        env:
+          GMGN_API_KEY: ${{ secrets.GMGN_API_KEY }}
+        run: python scripts/wt.py watch
+
+      - name: Scan token baru + regenerate dashboard
+        env:
+          GMGN_API_KEY: ${{ secrets.GMGN_API_KEY }}
+        run: python scripts/wt.py scan --top 20 && python scripts/wt.py html
+
+      - name: Commit data + dashboard
+        run: |
+          git config user.name "wt-loop"
+          git config user.email "wt-loop@users.noreply.github.com"
+          git add -f data/
+          git commit -m "loop: refresh data [skip ci]" || echo "tidak ada perubahan"
+          git push

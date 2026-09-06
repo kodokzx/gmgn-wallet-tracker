@@ -60,6 +60,32 @@ Alert tipe: **BARU** (pertama terlihat & muda), **TRAKSI NAIK** (holder +30% ata
 - Script ini **read-only** — tidak pernah menandatangani transaksi.
 - API key GMGN adalah kunci tanda-tangan request, bukan private key wallet.
 
+## Deploy auto-loop: GitHub Actions + Vercel (tanpa VPS)
+
+Repo ini punya workflow `.github/workflows/loop.yml` yang menjadi mesin datanya:
+tiap 5 menit menjalankan `watch`, di awal tiap jam menjalankan `scan` + regenerate
+`data/dashboard.html`, lalu commit hasilnya ke repo — sehingga Vercel cukup menayangkan.
+
+Langkah setup:
+
+1. **Secret API key**: GitHub repo → Settings → Secrets and variables → Actions →
+   New repository secret → Name `GMGN_API_KEY`, isi API key GMGN kamu.
+2. **Aktifkan Actions**: tab Actions → enable workflow `wallet-tracker loop`.
+   Jalankan pertama secara manual: pilih workflow → **Run workflow**.
+3. **Vercel**: Add New → Project → import repo ini → Framework Preset: **Other** → Deploy.
+   `vercel.json` sudah menayangkan dashboard di URL root.
+4. Buka URL Vercel dari HP — datanya terbarui otomatis tiap siklus Actions
+   (banner oranye di dashboard akan menawarkan muat ulang saat data baru masuk).
+
+Catatan:
+- **Privasi**: workflow meng-commit `data/` (riwayat alert, watchlist, dashboard yang
+  mengembed semuanya) ke repo. Repo publik = data ini terbaca publik. Kalau ingin privat,
+  ubah repo ke private — tapi Actions private memakai kuota menit GitHub, jadi turunkan
+  frekuensi cron di `loop.yml` (mis. `*/15`).
+- Jadwal Actions bisa telat beberapa menit (keterbatasan GitHub) — data efektif berumur 5–15 menit.
+- API key hanya hidup sebagai **GitHub Secret** + env `GMGN_API_KEY`, tidak pernah ditulis di file
+  yang di-commit.
+
 ## Deploy ke VPS (Linux)
 
 ```bash
