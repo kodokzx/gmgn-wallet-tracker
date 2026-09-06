@@ -1,0 +1,22 @@
+{
+  "api_key": "",
+  "chains": ["robinhood", "bsc", "sol"],
+  "scan": {
+    "min_smart_degen": 2,
+    "min_holder_count": 200,
+    "min_liquidity_usd": 20000,
+    "min_volume_1h_usd": 3000,
+    "max_top10_rate": 0.5,
+    "max_rug_ratio": 0.2,
+    "max_age_hours": 72
+  },
+  "watch": {
+    "smartmoney_min_usd": 500,
+    "watchlist_min_usd": 100,
+    "transfer_min_usd": 1000,
+    "limit_smartmoney": 100,
+    "limit_wallet_activity": 50
+  },
+  "telegram": { "bot_token": "", "chat_id": "" },
+  "watchlist": []
+}

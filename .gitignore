@@ -1,0 +1,8 @@
+# konfigurasi pribadi (API key, telegram, watchlist) — jangan pernah di-commit
+config.json
+
+# state & riwayat alert lokal
+data/
+__pycache__/
+*.pyc
+.DS_Store
