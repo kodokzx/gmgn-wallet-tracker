@@ -965,6 +965,143 @@ def cmd_test_notify(args):
     log("[ok] terkirim — cek Telegram kamu")
 
 
+# ---------------------------------------------------------------- HTML dashboard (data aktual)
+HTML_TEMPLATE = r"""<!doctype html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wallet Tracker — Dashboard</title>
+<style>
+:root{--bg:#0d1117;--card:#161b22;--line:#21262d;--tx:#e6edf3;--mut:#8b949e;
+--grn:#3fb950;--red:#f85149;--blu:#58a6ff;--org:#f0883e;--pur:#bc8cff;--tea:#39d2c0}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);
+font:14px/1.5 ui-sans-serif,system-ui,Segoe UI,Roboto}
+header{padding:20px 22px 8px}h1{margin:0;font-size:20px}h1 small{color:var(--mut);font-weight:400}
+.sub{color:var(--mut);font-size:12px;margin-top:2px}
+.cards{display:flex;gap:10px;flex-wrap:wrap;padding:12px 22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;min-width:130px}
+.card b{display:block;font-size:20px}.card span{color:var(--mut);font-size:11px;text-transform:uppercase}
+section{padding:8px 22px 18px}h2{font-size:15px;margin:18px 0 8px;color:var(--blu)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th{color:var(--mut);text-align:left;font-weight:600;font-size:11px;text-transform:uppercase;
+padding:6px 8px;border-bottom:1px solid var(--line)}
+td{padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:hover td{background:#1a212b}
+.chip{display:inline-block;border:1px solid var(--line);border-radius:20px;padding:2px 10px;
+margin:0 6px 6px 0;cursor:pointer;font-size:12px;color:var(--mut);user-select:none}
+.chip.on{background:var(--blu);color:#000;border-color:var(--blu)}
+.badge{display:inline-block;border-radius:6px;padding:1px 7px;font-size:11px;font-weight:700}
+.b-SHIFT{background:#3d2200;color:var(--org)}.b-TOKEN{background:#0b2b4a;color:var(--blu)}
+.b-TRADE{background:#1b2430;color:#9db6d3}.b-WALLET{background:#2a1e3d;color:var(--pur)}
+.b-TRANSFER{background:#0d2f2c;color:var(--tea)}.b-TEST{background:#222;color:#888}
+.up{color:var(--grn)}.dn{color:var(--red)}
+.a{color:var(--blu);text-decoration:none}.a:hover{text-decoration:underline}
+.item{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin-bottom:6px}
+.item .t{color:var(--mut);font-size:11px}
+.item.shift{border-color:var(--org)}
+.bar{height:9px;border-radius:5px;min-width:2px}
+.gA{background:var(--org)}.gB{background:var(--blu)}.gC{background:var(--grn)}.gD{background:var(--pur)}
+.legend{color:var(--mut);font-size:12px;margin:4px 0 10px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin:0 4px 0 12px}
+input{background:#0a0e14;border:1px solid var(--line);color:var(--tx);border-radius:8px;
+padding:7px 12px;width:280px;font-size:13px}
+.score{font-weight:800}.mut{color:var(--mut)}
+@media(max-width:760px){.cards{padding:8px 12px}section{padding:8px 12px 14px}}
+</style></head><body>
+<header><h1>🐋 Wallet Tracker <small>— dashboard data aktual</small></h1>
+<div class="sub">Digenerate: <span id="gen"></span> · sumber: data/alerts.jsonl + state lokal · read-only</div></header>
+<div class="cards" id="cards"></div>
+<section><h2>Radar Token <span class="mut">(alert token, dedup — terbaru per token)</span></h2>
+<div style="overflow-x:auto"><table id="radar"></table></div></section>
+<section><h2>Arus Grup Perilaku A/B/C/D <span class="mut">(kumulatif dari feed smart money)</span></h2>
+<div class="legend"><i class="gA"></i>A-iklan(KOL) <i class="gB"></i>B-smart-cepat <i class="gC"></i>C-akumulasi <i class="gD"></i>D-fomo — hijau/merah = net beli/jual</div>
+<div id="gflow"></div></section>
+<section><h2>Feed Alert</h2>
+<div><span class="chip on" data-f="SEMUA">semua</span><span class="chip" data-f="SHIFT">SHIFT</span>
+<span class="chip" data-f="TOKEN">token</span><span class="chip" data-f="TRADE">trade</span>
+<span class="chip" data-f="WALLET">watchlist</span><span class="chip" data-f="TRANSFER">transfer</span>
+<input id="q" placeholder="cari symbol / wallet / chain…"></div>
+<div id="feed" style="margin-top:10px"></div></section>
+<section><h2>Watchlist Wallet</h2><div style="overflow-x:auto"><table id="wlist"></table></div></section>
+<section><h2>Snapshot Grup per Token <span class="mut">(cmd: wt.py groups)</span></h2>
+<div id="gsnap" class="mut"></div></section>
+<script>const DATA=__DATA__;</script>
+<script>
+const $=s=>document.querySelector(s),esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const usd=v=>{v=+v||0;const a=Math.abs(v);if(a>=1e6)return"$"+(v/1e6).toFixed(2)+"M";if(a>=1e3)return"$"+(v/1e3).toFixed(1)+"k";return"$"+v.toFixed(2)};
+const link=(ch,a)=>`https://dexscreener.com/${ch}/${a}`;
+$("#gen").textContent=DATA.generated;
+const al=DATA.alerts||[],today=DATA.generated.slice(0,10);
+const nToday=al.filter(a=>(a.ts||"").startsWith(today)).length;
+const nShift=al.filter(a=>a.type==="SHIFT").length;
+$("#cards").innerHTML=[["Alert tersimpan",al.length],["Alert hari ini",nToday],["SHIFT terdeteksi",nShift],
+["Token di radar",Object.keys(radarMap()).length],["Grup token",Object.keys(DATA.gflow||{}).length],
+["Watchlist",(DATA.config.watchlist||[]).length]].map(c=>`<div class="card"><b>${c[1]}</b><span>${c[0]}</span></div>`).join("");
+function radarMap(){const m={};(al||[]).filter(a=>a.type==="TOKEN"&&a.data&&a.data.address)
+.forEach(a=>{const k=a.chain+":"+a.data.address;m[k]=a});return m}
+const rad=Object.values(radarMap()).sort((x,y)=>(y.data.score||0)-(x.data.score||0));
+$("#radar").innerHTML="<tr><th>skor</th><th>token</th><th>chain</th><th>mcap</th><th>liq</th><th>hold</th><th>smart</th><th>1h</th><th>umur</th><th>alert</th></tr>"+
+rad.map(a=>{const d=a.data;return `<tr><td class="score">${d.score||"?"}</td>
+<td><b>${esc(d.symbol)}</b></td><td>${esc(a.chain||d.chain)}</td><td>${usd(d.market_cap_usd)}</td>
+<td>${usd(d.liquidity_usd)}</td><td>${d.holder_count||0}</td><td>${d.smart_degen_count||0}</td>
+<td class="${(d.change_1h_pct||0)>=0?"up":"dn"}">${d.change_1h_pct||0}%</td><td class="mut">${d.age_hours??"?"}h</td>
+<td><a class="a" href="${link(d.chain||a.chain,d.address)}" target="_blank">chart ↗</a></td></tr>`}).join("");
+const gf=DATA.gflow||{},maxv=Math.max(1,...Object.values(gf).flatMap(o=>Object.values(o).slice(1).map(Number).map(Math.abs)));
+$("#gflow").innerHTML=Object.entries(gf).map(([k,o])=>{const[chain,addr]=k.split(":");
+const mx=Math.max(1,...["A","B","C","D"].map(g=>Math.abs(+o[g]||0)));
+return `<div class="item"><b>${esc(o.sym||"?")}</b> <span class="mut">${esc(chain)}</span>
+<span style="float:right"><a class="a" href="${link(chain,addr)}" target="_blank">chart ↗</a></span>
+${["A","B","C","D"].map(g=>{const v=+o[g]||0,pct=Math.abs(v)/mx*46;
+return `<div style="display:flex;align-items:center;gap:6px;margin:3px 0"><span class="mut" style="width:14px">${g}</span>
+<div style="width:47%;background:#0a0e14;border-radius:5px;position:relative;height:11px">
+<div class="bar g${g}" style="width:${pct}%;${v<0?"background:var(--red)":""}"></div></div>
+<span class="${v>=0?"up":"dn"}">${v>=0?"+":""}${usd(v)}</span></div>`}).join("")}</div>`}).join("")||"<i>belum ada arus grup terekam</i>";
+let ftype="SEMUA";
+document.querySelectorAll(".chip").forEach(ch=>ch.onclick=()=>{document.querySelectorAll(".chip").forEach(c=>c.classList.remove("on"));ch.classList.add("on");ftype=ch.dataset.f;renderFeed()});
+$("#q").oninput=renderFeed;
+function bodyHtml(b){return esc(b||"").replace(/(https?:\/\/[^\s]+)/g,'<a class="a" href="$1" target="_blank">$1</a>').replace(/\n/g,"<br>")}
+function renderFeed(){const q=($("#q").value||"").toLowerCase();
+const rows=al.slice().reverse().filter(a=>(ftype==="SEMUA"||a.type===ftype)&&
+(!q||((a.title||"")+(a.body||"")).toLowerCase().includes(q)));
+$("#feed").innerHTML=rows.slice(0,400).map(a=>`<div class="item ${a.type==="SHIFT"?"shift":""}">
+<span class="badge b-${a.type}">${a.type}</span> <b>${esc(a.title||"")}</b>
+<div class="t">${esc(a.ts||"")}</div><div>${bodyHtml(a.body)}</div></div>`).join("")||"<i class='mut'>tidak ada alert yang cocok</i>"}
+renderFeed();
+const wl=DATA.config.watchlist||[];
+$("#wlist").innerHTML="<tr><th>wallet</th><th>chain</th><th>note</th><th></th></tr>"+
+(wl.map(w=>`<tr><td>${esc(w.address)}</td><td>${esc(w.chain||"auto")}</td><td class="mut">${esc(w.note||"")}</td>
+<td><a class="a" href="https://gmgn.ai/${w.chain||"sol"}/wallet/${w.address}" target="_blank">gmgn ↗</a></td></tr>`).join("")||"<tr><td class='mut'>kosong</td></tr>");
+const gs=DATA.groups||{},ks=Object.keys(gs);
+$("#gsnap").innerHTML=ks.length?ks.map(k=>{const v=gs[k],g=v.groups||{};
+return `<div class="item"><b>${esc(k)}</b> <span class="mut">snapshot ${esc(v.ts||"")}</span><br>
+${Object.entries(g).map(([gr,net])=>`<span class="${net>=0?"up":"dn"}">${gr}: ${net>=0?"+":""}${usd(net)}</span>`).join(" · ")}</div>`}).join(""):"belum ada snapshot (jalankan: python scripts/wt.py groups 0xTOKEN)";
+</script></body></html>"""
+
+
+def cmd_html(args):
+    """Generate dashboard HTML dari seluruh data lokal (aktual)."""
+    cfg = load_config()
+    alerts = []
+    if ALERTS_LOG.exists():
+        for ln in ALERTS_LOG.read_text(encoding="utf-8").splitlines():
+            try:
+                alerts.append(json.loads(ln))
+            except Exception:
+                pass
+    watch_state = load_json(WATCH_STATE, {})
+    payload = {
+        "generated": now_iso(),
+        "config": {"chains": cfg.get("chains", []), "watchlist": cfg.get("watchlist", [])},
+        "alerts": alerts[-max(0, args.max_alerts):],
+        "gflow": watch_state.get("gflow", {}),
+        "groups": load_json(GROUPS_STATE, {}),
+    }
+    blob = json.dumps(payload, ensure_ascii=False, default=str).replace("</", "<\\/")
+    out = DATA_DIR / "dashboard.html"
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    out.write_text(HTML_TEMPLATE.replace("__DATA__", blob), encoding="utf-8")
+    log(f"[ok] dashboard {len(alerts)} alert -> {out}")
+
+
 def main():
     if sys.platform == "win32":
         try:
@@ -1006,6 +1143,10 @@ def main():
     p.add_argument("--min-shift", type=float, default=1500, help="ambang USD deteksi shift")
     p.add_argument("--api-key")
     p.set_defaults(fn=cmd_groups)
+
+    p = sub.add_parser("html", help="generate dashboard HTML dari data aktual lokal")
+    p.add_argument("--max-alerts", type=int, default=600)
+    p.set_defaults(fn=cmd_html)
 
     p = sub.add_parser("watchlist", help="kelola daftar wallet yang dipantau")
     p.add_argument("action", choices=["list", "add", "remove"])

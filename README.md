@@ -42,6 +42,7 @@ npm install -g gmgn-cli
 | `python scripts/wt.py watch --loop --interval 120` | Mode jalan terus |
 | `python scripts/wt.py analyze 0x... --chain robinhood --deep` | Breakdown wallet: PnL, per-token flow, side wallet, logika trading |
 | `python scripts/wt.py groups 0xTOKEN --chain robinhood` | Perilaku grup trader token (A-iklan/B-smart-cepat/C-akumulasi/D-fomo/BOT) + deteksi behavioral shift |
+| `python scripts/wt.py html` | Generate dashboard HTML (`data/dashboard.html`) dari seluruh data aktual lokal — radar token, arus grup A/B/C/D, feed alert, watchlist |
 | `python scripts/wt.py watchlist add 0x... --chain robinhood --note "kol"` | Tambah wallet dipantau |
 | `python scripts/wt.py watchlist list` / `remove 0x...` | Lihat/hapus |
 | `python scripts/wt.py alerts --last 30` | Riwayat alert (juga tersimpan di `data/alerts.jsonl`) |
