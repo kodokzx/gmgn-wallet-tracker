@@ -26,10 +26,13 @@ python scripts/wt.py analyze 0xADDR --chain robinhood --deep
 # 4) Perilaku grup trader pada satu token + deteksi behavioral shift
 python scripts/wt.py groups 0xTOKEN --chain robinhood
 
-# 5) Dashboard HTML dari data aktual (buka data/dashboard.html di browser)
+# 5) Database smart wallet + peta side wallet & koloni (dari alert tersimpan)
+python scripts/wt.py colony --top 8 --deep 3
+
+# 6) Dashboard HTML dari data aktual (buka data/dashboard.html di browser)
 python scripts/wt.py html
 
-# 6) Kelola watchlist / riwayat alert / tes telegram
+# 7) Kelola watchlist / riwayat alert / tes telegram
 python scripts/wt.py watchlist add 0xADDR --chain robinhood --note "kol"
 python scripts/wt.py alerts --last 30
 python scripts/wt.py test-notify

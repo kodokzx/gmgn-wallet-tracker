@@ -619,9 +619,9 @@ def fetch_stats(addr, ch, key):
     return gmgn(["portfolio", "stats", "--chain", ch, "--wallet", addr], api_key=key)
 
 
-def fetch_activity(addr, ch, limit, key):
+def fetch_activity(addr, ch, limit, key, pages=5):
     out, cursor = [], None
-    for _ in range(5):  # max 5 halaman (API cap 20 event/halaman)
+    for _ in range(pages):  # API cap 20 event/halaman
         args = ["portfolio", "activity", "--chain", ch, "--wallet", addr, "--limit", str(limit)]
         if cursor:
             args += ["--cursor", cursor]
@@ -1102,6 +1102,149 @@ def cmd_html(args):
     log(f"[ok] dashboard {len(alerts)} alert -> {out}")
 
 
+# ---------------------------------------------------------------- COLONY: database smart wallet + side wallet
+COLONY_STATE = DATA_DIR / "state_colony.json"
+
+
+def harvest_makers():
+    """Kumpulkan wallet unik dari alert TRADE/WALLET (database lokal kita)."""
+    rows = {}
+    if not ALERTS_LOG.exists():
+        return rows
+    for ln in ALERTS_LOG.read_text(encoding="utf-8").splitlines():
+        try:
+            r = json.loads(ln)
+        except Exception:
+            continue
+        if r.get("type") not in ("TRADE", "WALLET"):
+            continue
+        d = r.get("data") or {}
+        addr = (d.get("maker") or d.get("wallet") or "").strip()
+        if not addr:
+            continue
+        m = re.search(r"\$([\d.,]+)\s*([kM]?)\b", r.get("title") or "")
+        usd = float(m.group(1).replace(",", "")) * {"k": 1e3, "M": 1e6}.get(m.group(2), 1) if m else 0.0
+        t = re.search(r"\[([a-z_,]{3,60})\]", r.get("body") or "")
+        cm = re.search(r"\b(sol|bsc|base|eth|robinhood|arc|stable)\b", (r.get("body") or "").lower())
+        e = rows.setdefault(addr, {"n": 0, "usd": 0.0, "tags": set(), "chain": cm.group(1) if cm else None})
+        e["n"] += 1
+        e["usd"] += usd
+        if t:
+            e["tags"].update(x for x in t.group(1).split(",") if x and x != "gmgn")
+    return rows
+
+
+def cmd_colony(args):
+    cfg = load_config()
+    default_ch = cfg["chains"][0] if cfg["chains"] else "robinhood"
+    log(f"# Database smart wallet & peta koloni — {now_iso()}")
+    rows = harvest_makers()
+    if not rows:
+        log("Belum ada alert TRADE/WALLET tersimpan (jalankan watch dulu).")
+        return
+    ranked = sorted(rows.items(), key=lambda kv: (-kv[1]["n"], -kv[1]["usd"]))[:args.top]
+
+    profiles = []
+    for addr, e in ranked:
+        ch = e["chain"] or default_ch
+        try:
+            st = fetch_stats(addr, ch, args.api_key)
+        except Exception as ex:
+            log(f"[warn] stats {short(addr, 6)} gagal: {ex}")
+            continue
+        ps = st.get("pnl_stat") or {}
+        p = {"address": addr, "chain": ch, "n_alert": e["n"], "vol": e["usd"],
+             "tags": sorted(e["tags"] | set(common_of(st).get("tags") or [])),
+             "pnl": float(dig(st, "realized_profit", default=0) or 0),
+             "winrate": float(ps.get("winrate") or 0) * 100,
+             "hold_h": float(ps.get("avg_holding_period") or 0) / 3600,
+             "n_tok": int(ps.get("token_num") or 0),
+             "fund": common_of(st).get("fund_from_address") or ""}
+        profiles.append(p)
+
+    profiles.sort(key=lambda p: -p["pnl"])
+    log(f"\n## DATABASE — {len(profiles)} wallet profil lengkap (dari {len(rows)} wallet unik)")
+    log("```\nwallet          alert   vol     PnL       win  hold   token  tags")
+    for p in profiles:
+        log(f'{short(p["address"], 6):<15} {p["n_alert"]:>5} {usd(p["vol"]):>7} '
+            f'{usd(p["pnl"]):>9} {p["winrate"]:>4.0f}% {p["hold_h"]:>5.1f}h {p["n_tok"]:>5}  '
+            f'{",".join(p["tags"][:3])}')
+    log("```")
+
+    # --- deep: activity -> transfer -> side wallet candidates
+    log(f"\n## SIDE WALLET & KOLONI (deep {args.deep} wallet PnL terbaik)")
+
+    def wkey(a):
+        """Kunci cluster: EVM dinormalisasi lowercase, Solana base58 case-sensitive."""
+        return a.lower() if a.startswith("0x") else a
+
+    uf = {wkey(p["address"]): wkey(p["address"]) for p in profiles}
+
+    def find(x):
+        x = wkey(x)
+        while uf[x] != x:
+            uf[x] = uf[uf[x]]
+            x = uf[x]
+        return x
+
+    def union(a, b):
+        ra, rb = find(a), find(b)
+        if ra != rb:
+            uf[rb] = ra
+
+    all_transfers = {}
+    for p in profiles[:args.deep]:
+        addr = p["address"]
+        try:
+            acts = fetch_activity(addr, p["chain"], 20, args.api_key, pages=args.pages)
+        except Exception as ex:
+            log(f"[warn] activity {short(addr, 6)} gagal: {ex}")
+            continue
+        _, transfers = analyze_token_flows(acts)
+        all_transfers[addr] = transfers
+        sw = side_wallets(transfers, addr)
+        cand = [s for s in sw if s["n"] >= 2][:args.cand]
+        line = f'- {short(addr, 6)} (PnL {usd(p["pnl"])}):'
+        if p["fund"]:
+            line += f' funder {short(p["fund"], 5)};'
+        if cand:
+            line += " kandidat side wallet: " + "; ".join(
+                f'{short(s["address"], 5)} ({s["n"]}x {usd(s["usd"])})' for s in cand)
+        if not p["fund"] and not cand:
+            line += " belum ada jejak side wallet di window ini"
+        log(line)
+        for s in cand:
+            union(addr, s["address"])
+
+    # --- gabungkan klaster: funder sama = satu koloni
+    funded = {}
+    for p in profiles:
+        if p["fund"]:
+            funded.setdefault(wkey(p["fund"]), []).append(p["address"])
+    for members in funded.values():
+        for w in members[1:]:
+            union(members[0], w)
+
+    clusters = {}
+    for p in profiles:
+        clusters.setdefault(find(p["address"]), []).append(p)
+    solo = [c for c in clusters.values() if len(c) == 1]
+    multi = sorted((c for c in clusters.values() if len(c) > 1), key=len, reverse=True)
+
+    log(f"\n## PETA KOLONI")
+    for i, c in enumerate(multi, 1):
+        tot = sum(x["pnl"] for x in c)
+        log(f'- Koloni {i}: {len(c)} wallet terhubung, PnL gabungan {usd(tot)} — '
+            + ", ".join(f"{short(x['address'], 5)} ({usd(x['pnl'])})" for x in c))
+    if solo:
+        log(f"- {len(solo)} wallet berdiri sendiri (belum ada jejak hubungan)")
+
+    save = {"ts": now_iso(), "profiles": profiles,
+            "colonies": [[x["address"] for x in c] for c in multi]}
+    save_json(COLONY_STATE, save)
+    log(f"\n[done] tersimpan: {COLONY_STATE.name}")
+
+
 def main():
     if sys.platform == "win32":
         try:
@@ -1143,6 +1286,14 @@ def main():
     p.add_argument("--min-shift", type=float, default=1500, help="ambang USD deteksi shift")
     p.add_argument("--api-key")
     p.set_defaults(fn=cmd_groups)
+
+    p = sub.add_parser("colony", help="database smart wallet + peta side wallet/koloni dari alert tersimpan")
+    p.add_argument("--top", type=int, default=8, help="wallet paling aktif yang diprofilkan")
+    p.add_argument("--deep", type=int, default=3, help="wallet PnL terbaik yang dianalisis aktivitasnya")
+    p.add_argument("--pages", type=int, default=2, help="halaman activity per wallet deep")
+    p.add_argument("--cand", type=int, default=3, help="kandidat side wallet per wallet")
+    p.add_argument("--api-key")
+    p.set_defaults(fn=cmd_colony)
 
     p = sub.add_parser("html", help="generate dashboard HTML dari data aktual lokal")
     p.add_argument("--max-alerts", type=int, default=600)
