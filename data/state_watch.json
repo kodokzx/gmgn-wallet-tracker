@@ -1,10 +1,10 @@
 {
- "sm:robinhood": 1788729384,
- "sm:bsc": 1788729385,
- "sm:sol": 1788729383,
- "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1788726252,
- "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1788729380,
- "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1788729359,
+ "sm:robinhood": 1788735286,
+ "sm:bsc": 1788735284,
+ "sm:sol": 1788735286,
+ "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1788733460,
+ "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1788735075,
+ "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1788731943,
  "initialized": true,
  "gflow": {
   "robinhood:0x0c5453edca198471fc39edb9156d9627caae04bf": {
@@ -122,7 +122,7 @@
   "sol:So11111111111111111111111111111111111111112": {
    "sym": "WSOL",
    "A": -683.3136210000001,
-   "B": -2681.830262000001,
+   "B": -4249.761069000001,
    "C": 0.0,
    "D": 0.0
   },
@@ -2953,6 +2953,97 @@
    "B": -1045.2204663784,
    "C": 0.0,
    "D": 0.0
+  },
+  "robinhood:0xf3081494b87e8d5fb7960f066e931d1d0e6e3d67": {
+   "sym": "TAO",
+   "A": 0.0,
+   "B": 415.66871515232333,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x4ee6eab68e18a7dbee3ddb13c693d1ebd93b3bf2": {
+   "sym": "BUTTSENOR",
+   "A": 0.0,
+   "B": -758.0412163986595,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x8c229afd0ca48ddb3240095ed2054b48a07ee9b2": {
+   "sym": "BUTT",
+   "A": 0.0,
+   "B": 1140.451893655074,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xea8e8f7e1ca45192187e1c2c0d8c0fe62c1df69c": {
+   "sym": "TAO",
+   "A": 0.0,
+   "B": 135.57557749726902,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x36b7b77c903ff6e1ff6412800bcff287834884b8": {
+   "sym": "TOA",
+   "A": 0.0,
+   "B": 1515.2687999598106,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x65f54065f917057413d2fcbabc03dfad61977777": {
+   "sym": "马到",
+   "A": 0.0,
+   "B": -1675.5459070746049,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x7a848a5a8169aa6a2f603d056a749f924f504444": {
+   "sym": "CZ",
+   "A": 0.0,
+   "B": -501.8751687822315,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:4X6KdjN6mjuQNd2HRhtyLF6VRJ1FEmKAe8azDtbxhhWY": {
+   "sym": "CRIME",
+   "A": 0.0,
+   "B": 1044.243527,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN": {
+   "sym": "TRUMP",
+   "A": 0.0,
+   "B": 1044.243527,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:DFXGtdEktzGEQLGvVCtqFw8JTnFyepTJ5V3HBHtQNey4": {
+   "sym": "PEG",
+   "A": 0.0,
+   "B": 522.080123230261,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:XsueG8BtpquVJX9LVLLEGuViXUungE6WmK5YZ3p3bd1": {
+   "sym": "CRCLx",
+   "A": 0.0,
+   "B": 522.653303,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:E43qU77tnWDwN11o7TtaGMNpxCAqz8RZEZ7PcTCUXSim": {
+   "sym": "SLO",
+   "A": 0.0,
+   "B": 733.6791,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:7Gv9ZVoFT8GoJkBnscbokc8iK7B8REzykphcS6u3pump": {
+   "sym": "Squirrel",
+   "A": 0.0,
+   "B": 1038.36720104876,
+   "C": 0.0,
+   "D": 0.0
   }
  },
  "gflow_prev": {
@@ -3054,7 +3145,7 @@
   },
   "sol:So11111111111111111111111111111111111111112": {
    "A": -683.3136210000001,
-   "B": -2681.830262000001,
+   "B": -4249.761069000001,
    "C": 0.0,
    "D": 0.0
   },
@@ -5479,6 +5570,84 @@
   "sol:HJBoRECiJddTZQZpuY8pHenf5CZ2yjju4npekmvbpump": {
    "A": 0.0,
    "B": -1045.2204663784,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xf3081494b87e8d5fb7960f066e931d1d0e6e3d67": {
+   "A": 0.0,
+   "B": 415.66871515232333,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x4ee6eab68e18a7dbee3ddb13c693d1ebd93b3bf2": {
+   "A": 0.0,
+   "B": -758.0412163986595,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x8c229afd0ca48ddb3240095ed2054b48a07ee9b2": {
+   "A": 0.0,
+   "B": 1140.451893655074,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xea8e8f7e1ca45192187e1c2c0d8c0fe62c1df69c": {
+   "A": 0.0,
+   "B": 135.57557749726902,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x36b7b77c903ff6e1ff6412800bcff287834884b8": {
+   "A": 0.0,
+   "B": 1515.2687999598106,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x65f54065f917057413d2fcbabc03dfad61977777": {
+   "A": 0.0,
+   "B": -1675.5459070746049,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x7a848a5a8169aa6a2f603d056a749f924f504444": {
+   "A": 0.0,
+   "B": -501.8751687822315,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:4X6KdjN6mjuQNd2HRhtyLF6VRJ1FEmKAe8azDtbxhhWY": {
+   "A": 0.0,
+   "B": 1044.243527,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN": {
+   "A": 0.0,
+   "B": 1044.243527,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:DFXGtdEktzGEQLGvVCtqFw8JTnFyepTJ5V3HBHtQNey4": {
+   "A": 0.0,
+   "B": 522.080123230261,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:XsueG8BtpquVJX9LVLLEGuViXUungE6WmK5YZ3p3bd1": {
+   "A": 0.0,
+   "B": 522.653303,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:E43qU77tnWDwN11o7TtaGMNpxCAqz8RZEZ7PcTCUXSim": {
+   "A": 0.0,
+   "B": 733.6791,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:7Gv9ZVoFT8GoJkBnscbokc8iK7B8REzykphcS6u3pump": {
+   "A": 0.0,
+   "B": 1038.36720104876,
    "C": 0.0,
    "D": 0.0
   }
