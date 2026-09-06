@@ -1008,6 +1008,10 @@ margin:0 6px 6px 0;cursor:pointer;font-size:12px;color:var(--mut);user-select:no
 .b-TRADE{background:#1b2430;color:#9db6d3}.b-WALLET{background:#2a1e3d;color:var(--pur)}
 .b-TRANSFER{background:#0d2f2c;color:var(--tea)}.b-TEST{background:#222;color:#888}
 .up{color:var(--grn)}.dn{color:var(--red)}
+.v0{background:#0d2e1a;color:var(--grn)}.v1{background:#0b2b4a;color:var(--blu)}
+.v2{background:#3d2200;color:var(--org)}.v3{background:#3d0d0d;color:var(--red)}
+.det{max-width:360px;font-size:12px}
+.det a{word-break:break-all}
 .a{color:var(--blu);text-decoration:none}.a:hover{text-decoration:underline}
 .item{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin-bottom:6px}
 .item .t{color:var(--mut);font-size:11px}
@@ -1032,12 +1036,16 @@ padding:7px 12px;width:280px;font-size:13px}
 <button class="tog" id="gflowTog">tampilkan ▼</button></h2>
 <div id="gflowBody" style="display:none"><div class="legend"><i class="gA"></i>A-iklan(KOL) <i class="gB"></i>B-smart-cepat <i class="gC"></i>C-akumulasi <i class="gD"></i>D-fomo — hijau/merah = net beli/jual</div>
 <div id="gflow"></div></div></section>
-<section><h2>Feed Alert</h2>
+<section><h2>Top 30 MCap <span class="mut">(snapshot per generate — di-refresh otomatis tiap jam bareng scan; verdict = apakah masih layak masuk)</span></h2>
+<div class="tray" id="mcapTray"></div>
+<div style="overflow-x:auto"><table id="mcap"></table></div></section>
+<section><h2>Feed Alert <span class="mut">(klik × di header utk sembunyikan kolom)</span></h2>
+<div class="tray" id="feedTray"></div>
 <div id="feedfilters"><span class="chip on" data-f="SEMUA">semua</span><span class="chip" data-f="SHIFT">SHIFT</span>
 <span class="chip" data-f="TOKEN">token</span><span class="chip" data-f="TRADE">trade</span>
 <span class="chip" data-f="WALLET">watchlist</span><span class="chip" data-f="TRANSFER">transfer</span>
 <input id="q" placeholder="cari symbol / wallet / chain…"></div>
-<div id="feed" style="margin-top:10px"></div></section>
+<div style="overflow-x:auto"><table id="feed" style="margin-top:10px"></table></div></section>
 <section><h2>Watchlist Wallet <span class="mut">(klik × di header utk sembunyikan kolom)</span></h2>
 <div class="tray" id="wlistTray"></div>
 <div style="overflow-x:auto"><table id="wlist"></table></div></section>
@@ -1102,9 +1110,25 @@ function bodyHtml(b){return esc(b||"").replace(/(https?:\/\/[^\s]+)/g,'<a class=
 function renderFeed(){const q=($("#q").value||"").toLowerCase();
 const rows=al.slice().reverse().filter(a=>byChain(a)&&(ftype==="SEMUA"||a.type===ftype)&&
 (!q||((a.title||"")+(a.body||"")).toLowerCase().includes(q)));
-$("#feed").innerHTML=rows.slice(0,400).map(a=>`<div class="item ${a.type==="SHIFT"?"shift":""}">
-<span class="badge b-${a.type}">${a.type}</span> <b>${esc(a.title||"")}</b>
-<div class="t">${esc(a.ts||"")}</div><div>${bodyHtml(a.body)}</div></div>`).join("")||"<i class='mut'>tidak ada alert yang cocok</i>"}
+$("#feed").innerHTML="<tr><th>waktu</th><th>tipe</th><th>alert</th><th>detail</th></tr>"+
+rows.slice(0,400).map(a=>`<tr><td class="mut" style="white-space:nowrap">${esc((a.ts||"").slice(5,16))}</td>
+<td><span class="badge b-${a.type}">${a.type}</span></td>
+<td><b>${esc(a.title||"")}</b></td>
+<td class="det">${bodyHtml(a.body)}</td></tr>`).join("")
+||"<tr><td class='mut'>tidak ada alert yang cocok</td></tr>";
+hideable(document.getElementById("feed"),"feedTray");}
+function renderMcap(){
+const mc=DATA.mcap||{};let rows=[];
+Object.entries(mc).forEach(([ch,arr])=>(arr||[]).forEach(t=>rows.push(Object.assign({chain:ch},t))));
+rows=rows.filter(t=>fchain==="SEMUA"||t.chain===fchain).sort((a,b)=>(b.mcap||0)-(a.mcap||0));
+$("#mcap").innerHTML="<tr><th>#</th><th>token</th><th>chain</th><th>mcap</th><th>liq</th><th>hold</th><th>smart</th><th>1h</th><th>verdict</th><th>alasan</th><th>chart</th></tr>"+
+rows.slice(0,30).map((t,i)=>`<tr><td class="mut">${i+1}</td><td><b>${esc(t.symbol)}</b></td><td>${esc(t.chain)}</td>
+<td>${usd(t.mcap)}</td><td>${usd(t.liq)}</td><td>${t.holders||0}</td><td>${t.smart||0}</td>
+<td class="${(t.chg1h||0)>=0?"up":"dn"}">${t.chg1h||0}%</td>
+<td><span class="badge v${t.v}">${t.verdict}</span></td><td class="det mut">${esc(t.reason)}</td>
+<td><button class="cbtn" onclick='openChart("${t.chain}","${t.address}","${esc(t.symbol)}")'>📈</button></td></tr>`).join("")
+||"<tr><td class='mut'>belum ada data mcap — jalankan: python scripts/wt.py html</td></tr>";
+hideable(document.getElementById("mcap"),"mcapTray");}
 function chainOf(a){const d=(a&&a.data)||{};
  if(d.chain)return d.chain;
  const s=((a&&a.title||"")+" "+(a&&a.body||"")).toLowerCase();
@@ -1137,7 +1161,7 @@ ${Object.entries(g).map(([gr,net])=>`<span class="${net>=0?"up":"dn"}">${gr}: ${
 :"belum ada snapshot (jalankan: python scripts/wt.py groups 0xTOKEN)";}
 function setChain(c){fchain=c;
  document.querySelectorAll("#chainbar .chip").forEach(ch=>ch.classList.toggle("on",ch.dataset.ch===c));
- renderRadar();renderGflow();renderFeed();renderWlist();renderGsnap();}
+ renderRadar();renderGflow();renderFeed();renderWlist();renderGsnap();renderMcap();}
 document.querySelectorAll("#chainbar .chip").forEach(ch=>ch.onclick=()=>setChain(ch.dataset.ch));
 function openChart(chain,addr,sym){
  const m=$("#chartModal");m.classList.add("on");
@@ -1224,12 +1248,38 @@ def cmd_html(args):
             except Exception:
                 pass
     watch_state = load_json(WATCH_STATE, {})
+    mcap = {}
+    if args.mcap_chains:
+        gf_norm = {}
+        for k, v in (watch_state.get("gflow") or {}).items():
+            ch2, _, a2 = k.partition(":")
+            gf_norm[(ch2, a2.lower())] = v
+        for chain in [c.strip() for c in args.mcap_chains.split(",") if c.strip()]:
+            try:
+                rows = fetch_top_mcap(chain, args.api_key, 30)
+            except Exception as e:
+                log(f"[warn] mcap {chain}: {e}")
+                continue
+            out_rows = []
+            for t in rows:
+                addr = dig(t, "address", "token_address", default="")
+                if not addr:
+                    continue
+                out_rows.append({"symbol": dig(t, "symbol", default="?"), "address": addr,
+                                 "mcap": float(dig(t, "market_cap", "usd_market_cap", default=0) or 0),
+                                 "liq": float(dig(t, "liquidity", default=0) or 0),
+                                 "holders": int(float(dig(t, "holder_count", default=0) or 0)),
+                                 "smart": int(float(dig(t, "smart_degen_count", "renowned_count", default=0) or 0)),
+                                 "chg1h": float(dig(t, "price_change_percent1h", default=0) or 0),
+                                 **mcap_verdict(t, gf_norm.get((chain, addr.lower())))})
+            mcap[chain] = out_rows
     payload = {
         "generated": now_iso(),
         "config": {"chains": cfg.get("chains", []), "watchlist": cfg.get("watchlist", [])},
         "alerts": alerts[-max(0, args.max_alerts):],
         "gflow": watch_state.get("gflow", {}),
         "groups": load_json(GROUPS_STATE, {}),
+        "mcap": mcap,
     }
     blob = json.dumps(payload, ensure_ascii=False, default=str).replace("</", "<\\/")
     out = DATA_DIR / "dashboard.html"
@@ -1524,6 +1574,58 @@ def cmd_breakout(args):
     save_json(BREAKOUT_STATE, snap)
 
 
+# ---------------------------------------------------------------- MCAP: top mcap + verdict kelayakan
+def fetch_top_mcap(chain, key, limit=30):
+    d = gmgn(["market", "trending", "--chain", chain, "--interval", "24h", "--limit", str(limit),
+              "--order-by", "marketcap", "--direction", "desc"], api_key=key)
+    return (d.get("data", {}) or {}).get("rank") or []
+
+
+def mcap_verdict(t, gf_row):
+    """Verdict 'masih layak masuk?' dari smart-degen, liq, momentum, konsentrasi, arus grup."""
+    sd = int(float(dig(t, "smart_degen_count", "renowned_count", default=0) or 0))
+    mcap = float(dig(t, "market_cap", "usd_market_cap", default=0) or 0)
+    liq = float(dig(t, "liquidity", default=0) or 0)
+    chg = float(dig(t, "price_change_percent1h", default=0) or 0)
+    top10 = float(dig(t, "top_10_holder_rate", default=0) or 0)
+    rug = float(dig(t, "rug_ratio", default=0) or 0)
+    score, reasons = 0, []
+    if sd >= 100:
+        score += 2; reasons.append(f"smart-degen {sd} kuat")
+    elif sd >= 50:
+        score += 1; reasons.append(f"smart {sd} cukup")
+    else:
+        score -= 1; reasons.append(f"smart tipis ({sd})")
+    ratio = liq / mcap if mcap else 0
+    if ratio >= 0.03:
+        score += 1; reasons.append(f"liq {ratio:.0%} mcap sehat")
+    elif ratio and ratio < 0.015:
+        score -= 1; reasons.append(f"liq tipis ({ratio:.1%} mcap)")
+    if chg > 80:
+        score -= 1; reasons.append(f"1h +{chg:.0f}% overheat")
+    elif 5 <= chg <= 40:
+        score += 1; reasons.append(f"momentum 1h +{chg:.0f}%")
+    elif chg < -20:
+        score -= 1; reasons.append(f"1h {chg:.0f}% sedang dibuang")
+    if top10 > 0.35:
+        score -= 1; reasons.append(f"top-10 pegang {top10:.0%}")
+    if rug > 0.1:
+        score -= 1; reasons.append(f"rug-ratio {rug:.0%}")
+    if gf_row:
+        nb = float(gf_row.get("B") or 0) + float(gf_row.get("C") or 0)
+        if nb > 2000:
+            score += 2; reasons.append(f"grup B/C net +{usd(nb)} (akumulasi)")
+        elif nb < -2000:
+            score -= 2; reasons.append(f"grup B/C net {usd(nb)} (distribusi)")
+    if score >= 3:
+        return {"v": 0, "verdict": "LAYAK DITELITI", "reason": "; ".join(reasons) or "-"}
+    if score >= 1:
+        return {"v": 1, "verdict": "BOLEH DIPANTAU", "reason": "; ".join(reasons) or "-"}
+    if score >= -1:
+        return {"v": 2, "verdict": "HATI-HATI", "reason": "; ".join(reasons) or "-"}
+    return {"v": 3, "verdict": "HINDARI", "reason": "; ".join(reasons) or "-"}
+
+
 def main():
     if sys.platform == "win32":
         try:
@@ -1584,6 +1686,9 @@ def main():
 
     p = sub.add_parser("html", help="generate dashboard HTML dari data aktual lokal")
     p.add_argument("--max-alerts", type=int, default=600)
+    p.add_argument("--mcap-chains", default="robinhood",
+                   help="chain utk seksi Top 30 MCap, pisah koma (kosongkan utk skip)")
+    p.add_argument("--api-key")
     p.set_defaults(fn=cmd_html)
 
     p = sub.add_parser("watchlist", help="kelola daftar wallet yang dipantau")
