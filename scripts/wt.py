@@ -984,6 +984,9 @@ section{padding:8px 22px 18px}h2{font-size:15px;margin:18px 0 8px;color:var(--bl
 table{border-collapse:collapse;width:100%;font-size:13px}
 th{color:var(--mut);text-align:left;font-weight:600;font-size:11px;text-transform:uppercase;
 padding:6px 8px;border-bottom:1px solid var(--line)}
+.hbtn{opacity:.35;cursor:pointer;margin-left:6px;font-size:10px;color:var(--red)}
+.hbtn:hover{opacity:1}
+.tray{margin:6px 0;min-height:2px}
 td{padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 tr:hover td{background:#1a212b}
 .chip{display:inline-block;border:1px solid var(--line);border-radius:20px;padding:2px 10px;
@@ -1010,7 +1013,8 @@ padding:7px 12px;width:280px;font-size:13px}
 <header><h1>🐋 Wallet Tracker <small>— dashboard data aktual</small></h1>
 <div class="sub">Digenerate: <span id="gen"></span> · sumber: data/alerts.jsonl + state lokal · read-only</div></header>
 <div class="cards" id="cards"></div>
-<section><h2>Radar Token <span class="mut">(alert token, dedup — terbaru per token)</span></h2>
+<section><h2>Radar Token <span class="mut">(alert token, dedup — terbaru per token; klik × di header utk sembunyikan kolom)</span></h2>
+<div class="tray" id="radarTray"></div>
 <div style="overflow-x:auto"><table id="radar"></table></div></section>
 <section><h2>Arus Grup Perilaku A/B/C/D <span class="mut">(kumulatif dari feed smart money)</span></h2>
 <div class="legend"><i class="gA"></i>A-iklan(KOL) <i class="gB"></i>B-smart-cepat <i class="gC"></i>C-akumulasi <i class="gD"></i>D-fomo — hijau/merah = net beli/jual</div>
@@ -1021,7 +1025,9 @@ padding:7px 12px;width:280px;font-size:13px}
 <span class="chip" data-f="WALLET">watchlist</span><span class="chip" data-f="TRANSFER">transfer</span>
 <input id="q" placeholder="cari symbol / wallet / chain…"></div>
 <div id="feed" style="margin-top:10px"></div></section>
-<section><h2>Watchlist Wallet</h2><div style="overflow-x:auto"><table id="wlist"></table></div></section>
+<section><h2>Watchlist Wallet <span class="mut">(klik × di header utk sembunyikan kolom)</span></h2>
+<div class="tray" id="wlistTray"></div>
+<div style="overflow-x:auto"><table id="wlist"></table></div></section>
 <section><h2>Snapshot Grup per Token <span class="mut">(cmd: wt.py groups)</span></h2>
 <div id="gsnap" class="mut"></div></section>
 <script>const DATA=__DATA__;</script>
@@ -1074,6 +1080,26 @@ const gs=DATA.groups||{},ks=Object.keys(gs);
 $("#gsnap").innerHTML=ks.length?ks.map(k=>{const v=gs[k],g=v.groups||{};
 return `<div class="item"><b>${esc(k)}</b> <span class="mut">snapshot ${esc(v.ts||"")}</span><br>
 ${Object.entries(g).map(([gr,net])=>`<span class="${net>=0?"up":"dn"}">${gr}: ${net>=0?"+":""}${usd(net)}</span>`).join(" · ")}</div>`}).join(""):"belum ada snapshot (jalankan: python scripts/wt.py groups 0xTOKEN)";
+function hideable(tbl,trayId){
+  const tray=document.getElementById(trayId);
+  const hdr=tbl.rows[0]; if(!hdr)return;
+  [...hdr.cells].forEach((th,i)=>{
+    const label=th.textContent;
+    const b=document.createElement("span"); b.className="hbtn"; b.title="sembunyikan kolom"; b.textContent="×";
+    b.onclick=e=>{e.stopPropagation();
+      [...tbl.rows].forEach(r=>{const c=r.cells[i]; if(c)c.style.display="none";});
+      th.style.display="none";
+      const chip=document.createElement("span"); chip.className="chip on";
+      chip.textContent=label+" ✚ tampilkan";
+      chip.onclick=()=>{[...tbl.rows].forEach(r=>{const c=r.cells[i]; if(c)c.style.display="";});
+        th.style.display=""; chip.remove();};
+      tray.appendChild(chip);
+    };
+    th.appendChild(b);
+  });
+}
+hideable(document.getElementById("radar"),"radarTray");
+hideable(document.getElementById("wlist"),"wlistTray");
 </script></body></html>"""
 
 
@@ -1245,6 +1271,149 @@ def cmd_colony(args):
     log(f"\n[done] tersimpan: {COLONY_STATE.name}")
 
 
+# ---------------------------------------------------------------- BREAKOUT: siapa yang masuk sebelum mooning
+BREAKOUT_STATE = DATA_DIR / "state_breakout.json"
+RES_MIN = {"30s": 0.5 / 60, "1m": 1, "5m": 5, "15m": 15, "1h": 60, "4h": 240, "1d": 1440}
+
+
+def fetch_kline(addr, ch, res, hours, key):
+    to_ts = int(time.time())
+    from_ts = to_ts - int(hours * 3600)
+    d = gmgn(["market", "kline", "--chain", ch, "--address", addr, "--resolution", res,
+              "--from", str(from_ts), "--to", str(to_ts)], api_key=key)
+    out = []
+    for k in d.get("list") or []:
+        try:
+            out.append({"t": int(k["time"]) // 1000, "o": float(k["open"]), "c": float(k["close"]),
+                        "h": float(k["high"]), "l": float(k["low"]), "v": float(k["volume"])})
+        except (KeyError, TypeError, ValueError):
+            continue
+    return out
+
+
+def find_breakout(kl, lookback=12, px_mult=1.5, vol_mult=2.5):
+    """Candle breakout pertama: close >= 1.5x max-close 12 candle sebelumnya
+    DAN volume >= 2.5x rata-rata volume candle sebelumnya."""
+    if len(kl) < lookback + 2:
+        return None
+    for i in range(lookback, len(kl)):
+        prev = kl[i - lookback:i]
+        maxc = max(c["c"] for c in prev)
+        meanv = sum(c["v"] for c in prev) / len(prev)
+        if meanv <= 0:
+            continue
+        if kl[i]["c"] >= px_mult * maxc and kl[i]["v"] >= vol_mult * meanv:
+            return kl[i]
+    return max(kl, key=lambda c: c["v"])  # fallback: candle volume terbesar
+
+
+def cmd_breakout(args):
+    cfg = load_config()
+    ch = args.chain or (cfg["chains"][0] if cfg["chains"] else "robinhood")
+    addr = args.token.strip()
+    now = int(time.time())
+
+    sym, created, price = "?", 0, 0.0
+    try:
+        ti = gmgn(["token", "info", "--chain", ch, "--address", addr], api_key=args.api_key)
+        tb = ti.get("token") or ti.get("data") or ti
+        sym = dig(tb, "symbol", default="?")
+        created = int(float(dig(tb, "creation_timestamp", "open_timestamp", default=0) or 0))
+        pv = dig(tb, "price", default=0)
+        if isinstance(pv, dict):
+            pv = pv.get("price")
+        price = float(pv or 0)
+    except Exception as e:
+        log(f"[warn] token info: {e}")
+
+    age_h = (now - created) / 3600 if created else 24
+    res = "5m" if age_h <= 8 else ("15m" if age_h <= 24 else "1h")
+    hours = min(age_h + 0.5, 100 * RES_MIN[res])
+    kl = fetch_kline(addr, ch, res, hours, args.api_key)
+
+    def px_at(ts):
+        """Harga close candle yang memuat timestamp ts (fallback: candle pertama/terakhir)."""
+        if not kl:
+            return 0.0
+        cand = [k for k in kl if k["t"] <= ts]
+        return (cand[-1]["c"] if cand else kl[0]["o"]) if ts else 0.0
+
+    bt = find_breakout(kl)
+    if not bt:
+        raise SystemExit("[error] kline terlalu pendek untuk deteksi breakout")
+    bt_ts, bt_px = bt["t"], bt["c"]
+    if not price:
+        price = kl[-1]["c"] if kl else 0.0
+    mult_now = price / bt_px if bt_px else 0
+    log(f"# Pre-breakout `{sym}` ({ch}) — {now_iso()}")
+    log(f"- Breakout: {ts_fmt(bt_ts)} @ ${bt_px:.10f} (res {res}) — harga sekarang ${price:.10f} "
+        f"= **{mult_now:.1f}x** dari breakout" + (f" | lahir {ts_fmt(created)}" if created else ""))
+
+    d = gmgn(["token", "traders", "--chain", ch, "--address", addr,
+              "--limit", str(args.limit)], api_key=args.api_key)
+    traders = d.get("list") or []
+
+    pre, late = [], []
+    for t in traders:
+        a = (t.get("address") or "").lower()
+        if not a or a == "0x000000000000000000000000000000000000dead":
+            continue
+        tags = t.get("tags") or []
+        if "sandwich_bot" in tags or "sniper_bot" in tags:
+            continue
+        start = int(t.get("start_holding_at") or 0)
+        rec = {"address": a, "tags": tags,
+               "buy": float(t.get("buy_volume_cur") or 0),
+               "sell": float(t.get("sell_volume_cur") or 0),
+               "real": float(t.get("realized_profit") or 0),
+               "hold_pct": float(t.get("amount_percentage") or 0) * 100}
+        rec["entry_px"] = px_at(start) if start else 0.0
+        rec["x_now"] = price / rec["entry_px"] if rec["entry_px"] > 0 else 0
+        rec["delta_min"] = (bt_ts - start) // 60 if start else None
+        smart = bool({"smart_degen", "kol"} & set(tags))
+        rec["smart"] = smart
+        if start and start <= bt_ts:
+            rec["verdict"] = ("⭐ SMART PRE-BREAKOUT" if smart else
+                              "⭐ PRE-BREAKOUT (profit)" if rec["real"] > 300 else
+                              "early (belum terbukti)")
+            pre.append(rec)
+        elif start:
+            rec["verdict"] = "late"
+            late.append(rec)
+
+    pre.sort(key=lambda r: -r["buy"])
+    log(f"\n## MASUK SEBELUM BREAKOUT ({len(pre)} wallet — wallet siapa saja)")
+    log("```\nwallet          entry        size$    x-sekarang  realize   hold%  verdict")
+    for r in pre[:args.top]:
+        dmin = f'{r["delta_min"]}m sebelum' if r["delta_min"] is not None else "?"
+        xr = f'{r["x_now"]:.1f}x' if r["x_now"] else "?"
+        log(f'{short(r["address"], 6):<15} {dmin:<12} {usd(r["buy"]):>8} {xr:>11} '
+            f'{usd(r["real"]):>9} {r["hold_pct"]:>5.0f}%  {r["verdict"]}')
+    log("```")
+
+    late.sort(key=lambda r: -r["buy"])
+    if late:
+        log(f"\n## PEMBELI LATE TERBESAR (setelah breakout)")
+        for r in late[:5]:
+            xr = f'{r["x_now"]:.1f}x' if r["x_now"] else "?"
+            log(f'- {short(r["address"], 6)}: beli {usd(r["buy"])} @ {xr} dari breakout, '
+                f'realize {usd(r["real"])}, hold {r["hold_pct"]:.0f}%')
+
+    smart_pre = [r for r in pre if r["smart"] or (r["real"] > 300 and r["buy"] > 300)]
+    log(f"\n## TANDA SMART WALLET ({len(smart_pre)} layak di-flag)")
+    for r in smart_pre[:args.top]:
+        log(f'- ⭐ `{r["address"]}` — {r["verdict"]} | beli {usd(r["buy"])} sebelum breakout, '
+            f'realize {usd(r["real"])}, masih pegang {r["hold_pct"]:.0f}% | {",".join(r["tags"]) or "no-tag"}')
+    prof = GMGN_WALLET_URL.format(chain=ch, addr=addr) if ch in ("sol", "bsc", "base", "eth") else ""
+    log(f"\nProfil token: {DEXSCREENER_TOKEN_URL.format(chain=ch, addr=addr)}"
+        + (f" | {prof}" if prof else ""))
+
+    snap = load_json(BREAKOUT_STATE, {})
+    snap[f"{ch}:{addr.lower()}"] = {"ts": now_iso(), "breakout_ts": bt_ts, "breakout_px": bt_px,
+                                    "pre": pre[:args.top]}
+    save_json(BREAKOUT_STATE, snap)
+
+
 def main():
     if sys.platform == "win32":
         try:
@@ -1286,6 +1455,14 @@ def main():
     p.add_argument("--min-shift", type=float, default=1500, help="ambang USD deteksi shift")
     p.add_argument("--api-key")
     p.set_defaults(fn=cmd_groups)
+
+    p = sub.add_parser("breakout", help="breakdown wallet yang masuk sebelum breakout s/d mooning + flag smart wallet")
+    p.add_argument("token")
+    p.add_argument("--chain")
+    p.add_argument("--limit", type=int, default=30)
+    p.add_argument("--top", type=int, default=15)
+    p.add_argument("--api-key")
+    p.set_defaults(fn=cmd_breakout)
 
     p = sub.add_parser("colony", help="database smart wallet + peta side wallet/koloni dari alert tersimpan")
     p.add_argument("--top", type=int, default=8, help="wallet paling aktif yang diprofilkan")

@@ -29,10 +29,13 @@ python scripts/wt.py groups 0xTOKEN --chain robinhood
 # 5) Database smart wallet + peta side wallet & koloni (dari alert tersimpan)
 python scripts/wt.py colony --top 8 --deep 3
 
-# 6) Dashboard HTML dari data aktual (buka data/dashboard.html di browser)
+# 6) Pre-breakout: wallet siapa yang masuk SEBELUM token meledak + flag smart wallet
+python scripts/wt.py breakout 0xTOKEN --chain robinhood
+
+# 7) Dashboard HTML dari data aktual (buka data/dashboard.html di browser)
 python scripts/wt.py html
 
-# 7) Kelola watchlist / riwayat alert / tes telegram
+# 8) Kelola watchlist / riwayat alert / tes telegram
 python scripts/wt.py watchlist add 0xADDR --chain robinhood --note "kol"
 python scripts/wt.py alerts --last 30
 python scripts/wt.py test-notify
@@ -59,6 +62,14 @@ python scripts/wt.py test-notify
   kelakuan". Snapshot net-flow tiap grup disimpan — saat dijalankan ulang, pembalikan arah
   (zero-cross ≥ $1.5k) dilaporkan sebagai ⚠️ SHIFT dengan interpretasinya (mis. B jual + D beli =
   distribusi ke ritel / exit liquidity; C beli saat turun = akumulasi stealth).
+- **Pre-breakout forensik** (`breakout 0xTOKEN`): deteksi candle breakout dari kline
+  (close ≥1.5x max 12 candle sebelumnya + volume ≥2.5x rata-rata), lalu daftar semua wallet yang
+  mulai pegang token SEBELUM momen itu — berapa banyak $, multiple harga entry vs sekarang,
+  sudah realize berapa, masih pegang berapa % supply, dan verdict: ⭐ SMART PRE-BREAKOUT
+  (tag smart_degen/kol), ⭐ PRE-BREAKOUT (profit terbukti), early, atau late. Jalankan ini saat
+  user bertanya "siapa yang masuk sebelum naik" pada runner.
+- Dashboard `html` mendukung sembunyikan kolom: klik × di header kolom (tabel Radar & Watchlist),
+  kolom bisa dikembalikan lewat chip di tray atas tabel.
 - Alert `watch` otomatis berlabel grup: `[A]`/`[B]`/`[D]`/`[BOT]` pada trade smart money, dan
   alert `SHIFT` muncul saat grup berbalik arah pada token yang dipantau.
 
