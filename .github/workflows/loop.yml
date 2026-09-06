@@ -57,6 +57,14 @@ jobs:
         run: |
           git config user.name "wt-loop"
           git config user.email "wt-loop@users.noreply.github.com"
-          git add -f data/
+          git add -f data/ .vercel/project.json
           git commit -m "loop: refresh data [skip ci]" || echo "tidak ada perubahan"
           git push
+
+      - name: Deploy ke Vercel (hanya jika VERCEL_TOKEN terisi di secrets)
+        if: env.VERCEL_TOKEN != ''
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          npm install -g vercel
+          vercel deploy --prod --yes --token="$VERCEL_TOKEN"
