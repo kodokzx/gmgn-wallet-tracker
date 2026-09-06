@@ -980,6 +980,8 @@ header{padding:20px 22px 8px}h1{margin:0;font-size:20px}h1 small{color:var(--mut
 .cards{display:flex;gap:10px;flex-wrap:wrap;padding:12px 22px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;min-width:130px}
 .card b{display:block;font-size:20px}.card span{color:var(--mut);font-size:11px;text-transform:uppercase}
+.chainbar{padding:0 22px 6px}
+.chainbar .chip{background:var(--card);font-weight:600;text-transform:uppercase}
 section{padding:8px 22px 18px}h2{font-size:15px;margin:18px 0 8px;color:var(--blu)}
 table{border-collapse:collapse;width:100%;font-size:13px}
 th{color:var(--mut);text-align:left;font-weight:600;font-size:11px;text-transform:uppercase;
@@ -1013,6 +1015,7 @@ padding:7px 12px;width:280px;font-size:13px}
 <header><h1>🐋 Wallet Tracker <small>— dashboard data aktual</small></h1>
 <div class="sub">Digenerate: <span id="gen"></span> · sumber: data/alerts.jsonl + state lokal · read-only</div></header>
 <div class="cards" id="cards"></div>
+<div class="chainbar" id="chainbar"></div>
 <section><h2>Radar Token <span class="mut">(alert token, dedup — terbaru per token; klik × di header utk sembunyikan kolom)</span></h2>
 <div class="tray" id="radarTray"></div>
 <div style="overflow-x:auto"><table id="radar"></table></div></section>
@@ -1020,7 +1023,7 @@ padding:7px 12px;width:280px;font-size:13px}
 <div class="legend"><i class="gA"></i>A-iklan(KOL) <i class="gB"></i>B-smart-cepat <i class="gC"></i>C-akumulasi <i class="gD"></i>D-fomo — hijau/merah = net beli/jual</div>
 <div id="gflow"></div></section>
 <section><h2>Feed Alert</h2>
-<div><span class="chip on" data-f="SEMUA">semua</span><span class="chip" data-f="SHIFT">SHIFT</span>
+<div id="feedfilters"><span class="chip on" data-f="SEMUA">semua</span><span class="chip" data-f="SHIFT">SHIFT</span>
 <span class="chip" data-f="TOKEN">token</span><span class="chip" data-f="TRADE">trade</span>
 <span class="chip" data-f="WALLET">watchlist</span><span class="chip" data-f="TRANSFER">transfer</span>
 <input id="q" placeholder="cari symbol / wallet / chain…"></div>
@@ -1043,16 +1046,20 @@ $("#cards").innerHTML=[["Alert tersimpan",al.length],["Alert hari ini",nToday],[
 ["Token di radar",Object.keys(radarMap()).length],["Grup token",Object.keys(DATA.gflow||{}).length],
 ["Watchlist",(DATA.config.watchlist||[]).length]].map(c=>`<div class="card"><b>${c[1]}</b><span>${c[0]}</span></div>`).join("");
 function radarMap(){const m={};(al||[]).filter(a=>a.type==="TOKEN"&&a.data&&a.data.address)
-.forEach(a=>{const k=a.chain+":"+a.data.address;m[k]=a});return m}
-const rad=Object.values(radarMap()).sort((x,y)=>(y.data.score||0)-(x.data.score||0));
+.forEach(a=>{const k=(a.data.chain||"x")+":"+a.data.address;m[k]=a});return m}
+function renderRadar(){
+const rad=Object.values(radarMap()).filter(a=>byChain(a)).sort((x,y)=>(y.data.score||0)-(x.data.score||0));
 $("#radar").innerHTML="<tr><th>skor</th><th>token</th><th>chain</th><th>mcap</th><th>liq</th><th>hold</th><th>smart</th><th>1h</th><th>umur</th><th>alert</th></tr>"+
 rad.map(a=>{const d=a.data;return `<tr><td class="score">${d.score||"?"}</td>
 <td><b>${esc(d.symbol)}</b></td><td>${esc(a.chain||d.chain)}</td><td>${usd(d.market_cap_usd)}</td>
 <td>${usd(d.liquidity_usd)}</td><td>${d.holder_count||0}</td><td>${d.smart_degen_count||0}</td>
 <td class="${(d.change_1h_pct||0)>=0?"up":"dn"}">${d.change_1h_pct||0}%</td><td class="mut">${d.age_hours??"?"}h</td>
-<td><a class="a" href="${link(d.chain||a.chain,d.address)}" target="_blank">chart ↗</a></td></tr>`}).join("");
-const gf=DATA.gflow||{},maxv=Math.max(1,...Object.values(gf).flatMap(o=>Object.values(o).slice(1).map(Number).map(Math.abs)));
-$("#gflow").innerHTML=Object.entries(gf).map(([k,o])=>{const[chain,addr]=k.split(":");
+<td><a class="a" href="${link(d.chain||a.chain,d.address)}" target="_blank">chart ↗</a></td></tr>`}).join("")||"<tr><td class='mut'>tidak ada token utk filter ini</td></tr>";
+hideable(document.getElementById("radar"),"radarTray");}
+function renderGflow(){
+const gf=DATA.gflow||{};
+const maxv=Math.max(1,...Object.values(gf).flatMap(o=>Object.values(o).slice(1).map(Number).map(Math.abs)));
+$("#gflow").innerHTML=Object.entries(gf).filter(([k])=>fchain==="SEMUA"||k.split(":")[0]===fchain).map(([k,o])=>{const[chain,addr]=k.split(":");
 const mx=Math.max(1,...["A","B","C","D"].map(g=>Math.abs(+o[g]||0)));
 return `<div class="item"><b>${esc(o.sym||"?")}</b> <span class="mut">${esc(chain)}</span>
 <span style="float:right"><a class="a" href="${link(chain,addr)}" target="_blank">chart ↗</a></span>
@@ -1060,26 +1067,53 @@ ${["A","B","C","D"].map(g=>{const v=+o[g]||0,pct=Math.abs(v)/mx*46;
 return `<div style="display:flex;align-items:center;gap:6px;margin:3px 0"><span class="mut" style="width:14px">${g}</span>
 <div style="width:47%;background:#0a0e14;border-radius:5px;position:relative;height:11px">
 <div class="bar g${g}" style="width:${pct}%;${v<0?"background:var(--red)":""}"></div></div>
-<span class="${v>=0?"up":"dn"}">${v>=0?"+":""}${usd(v)}</span></div>`}).join("")}</div>`}).join("")||"<i>belum ada arus grup terekam</i>";
+<span class="${v>=0?"up":"dn"}">${v>=0?"+":""}${usd(v)}</span></div>`}).join("")}</div>`}).join("")
+||"<i class='mut'>belum ada arus grup terekam utk filter ini</i>";}
 let ftype="SEMUA";
-document.querySelectorAll(".chip").forEach(ch=>ch.onclick=()=>{document.querySelectorAll(".chip").forEach(c=>c.classList.remove("on"));ch.classList.add("on");ftype=ch.dataset.f;renderFeed()});
+document.querySelectorAll("#feedfilters .chip").forEach(ch=>ch.onclick=()=>{document.querySelectorAll("#feedfilters .chip").forEach(c=>c.classList.remove("on"));ch.classList.add("on");ftype=ch.dataset.f;renderFeed()});
 $("#q").oninput=renderFeed;
 function bodyHtml(b){return esc(b||"").replace(/(https?:\/\/[^\s]+)/g,'<a class="a" href="$1" target="_blank">$1</a>').replace(/\n/g,"<br>")}
 function renderFeed(){const q=($("#q").value||"").toLowerCase();
-const rows=al.slice().reverse().filter(a=>(ftype==="SEMUA"||a.type===ftype)&&
+const rows=al.slice().reverse().filter(a=>byChain(a)&&(ftype==="SEMUA"||a.type===ftype)&&
 (!q||((a.title||"")+(a.body||"")).toLowerCase().includes(q)));
 $("#feed").innerHTML=rows.slice(0,400).map(a=>`<div class="item ${a.type==="SHIFT"?"shift":""}">
 <span class="badge b-${a.type}">${a.type}</span> <b>${esc(a.title||"")}</b>
 <div class="t">${esc(a.ts||"")}</div><div>${bodyHtml(a.body)}</div></div>`).join("")||"<i class='mut'>tidak ada alert yang cocok</i>"}
-renderFeed();
-const wl=DATA.config.watchlist||[];
+function chainOf(a){const d=(a&&a.data)||{};
+ if(d.chain)return d.chain;
+ const s=((a&&a.title||"")+" "+(a&&a.body||"")).toLowerCase();
+ const m=s.match(/\b(robinhood|bsc|sol|base|eth|arc|stable)\b/);
+ return m?m[1]:null}
+let fchain="SEMUA";
+const byChain=a=>fchain==="SEMUA"||chainOf(a)===fchain;
+const CHAINS=[...new Set([].concat(
+ al.map(chainOf).filter(Boolean),
+ Object.keys(DATA.gflow||{}).map(k=>k.split(":")[0]),
+ (DATA.config.watchlist||[]).map(w=>w.chain).filter(Boolean)))];
+const CORD=["robinhood","bsc","sol","base","eth"];
+CHAINS.sort((a,b)=>{const i=CORD.indexOf(a),j=CORD.indexOf(b);return (i<0?99:i)-(j<0?99:j)||a.localeCompare(b)});
+$("#chainbar").innerHTML=["SEMUA"].concat(CHAINS).map(c=>{
+ const n=c==="SEMUA"?al.length:al.filter(a=>chainOf(a)===c).length;
+ return `<span class="chip${c===fchain?" on":""}" data-ch="${c}">${c} (${n})</span>`}).join("");
+function renderWlist(){
+const wl=(DATA.config.watchlist||[]).filter(w=>fchain==="SEMUA"||(w.chain||"")===fchain);
 $("#wlist").innerHTML="<tr><th>wallet</th><th>chain</th><th>note</th><th></th></tr>"+
 (wl.map(w=>`<tr><td>${esc(w.address)}</td><td>${esc(w.chain||"auto")}</td><td class="mut">${esc(w.note||"")}</td>
-<td><a class="a" href="https://gmgn.ai/${w.chain||"sol"}/wallet/${w.address}" target="_blank">gmgn ↗</a></td></tr>`).join("")||"<tr><td class='mut'>kosong</td></tr>");
-const gs=DATA.groups||{},ks=Object.keys(gs);
+<td><a class="a" href="https://gmgn.ai/${w.chain||"sol"}/wallet/${w.address}" target="_blank">gmgn ↗</a></td></tr>`).join("")
+||"<tr><td class='mut'>kosong utk filter ini</td></tr>");
+hideable(document.getElementById("wlist"),"wlistTray");}
+function renderGsnap(){
+const gs=DATA.groups||{};
+const ks=Object.keys(gs).filter(k=>fchain==="SEMUA"||k.split(":")[0]===fchain);
 $("#gsnap").innerHTML=ks.length?ks.map(k=>{const v=gs[k],g=v.groups||{};
 return `<div class="item"><b>${esc(k)}</b> <span class="mut">snapshot ${esc(v.ts||"")}</span><br>
-${Object.entries(g).map(([gr,net])=>`<span class="${net>=0?"up":"dn"}">${gr}: ${net>=0?"+":""}${usd(net)}</span>`).join(" · ")}</div>`}).join(""):"belum ada snapshot (jalankan: python scripts/wt.py groups 0xTOKEN)";
+${Object.entries(g).map(([gr,net])=>`<span class="${net>=0?"up":"dn"}">${gr}: ${net>=0?"+":""}${usd(net)}</span>`).join(" · ")}</div>`}).join("")
+:"belum ada snapshot (jalankan: python scripts/wt.py groups 0xTOKEN)";}
+function setChain(c){fchain=c;
+ document.querySelectorAll("#chainbar .chip").forEach(ch=>ch.classList.toggle("on",ch.dataset.ch===c));
+ renderRadar();renderGflow();renderFeed();renderWlist();renderGsnap();}
+document.querySelectorAll("#chainbar .chip").forEach(ch=>ch.onclick=()=>setChain(ch.dataset.ch));
+setChain("SEMUA");
 function hideable(tbl,trayId){
   const tray=document.getElementById(trayId);
   const hdr=tbl.rows[0]; if(!hdr)return;
