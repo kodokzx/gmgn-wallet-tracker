@@ -1075,6 +1075,7 @@ rad.map(a=>{const d=a.data;return `<tr><td class="score">${d.score||"?"}</td>
 <td><a class="cbtn" href="https://gmgn.ai/${d.chain||a.chain}/token/${d.address}" target="_blank" title="buka chart GMGN">📈 chart</a>
 <a class="a" href="${link(d.chain||a.chain,d.address)}" target="_blank">dex ↗</a></td></tr>`}).join("")||"<tr><td class='mut'>tidak ada token utk filter ini</td></tr>";
 hideable(document.getElementById("radar"),"radarTray");}
+let gflowAll=false;
 function renderGflow(){
 const gf=DATA.gflow||{};
 const sz=o=>Math.abs(+o.A||0)+Math.abs(+o.B||0)+Math.abs(+o.C||0)+Math.abs(+o.D||0);
@@ -1117,7 +1118,7 @@ rows=rows.filter(t=>fchain==="SEMUA"||t.chain===fchain).sort((a,b)=>(b.mcap||0)-
 $("#mcap").innerHTML="<tr><th>#</th><th>token</th><th>chain</th><th>mcap</th><th>liq</th><th>hold</th><th>smart</th><th>1h</th><th>verdict</th><th>alasan</th><th>chart</th></tr>"+
 rows.slice(0,30).map((t,i)=>`<tr><td class="mut">${i+1}</td><td><b>${esc(t.symbol)}</b></td><td>${esc(t.chain)}</td>
 <td>${usd(t.mcap)}</td><td>${usd(t.liq)}</td><td>${t.holders||0}</td><td>${t.smart||0}</td>
-<td class="${(t.chg1h||0)>=0?"up":"dn"}">${t.chg1h||0}%</td>
+<td class="${(t.chg1h||0)>=0?"up":"dn"}">${(+t.chg1h||0).toFixed(1)}%</td>
 <td><span class="badge v${t.v}">${t.verdict}</span></td><td class="det mut">${esc(t.reason)}</td>
 <td><a class="cbtn" href="https://gmgn.ai/${t.chain}/token/${t.address}" target="_blank" title="buka chart GMGN">📈</a></td></tr>`).join("")
 ||"<tr><td class='mut'>belum ada data mcap — jalankan: python scripts/wt.py html</td></tr>";
@@ -1628,7 +1629,7 @@ def main():
     p.set_defaults(fn=cmd_colony)
 
     p = sub.add_parser("html", help="generate dashboard HTML dari data aktual lokal")
-    p.add_argument("--max-alerts", type=int, default=600)
+    p.add_argument("--max-alerts", type=int, default=3000)
     p.add_argument("--mcap-chains", default="robinhood,bsc,sol",
                    help="chain utk seksi Top 30 MCap, pisah koma (kosongkan utk skip)")
     p.add_argument("--api-key")
