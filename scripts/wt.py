@@ -87,6 +87,12 @@ def load_config():
             "limit_wallet_activity": 50,
         },
         "telegram": {"bot_token": "", "chat_id": ""},
+        "rwa_blocklist": [
+            "SPY", "SPYB", "QQQ", "IWM", "DIA", "GLD", "SLV",
+            "NVDA", "NVDAB", "TSLA", "TSLAB", "AAPL", "AAPLB", "MSFT", "GOOGL", "GOOG",
+            "AMZN", "META", "NFLX", "AMD", "INTC", "COIN", "MSTR", "HOOD", "HOODB",
+            "PLTR", "CRCL", "SPCX", "OPEN", "BABA", "UBER", "ABNB", "SHOP", "SQ",
+        ],
         "watchlist": [],
     }
     if CONFIG_PATH.exists():
@@ -1193,6 +1199,7 @@ def cmd_html(args):
                 pass
     watch_state = load_json(WATCH_STATE, {})
     mcap = {}
+    rwa_block = {x.strip().upper() for x in (cfg.get("rwa_blocklist") or [])}
     if args.mcap_chains:
         gf_norm = {}
         for k, v in (watch_state.get("gflow") or {}).items():
@@ -1200,7 +1207,7 @@ def cmd_html(args):
             gf_norm[(ch2, a2.lower())] = v
         for chain in [c.strip() for c in args.mcap_chains.split(",") if c.strip()]:
             try:
-                rows = fetch_top_mcap(chain, args.api_key, 30)
+                rows = fetch_top_mcap(chain, args.api_key, 60)
             except Exception as e:
                 log(f"[warn] mcap {chain}: {e}")
                 continue
@@ -1209,6 +1216,10 @@ def cmd_html(args):
                 addr = dig(t, "address", "token_address", default="")
                 if not addr:
                     continue
+                sym_u = str(dig(t, "symbol", default="?")).upper()
+                base = sym_u[:-1] if sym_u.endswith("B") and len(sym_u) > 1 else sym_u
+                if sym_u in rwa_block or base in rwa_block:
+                    continue  # saham/ETF/commodity tokenized (mis. NVDA, SPYB) — bukan target
                 out_rows.append({"symbol": dig(t, "symbol", default="?"), "address": addr,
                                  "mcap": float(dig(t, "market_cap", "usd_market_cap", default=0) or 0),
                                  "liq": float(dig(t, "liquidity", default=0) or 0),
@@ -1216,6 +1227,8 @@ def cmd_html(args):
                                  "smart": int(float(dig(t, "smart_degen_count", "renowned_count", default=0) or 0)),
                                  "chg1h": float(dig(t, "price_change_percent1h", default=0) or 0),
                                  **mcap_verdict(t, gf_norm.get((chain, addr.lower())))})
+                if len(out_rows) >= 30:
+                    break
             mcap[chain] = out_rows
     payload = {
         "generated": now_iso(),
