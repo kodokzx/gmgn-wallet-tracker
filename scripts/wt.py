@@ -982,6 +982,15 @@ header{padding:20px 22px 8px}h1{margin:0;font-size:20px}h1 small{color:var(--mut
 .card b{display:block;font-size:20px}.card span{color:var(--mut);font-size:11px;text-transform:uppercase}
 .chainbar{padding:0 22px 6px}
 .chainbar .chip{background:var(--card);font-weight:600;text-transform:uppercase}
+.chainbar .chip[data-ch="robinhood"]{border-color:var(--blu);color:var(--blu)}
+.cbtn{cursor:pointer;border:1px solid var(--line);border-radius:6px;padding:1px 8px;background:#0a0e14;color:var(--tx);font-size:12px}
+.tog{cursor:pointer;color:var(--blu);font-size:12px;border:1px solid var(--line);border-radius:6px;padding:2px 10px;background:transparent;float:right}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.78);display:none;z-index:50;align-items:center;justify-content:center}
+.modal.on{display:flex}
+.mbox{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;width:min(880px,94vw)}
+.mhead{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+.mhead b{font-size:16px}
+canvas{width:100%;height:340px;display:block;background:#0a0e14;border-radius:8px}
 section{padding:8px 22px 18px}h2{font-size:15px;margin:18px 0 8px;color:var(--blu)}
 table{border-collapse:collapse;width:100%;font-size:13px}
 th{color:var(--mut);text-align:left;font-weight:600;font-size:11px;text-transform:uppercase;
@@ -1019,9 +1028,10 @@ padding:7px 12px;width:280px;font-size:13px}
 <section><h2>Radar Token <span class="mut">(alert token, dedup — terbaru per token; klik × di header utk sembunyikan kolom)</span></h2>
 <div class="tray" id="radarTray"></div>
 <div style="overflow-x:auto"><table id="radar"></table></div></section>
-<section><h2>Arus Grup Perilaku A/B/C/D <span class="mut">(kumulatif dari feed smart money)</span></h2>
-<div class="legend"><i class="gA"></i>A-iklan(KOL) <i class="gB"></i>B-smart-cepat <i class="gC"></i>C-akumulasi <i class="gD"></i>D-fomo — hijau/merah = net beli/jual</div>
-<div id="gflow"></div></section>
+<section><h2>Arus Grup Perilaku A/B/C/D <span class="mut">(kumulatif dari feed smart money)</span>
+<button class="tog" id="gflowTog">tampilkan ▼</button></h2>
+<div id="gflowBody" style="display:none"><div class="legend"><i class="gA"></i>A-iklan(KOL) <i class="gB"></i>B-smart-cepat <i class="gC"></i>C-akumulasi <i class="gD"></i>D-fomo — hijau/merah = net beli/jual</div>
+<div id="gflow"></div></div></section>
 <section><h2>Feed Alert</h2>
 <div id="feedfilters"><span class="chip on" data-f="SEMUA">semua</span><span class="chip" data-f="SHIFT">SHIFT</span>
 <span class="chip" data-f="TOKEN">token</span><span class="chip" data-f="TRADE">trade</span>
@@ -1033,6 +1043,13 @@ padding:7px 12px;width:280px;font-size:13px}
 <div style="overflow-x:auto"><table id="wlist"></table></div></section>
 <section><h2>Snapshot Grup per Token <span class="mut">(cmd: wt.py groups)</span></h2>
 <div id="gsnap" class="mut"></div></section>
+<div class="modal" id="chartModal"><div class="mbox">
+<div class="mhead"><b id="cTitle"></b><span class="mut" id="cSub"></span>
+<span style="margin-left:auto"><a class="a" id="cDex" target="_blank">DexScreener ↗</a>
+<button class="cbtn" onclick="document.getElementById('chartModal').classList.remove('on')">✕ tutup</button></span></div>
+<canvas id="cCanvas" width="860" height="340"></canvas>
+<div class="mut" id="cNote" style="font-size:11px;margin-top:6px"></div>
+</div></div>
 <script>const DATA=__DATA__;</script>
 <script>
 const $=s=>document.querySelector(s),esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -1054,21 +1071,30 @@ rad.map(a=>{const d=a.data;return `<tr><td class="score">${d.score||"?"}</td>
 <td><b>${esc(d.symbol)}</b></td><td>${esc(a.chain||d.chain)}</td><td>${usd(d.market_cap_usd)}</td>
 <td>${usd(d.liquidity_usd)}</td><td>${d.holder_count||0}</td><td>${d.smart_degen_count||0}</td>
 <td class="${(d.change_1h_pct||0)>=0?"up":"dn"}">${d.change_1h_pct||0}%</td><td class="mut">${d.age_hours??"?"}h</td>
-<td><a class="a" href="${link(d.chain||a.chain,d.address)}" target="_blank">chart ↗</a></td></tr>`}).join("")||"<tr><td class='mut'>tidak ada token utk filter ini</td></tr>";
+<td><button class="cbtn" onclick='openChart("${d.chain||a.chain}","${d.address}","${esc(d.symbol)}")'>📈 chart</button>
+<a class="a" href="${link(d.chain||a.chain,d.address)}" target="_blank">dex ↗</a></td></tr>`}).join("")||"<tr><td class='mut'>tidak ada token utk filter ini</td></tr>";
 hideable(document.getElementById("radar"),"radarTray");}
 function renderGflow(){
 const gf=DATA.gflow||{};
-const maxv=Math.max(1,...Object.values(gf).flatMap(o=>Object.values(o).slice(1).map(Number).map(Math.abs)));
-$("#gflow").innerHTML=Object.entries(gf).filter(([k])=>fchain==="SEMUA"||k.split(":")[0]===fchain).map(([k,o])=>{const[chain,addr]=k.split(":");
+const sz=o=>Math.abs(+o.A||0)+Math.abs(+o.B||0)+Math.abs(+o.C||0)+Math.abs(+o.D||0);
+let items=Object.entries(gf).filter(([k])=>fchain==="SEMUA"||k.split(":")[0]===fchain);
+items.sort((a,b)=>sz(b[1])-sz(a[1]));
+const maxv=Math.max(1,...items.flatMap(([,o])=>Object.values(o).slice(1).map(Number).map(Math.abs)));
+const shown=gflowAll?items:items.slice(0,12);
+$("#gflow").innerHTML=shown.map(([k,o])=>{const[chain,addr]=k.split(":");
 const mx=Math.max(1,...["A","B","C","D"].map(g=>Math.abs(+o[g]||0)));
 return `<div class="item"><b>${esc(o.sym||"?")}</b> <span class="mut">${esc(chain)}</span>
-<span style="float:right"><a class="a" href="${link(chain,addr)}" target="_blank">chart ↗</a></span>
+<span style="float:right"><button class="cbtn" onclick='openChart("${chain}","${addr}","${esc(o.sym||"?")}")'>📈 chart</button>
+<a class="a" href="${link(chain,addr)}" target="_blank">dex ↗</a></span>
 ${["A","B","C","D"].map(g=>{const v=+o[g]||0,pct=Math.abs(v)/mx*46;
 return `<div style="display:flex;align-items:center;gap:6px;margin:3px 0"><span class="mut" style="width:14px">${g}</span>
 <div style="width:47%;background:#0a0e14;border-radius:5px;position:relative;height:11px">
 <div class="bar g${g}" style="width:${pct}%;${v<0?"background:var(--red)":""}"></div></div>
 <span class="${v>=0?"up":"dn"}">${v>=0?"+":""}${usd(v)}</span></div>`}).join("")}</div>`}).join("")
++(items.length>12?`<span class="chip" onclick="gflowAll=!gflowAll;renderGflow()">${gflowAll?"▲ ringkas lagi":"▼ tampilkan semua ("+items.length+" token)"}</span>`:"")
 ||"<i class='mut'>belum ada arus grup terekam utk filter ini</i>";}
+$("#gflowTog").onclick=()=>{const b=$("#gflowBody");const on=b.style.display==="none";
+b.style.display=on?"":"none";$("#gflowTog").textContent=on?"sembunyikan ▲":"tampilkan ▼";if(on)renderGflow();};
 let ftype="SEMUA";
 document.querySelectorAll("#feedfilters .chip").forEach(ch=>ch.onclick=()=>{document.querySelectorAll("#feedfilters .chip").forEach(c=>c.classList.remove("on"));ch.classList.add("on");ftype=ch.dataset.f;renderFeed()});
 $("#q").oninput=renderFeed;
@@ -1113,7 +1139,57 @@ function setChain(c){fchain=c;
  document.querySelectorAll("#chainbar .chip").forEach(ch=>ch.classList.toggle("on",ch.dataset.ch===c));
  renderRadar();renderGflow();renderFeed();renderWlist();renderGsnap();}
 document.querySelectorAll("#chainbar .chip").forEach(ch=>ch.onclick=()=>setChain(ch.dataset.ch));
-setChain("SEMUA");
+function openChart(chain,addr,sym){
+ const m=$("#chartModal");m.classList.add("on");
+ $("#cTitle").textContent=(sym||"?")+" — "+chain;
+ $("#cSub").textContent="";
+ $("#cDex").href=link(chain,addr);
+ $("#cNote").textContent="memuat candle 15m dari GeckoTerminal…";
+ const cv=$("#cCanvas"),ctx=cv.getContext("2d");ctx.clearRect(0,0,cv.width,cv.height);
+ fetch("https://api.geckoterminal.com/api/v2/networks/"+chain+"/tokens/"+addr+"/pools")
+ .then(r=>r.json()).then(pd=>{
+  const pools=pd.data||[];if(!pools.length)throw 0;
+  const best=pools.map(p=>({p,v:+((p.attributes||{}).reserve_in_usd||0)})).sort((x,y)=>y.v-x.v)[0].p;
+  const pid=best.id.replace(/^[^_]+_/,"");
+  return fetch("https://api.geckoterminal.com/api/v2/networks/"+chain+"/pools/"+pid+"/ohlcv/minute?aggregate=15&limit=100").then(r=>r.json());
+ }).then(od=>{
+  const cl=((od.data||{}).attributes||{}).ohlcv_list||[];
+  if(!cl.length)throw 0;
+  $("#cSub").textContent=cl.length+" candle 15m";
+  $("#cNote").textContent="hijau=naik, merah=turun · batang bawah = volume USD · sumber: GeckoTerminal (publik, tanpa API key)";
+  drawCandles(cv,cl);
+ }).catch(()=>{
+  $("#cNote").textContent="Gagal memuat chart dari GeckoTerminal — pakai link DexScreener ↗ di atas.";
+ });}
+function drawCandles(cv,cl){
+ const ctx=cv.getContext("2d"),W=cv.width,H=cv.height;
+ ctx.clearRect(0,0,W,H);
+ const data=cl.slice().sort((a,b)=>a[0]-b[0]);
+ const hi=Math.max(...data.map(c=>c[2])),lo=Math.min(...data.map(c=>c[3]));
+ const vmax=Math.max(...data.map(c=>c[5]))||1;
+ const padR=70,padB=48,padT=10;
+ const cw=(W-padR)/data.length,ph=H-padB-padT;
+ const y=p=>padT+(hi-p)/((hi-lo)||1)*ph;
+ ctx.strokeStyle="#21262d";ctx.fillStyle="#8b949e";ctx.font="10px monospace";
+ for(let i=0;i<=4;i++){const p=lo+(hi-lo)*i/4,yy=y(p);
+  ctx.beginPath();ctx.moveTo(0,yy);ctx.lineTo(W-padR,yy);ctx.stroke();
+  ctx.fillText(p>=0.001?p.toFixed(4):p.toPrecision(3),W-padR+4,yy+3);}
+ const step=Math.ceil(data.length/6);
+ data.forEach((c,i)=>{const x=i*cw+cw/2;
+  const up=c[4]>=c[1];
+  ctx.strokeStyle=up?"#3fb950":"#f85149";
+  ctx.beginPath();ctx.moveTo(x,y(c[2]));ctx.lineTo(x,y(c[3]));ctx.stroke();
+  const bw=Math.max(1,cw*0.6);
+  const top=y(Math.max(c[1],c[4])),bot=y(Math.min(c[1],c[4]));
+  ctx.fillStyle=up?"#3fb950":"#f85149";
+  ctx.fillRect(x-bw/2,top,bw,Math.max(1,bot-top));
+  const vh=(c[5]/vmax)*(H-padB-Math.max(40,ph*0.72));
+  ctx.globalAlpha=0.45;ctx.fillRect(x-bw/2,H-padB-vh,bw,vh);ctx.globalAlpha=1;
+  if(i%step===0){const d=new Date(c[0]*1000);
+   ctx.fillStyle="#8b949e";
+   ctx.fillText(d.getHours()+":"+String(d.getMinutes()).padStart(2,"0"),x-11,H-padB+14);}});
+}
+setChain(CHAINS.includes("robinhood")?"robinhood":"SEMUA");
 function hideable(tbl,trayId){
   const tray=document.getElementById(trayId);
   const hdr=tbl.rows[0]; if(!hdr)return;
