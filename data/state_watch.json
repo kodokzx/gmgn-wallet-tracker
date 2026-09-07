@@ -1,10 +1,10 @@
 {
- "sm:robinhood": 1788776013,
- "sm:bsc": 1788776014,
- "sm:sol": 1788776014,
- "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1788760197,
+ "sm:robinhood": 1788796347,
+ "sm:bsc": 1788796348,
+ "sm:sol": 1788796347,
+ "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1788791684,
  "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1788763192,
- "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1788731943,
+ "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1788796130,
  "initialized": true,
  "gflow": {
   "robinhood:0x0c5453edca198471fc39edb9156d9627caae04bf": {
@@ -122,7 +122,7 @@
   "sol:So11111111111111111111111111111111111111112": {
    "sym": "WSOL",
    "A": -683.3136210000001,
-   "B": -4230.9789900000005,
+   "B": -3151.7024240000005,
    "C": 0.0,
    "D": 0.0
   },
@@ -192,7 +192,7 @@
   "robinhood:0x2e8c31162b855a2ffa90f6f8634643ad6f111e18": {
    "sym": "AI",
    "A": 0.0,
-   "B": 29155.471237693946,
+   "B": 30135.266771952283,
    "C": 0.0,
    "D": 0.0
   },
@@ -241,7 +241,7 @@
   "sol:9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump": {
    "sym": "ANSEM",
    "A": 0.0,
-   "B": -4247.75916846014,
+   "B": 860.2949725126603,
    "C": 0.0,
    "D": 0.0
   },
@@ -3205,6 +3205,55 @@
    "B": 515.7513895134964,
    "C": 0.0,
    "D": 0.0
+  },
+  "robinhood:0x4c31083d1fc0135e8ccbebab46308625cb074a4c": {
+   "sym": "ELONMUSK",
+   "A": 0.0,
+   "B": 9.99999883788405e-07,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xacef2e09adb47ad6abebad9ff06689e60615c2b6": {
+   "sym": "INDA",
+   "A": 0.0,
+   "B": -3428.7338365730516,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x753b0f74502d3d66c278a563cb04503154e6eb0d": {
+   "sym": "HUSDP",
+   "A": 0.0,
+   "B": -156.43777476622256,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x3689f99bf5a40a1f4f53ef7f16ddcdf5f7da7777": {
+   "sym": "MORALS",
+   "A": 0.0,
+   "B": 720.17591184,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:DoGEV7LASBkQbibMc5k5vKnTZoMg423GpJ5QtJEGfm7R": {
+   "sym": "DOGE",
+   "A": 0.0,
+   "B": -1079.276566,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:BGbzLQAF4AGou24pZCRVYdAb1yCmobKAPFPtb5zfs6My": {
+   "sym": "ELONCOIN",
+   "A": 0.0,
+   "B": -1129.2914411721235,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:2GXywETceXjU7LQpKH1DU1MTUUz2yCNwumuffN7csHw7": {
+   "sym": "honter",
+   "A": 0.0,
+   "B": -242.12974236820003,
+   "C": 0.0,
+   "D": 0.0
   }
  },
  "gflow_prev": {
@@ -3306,7 +3355,7 @@
   },
   "sol:So11111111111111111111111111111111111111112": {
    "A": -683.3136210000001,
-   "B": -4230.9789900000005,
+   "B": -3151.7024240000005,
    "C": 0.0,
    "D": 0.0
   },
@@ -3366,7 +3415,7 @@
   },
   "robinhood:0x2e8c31162b855a2ffa90f6f8634643ad6f111e18": {
    "A": 0.0,
-   "B": 29155.471237693946,
+   "B": 30135.266771952283,
    "C": 0.0,
    "D": 0.0
   },
@@ -3408,7 +3457,7 @@
   },
   "sol:9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump": {
    "A": 0.0,
-   "B": -4247.75916846014,
+   "B": 860.2949725126603,
    "C": 0.0,
    "D": 0.0
   },
@@ -5947,6 +5996,48 @@
   "sol:ykBLS2LysxUmZzn9NJncFkjxvb6tWA2Z8BwaJj2aQ2c": {
    "A": 0.0,
    "B": 515.7513895134964,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x4c31083d1fc0135e8ccbebab46308625cb074a4c": {
+   "A": 0.0,
+   "B": 9.99999883788405e-07,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xacef2e09adb47ad6abebad9ff06689e60615c2b6": {
+   "A": 0.0,
+   "B": -3428.7338365730516,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x753b0f74502d3d66c278a563cb04503154e6eb0d": {
+   "A": 0.0,
+   "B": -156.43777476622256,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x3689f99bf5a40a1f4f53ef7f16ddcdf5f7da7777": {
+   "A": 0.0,
+   "B": 720.17591184,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:DoGEV7LASBkQbibMc5k5vKnTZoMg423GpJ5QtJEGfm7R": {
+   "A": 0.0,
+   "B": -1079.276566,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:BGbzLQAF4AGou24pZCRVYdAb1yCmobKAPFPtb5zfs6My": {
+   "A": 0.0,
+   "B": -1129.2914411721235,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:2GXywETceXjU7LQpKH1DU1MTUUz2yCNwumuffN7csHw7": {
+   "A": 0.0,
+   "B": -242.12974236820003,
    "C": 0.0,
    "D": 0.0
   }
