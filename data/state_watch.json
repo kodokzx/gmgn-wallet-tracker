@@ -1,10 +1,10 @@
 {
- "sm:robinhood": 1788859121,
- "sm:bsc": 1788859124,
- "sm:sol": 1788859124,
+ "sm:robinhood": 1788874915,
+ "sm:bsc": 1788874916,
+ "sm:sol": 1788874912,
  "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1788832599,
  "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1788763192,
- "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1788813291,
+ "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1788874150,
  "initialized": true,
  "gflow": {
   "robinhood:0x0c5453edca198471fc39edb9156d9627caae04bf": {
@@ -1095,7 +1095,7 @@
   "sol:2pouN3by7twkiZGy5aEKYUpf78ALDpKRTNu2WsQkpkqt": {
    "sym": "BUTT",
    "A": 0.0,
-   "B": -3609.517938419774,
+   "B": -4172.217827258674,
    "C": 0.0,
    "D": 0.0
   },
@@ -3534,6 +3534,41 @@
    "B": -998.059551692,
    "C": 0.0,
    "D": 0.0
+  },
+  "robinhood:0xdf0992e440dd0be65bd8439b609d6d4366bf1cb5": {
+   "sym": "CRCL",
+   "A": 0.0,
+   "B": -970.5085466399198,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x649792631ddbc52551fd765a17382b4d375b9b78": {
+   "sym": "WHEEL",
+   "A": 0.0,
+   "B": -1296.2149585427746,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xf4eaec43e22251547fbd2cb2f153e041c3aa4ea6": {
+   "sym": "TEST",
+   "A": 0.0,
+   "B": -1805.1762378716744,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xeae1cb74621eef88babac747c6f4511fb125d031": {
+   "sym": "Fuggler",
+   "A": 0.0,
+   "B": 1.0000001111620804e-06,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x62cd5cd9d354a2a50affe9efa21c8918b9640a5b": {
+   "sym": "LDX",
+   "A": 0.0,
+   "B": -547.3969149073855,
+   "C": 0.0,
+   "D": 0.0
   }
  },
  "gflow_prev": {
@@ -4469,7 +4504,7 @@
   },
   "sol:2pouN3by7twkiZGy5aEKYUpf78ALDpKRTNu2WsQkpkqt": {
    "A": 0.0,
-   "B": -3609.517938419774,
+   "B": -4172.217827258674,
    "C": 0.0,
    "D": 0.0
   },
@@ -6558,6 +6593,36 @@
   "sol:FSS6412bQYgcpF5sKwhXq1cv9TgktHYsXJnCzFahtxRK": {
    "A": 0.0,
    "B": -998.059551692,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xdf0992e440dd0be65bd8439b609d6d4366bf1cb5": {
+   "A": 0.0,
+   "B": -970.5085466399198,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x649792631ddbc52551fd765a17382b4d375b9b78": {
+   "A": 0.0,
+   "B": -1296.2149585427746,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xf4eaec43e22251547fbd2cb2f153e041c3aa4ea6": {
+   "A": 0.0,
+   "B": -1805.1762378716744,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xeae1cb74621eef88babac747c6f4511fb125d031": {
+   "A": 0.0,
+   "B": 1.0000001111620804e-06,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x62cd5cd9d354a2a50affe9efa21c8918b9640a5b": {
+   "A": 0.0,
+   "B": -547.3969149073855,
    "C": 0.0,
    "D": 0.0
   }
