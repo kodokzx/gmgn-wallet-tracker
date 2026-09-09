@@ -1,8 +1,8 @@
 {
- "sm:robinhood": 1788930687,
- "sm:bsc": 1788930690,
- "sm:sol": 1788930690,
- "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1788930681,
+ "sm:robinhood": 1788947083,
+ "sm:bsc": 1788947087,
+ "sm:sol": 1788947088,
+ "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1788934839,
  "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1788908481,
  "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1788912187,
  "initialized": true,
@@ -521,7 +521,7 @@
   "sol:7hGgx1VtNTj193fFXXuMEkp1MRV6JbWYgMBhHRYxaxu2": {
    "sym": "FRIES",
    "A": 0.0,
-   "B": -1061.5382192112947,
+   "B": -1727.2276709706819,
    "C": 0.0,
    "D": 0.0
   },
@@ -1172,7 +1172,7 @@
   "bsc:0xc9d825e83aada475bd4d38c8ca984ed746277777": {
    "sym": "Stonks",
    "A": 0.0,
-   "B": 2025.100585790025,
+   "B": 1240.7293446701265,
    "C": 0.0,
    "D": 0.0
   },
@@ -2243,7 +2243,7 @@
   "sol:XsqE9cRRpzxcGKDXj1BJ7Xmg4GRhZoyY1KpmGSxAWT2": {
    "sym": "MCDx",
    "A": 0.0,
-   "B": 11.572939940040044,
+   "B": -646.31901153126,
    "C": 0.0,
    "D": 0.0
   },
@@ -3272,7 +3272,7 @@
   "robinhood:0x020bfc650a365f8bb26819deaabf3e21291018b4": {
    "sym": "CASHCAT",
    "A": 0.0,
-   "B": -634.9886152675012,
+   "B": -63068.70243416704,
    "C": 0.0,
    "D": 0.0
   },
@@ -3807,6 +3807,55 @@
    "B": -1611.909761,
    "C": 0.0,
    "D": 0.0
+  },
+  "robinhood:0xd5f3879160bc7c32ebb4dc785f8a4f505888de68": {
+   "sym": "QQQ",
+   "A": 0.0,
+   "B": -9976.315992996499,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xd9d674b04a72affe00e06385535eaac10b988fca": {
+   "sym": "DRILL",
+   "A": 0.0,
+   "B": -1167.4707847447544,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x0d257ca40d40090be60c2d2ed5bb3535392838cc": {
+   "sym": "HOOD10",
+   "A": 0.0,
+   "B": -2947.6570476922734,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x530348eee936889afc9cc7552fb726ca2b9d3a5d": {
+   "sym": "WEFT",
+   "A": 0.0,
+   "B": -538.1602309932479,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:EUUeUMWxMcsdutaCod1zPiGxQFkdr9g3Ya1Zz3bLF4ui": {
+   "sym": "GPU",
+   "A": 0.0,
+   "B": -636.83210167047,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:uuxWwFL6G9UjiYRZvWxJrSB18V1oKBgYrmueamREK57": {
+   "sym": "HONTER",
+   "A": 0.0,
+   "B": -859.77220462848,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:B41hNVtenQvhF9zSuwcW3PjMCdrjm5WELiaztd14pump": {
+   "sym": "M&M",
+   "A": 0.0,
+   "B": 1314.755482391,
+   "C": 0.0,
+   "D": 0.0
   }
  },
  "gflow_prev": {
@@ -4250,7 +4299,7 @@
   },
   "sol:7hGgx1VtNTj193fFXXuMEkp1MRV6JbWYgMBhHRYxaxu2": {
    "A": 0.0,
-   "B": -1061.5382192112947,
+   "B": -1727.2276709706819,
    "C": 0.0,
    "D": 0.0
   },
@@ -4808,7 +4857,7 @@
   },
   "bsc:0xc9d825e83aada475bd4d38c8ca984ed746277777": {
    "A": 0.0,
-   "B": 2025.100585790025,
+   "B": 1240.7293446701265,
    "C": 0.0,
    "D": 0.0
   },
@@ -5726,7 +5775,7 @@
   },
   "sol:XsqE9cRRpzxcGKDXj1BJ7Xmg4GRhZoyY1KpmGSxAWT2": {
    "A": 0.0,
-   "B": 11.572939940040044,
+   "B": -646.31901153126,
    "C": 0.0,
    "D": 0.0
   },
@@ -6608,7 +6657,7 @@
   },
   "robinhood:0x020bfc650a365f8bb26819deaabf3e21291018b4": {
    "A": 0.0,
-   "B": -634.9886152675012,
+   "B": -63068.70243416704,
    "C": 0.0,
    "D": 0.0
   },
@@ -7065,6 +7114,48 @@
   "sol:Ax5dAamJPeuaLpFUzs9FdcpoUhHDcxyjPzxCJQidjups": {
    "A": 0.0,
    "B": -1611.909761,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xd5f3879160bc7c32ebb4dc785f8a4f505888de68": {
+   "A": 0.0,
+   "B": -9976.315992996499,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xd9d674b04a72affe00e06385535eaac10b988fca": {
+   "A": 0.0,
+   "B": -1167.4707847447544,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x0d257ca40d40090be60c2d2ed5bb3535392838cc": {
+   "A": 0.0,
+   "B": -2947.6570476922734,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x530348eee936889afc9cc7552fb726ca2b9d3a5d": {
+   "A": 0.0,
+   "B": -538.1602309932479,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:EUUeUMWxMcsdutaCod1zPiGxQFkdr9g3Ya1Zz3bLF4ui": {
+   "A": 0.0,
+   "B": -636.83210167047,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:uuxWwFL6G9UjiYRZvWxJrSB18V1oKBgYrmueamREK57": {
+   "A": 0.0,
+   "B": -859.77220462848,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:B41hNVtenQvhF9zSuwcW3PjMCdrjm5WELiaztd14pump": {
+   "A": 0.0,
+   "B": 1314.755482391,
    "C": 0.0,
    "D": 0.0
   }
