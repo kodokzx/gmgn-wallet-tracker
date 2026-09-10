@@ -1,10 +1,10 @@
 {
- "sm:robinhood": 1789060370,
- "sm:bsc": 1789060374,
- "sm:sol": 1789060369,
- "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1789060034,
- "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1789060339,
- "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1789059221,
+ "sm:robinhood": 1789069321,
+ "sm:bsc": 1789069317,
+ "sm:sol": 1789069323,
+ "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1789067999,
+ "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1789067940,
+ "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1789062689,
  "initialized": true,
  "gflow": {
   "robinhood:0x0c5453edca198471fc39edb9156d9627caae04bf": {
@@ -122,7 +122,7 @@
   "sol:So11111111111111111111111111111111111111112": {
    "sym": "WSOL",
    "A": -683.3136210000001,
-   "B": -3433.877043000001,
+   "B": -4032.723504000001,
    "C": 0.0,
    "D": 0.0
   },
@@ -605,7 +605,7 @@
   "robinhood:0x385f4f8ae47651ce5f58f5265395a669f8281e18": {
    "sym": "MEME",
    "A": 0.0,
-   "B": 98649.62167298679,
+   "B": 97885.5180192426,
    "C": 0.0,
    "D": 0.0
   },
@@ -4119,7 +4119,7 @@
   "bsc:0xfa53228bdf886f0717cfc2e3646a982ca43d7777": {
    "sym": "MONKI",
    "A": 0.0,
-   "B": -468.82157686201447,
+   "B": -630.0770468510193,
    "C": 0.0,
    "D": 0.0
   },
@@ -4169,6 +4169,69 @@
    "sym": "BADDOG",
    "A": 0.0,
    "B": 592.0591287779,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea": {
+   "sym": "SPCX",
+   "A": 0.0,
+   "B": -1500.8936524521407,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x2ad71d0eeea14c5af2b26be96d2917f45bd66127": {
+   "sym": "COLLECTIBLE",
+   "A": 0.0,
+   "B": -1056.3736843179267,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x1b241f52e1eb8aa9c890c743b2b83fb0729d3537": {
+   "sym": "SHELL",
+   "A": 0.0,
+   "B": 1197.231651,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3385469427fb90c296394998c250ed3fbe8e18e1": {
+   "sym": "RocketFrog",
+   "A": 0.0,
+   "B": -514.8910001708954,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x7a492b0a2d630b94791af846c1842db9e623420c": {
+   "sym": "MARIO",
+   "A": 0.0,
+   "B": -575.4870445323672,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh": {
+   "sym": "WBTC",
+   "A": 0.0,
+   "B": -604.2243607261,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:EvHUJX4S7fjvLynuxny8Z9TuSHgLUJroDQqjEvUapump": {
+   "sym": "MALONE",
+   "A": 0.0,
+   "B": -612.070480860699,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:2QMVV1tYsNUXu6AdAEdJbJhkYc4pwFqNPEZxF3vX9AVu": {
+   "sym": "COLLECTIBLE",
+   "A": 0.0,
+   "B": 593.3666839511593,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Xsf9mBktVB9BSU5kf4nHxPq5hCBJ2j2ui3ecFGxPRGc": {
+   "sym": "GMEx",
+   "A": 0.0,
+   "B": 598.846461,
    "C": 0.0,
    "D": 0.0
   }
@@ -4272,7 +4335,7 @@
   },
   "sol:So11111111111111111111111111111111111111112": {
    "A": -683.3136210000001,
-   "B": -3433.877043000001,
+   "B": -4032.723504000001,
    "C": 0.0,
    "D": 0.0
   },
@@ -4686,7 +4749,7 @@
   },
   "robinhood:0x385f4f8ae47651ce5f58f5265395a669f8281e18": {
    "A": 0.0,
-   "B": 98649.62167298679,
+   "B": 97885.5180192426,
    "C": 0.0,
    "D": 0.0
   },
@@ -7698,7 +7761,7 @@
   },
   "bsc:0xfa53228bdf886f0717cfc2e3646a982ca43d7777": {
    "A": 0.0,
-   "B": -468.82157686201447,
+   "B": -630.0770468510193,
    "C": 0.0,
    "D": 0.0
   },
@@ -7741,6 +7804,60 @@
   "sol:G3iwSQEroy2N2oP4Smo6NoJT9m4PWkyrvRGW5VRdpump": {
    "A": 0.0,
    "B": 592.0591287779,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea": {
+   "A": 0.0,
+   "B": -1500.8936524521407,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x2ad71d0eeea14c5af2b26be96d2917f45bd66127": {
+   "A": 0.0,
+   "B": -1056.3736843179267,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x1b241f52e1eb8aa9c890c743b2b83fb0729d3537": {
+   "A": 0.0,
+   "B": 1197.231651,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3385469427fb90c296394998c250ed3fbe8e18e1": {
+   "A": 0.0,
+   "B": -514.8910001708954,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x7a492b0a2d630b94791af846c1842db9e623420c": {
+   "A": 0.0,
+   "B": -575.4870445323672,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh": {
+   "A": 0.0,
+   "B": -604.2243607261,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:EvHUJX4S7fjvLynuxny8Z9TuSHgLUJroDQqjEvUapump": {
+   "A": 0.0,
+   "B": -612.070480860699,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:2QMVV1tYsNUXu6AdAEdJbJhkYc4pwFqNPEZxF3vX9AVu": {
+   "A": 0.0,
+   "B": 593.3666839511593,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Xsf9mBktVB9BSU5kf4nHxPq5hCBJ2j2ui3ecFGxPRGc": {
+   "A": 0.0,
+   "B": 598.846461,
    "C": 0.0,
    "D": 0.0
   }
