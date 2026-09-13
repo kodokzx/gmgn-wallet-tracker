@@ -1,10 +1,10 @@
 {
- "sm:robinhood": 1789293347,
- "sm:bsc": 1789293326,
- "sm:sol": 1789293348,
- "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1789291772,
- "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1789228335,
- "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1789235870,
+ "sm:robinhood": 1789308114,
+ "sm:bsc": 1789308107,
+ "sm:sol": 1789308112,
+ "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1789303765,
+ "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1789308108,
+ "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1789302625,
  "initialized": true,
  "gflow": {
   "robinhood:0x0c5453edca198471fc39edb9156d9627caae04bf": {
@@ -4497,7 +4497,7 @@
   "robinhood:0xf1b266c11f68bc936f218ad20712c4feb3e61e18": {
    "sym": "OPEN",
    "A": 0.0,
-   "B": -3725.329688334287,
+   "B": -3003.6331472033644,
    "C": 0.0,
    "D": 0.0
   },
@@ -5093,6 +5093,69 @@
    "sym": "LOOP",
    "A": 0.0,
    "B": -919.06612852392,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x1537fee0675e85a9b3f01938a56c9e6ed6941e18": {
+   "sym": "LONGCAT",
+   "A": 0.0,
+   "B": -1516.3890206057404,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x978284a666b19c86c8a63bcebc3080069bf2b131": {
+   "sym": "Scooby-Doo",
+   "A": 0.0,
+   "B": 156.61941354727628,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x6245e67affa44a23077f0ea7f981a8dc743a0c47": {
+   "sym": "FRONG",
+   "A": 0.0,
+   "B": 4172.074205279845,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x05a3d1cd21d0c88145e82600e62e7e496e0f222b": {
+   "sym": "AMC",
+   "A": 0.0,
+   "B": -1059.3577652958877,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xf274b70bef1ce31f08d3bd4105eccb9af9807777": {
+   "sym": "17",
+   "A": 0.0,
+   "B": 5.95926552017977,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x9990e4a79be59857207587aecc8fb31853a92742": {
+   "sym": "Daram",
+   "A": 0.0,
+   "B": 1221.0329673940878,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xcd652adcf9c986cb9ce7b1322bfc25b38ec37777": {
+   "sym": "ENGINE",
+   "A": 0.0,
+   "B": 565.5484229135507,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Xs2yquAgsHByNzx68WJC55WHjHBvG9JsMB7CWjTLyPy": {
+   "sym": "DFDVx",
+   "A": 0.0,
+   "B": -524.76047872508,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:4xSfWrG9VkyNbnCNvB6opKEex2ebXmCZCiied84fZisB": {
+   "sym": "MAXI",
+   "A": 0.0,
+   "B": -530.262559421,
    "C": 0.0,
    "D": 0.0
   }
@@ -8946,7 +9009,7 @@
   },
   "robinhood:0xf1b266c11f68bc936f218ad20712c4feb3e61e18": {
    "A": 0.0,
-   "B": -3725.329688334287,
+   "B": -3003.6331472033644,
    "C": 0.0,
    "D": 0.0
   },
@@ -9457,6 +9520,60 @@
   "sol:HunmXDXMNQYVoDnUL6PNnSYEtFaTZA2WzGh1HJTW7aoV": {
    "A": 0.0,
    "B": -919.06612852392,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x1537fee0675e85a9b3f01938a56c9e6ed6941e18": {
+   "A": 0.0,
+   "B": -1516.3890206057404,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x978284a666b19c86c8a63bcebc3080069bf2b131": {
+   "A": 0.0,
+   "B": 156.61941354727628,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x6245e67affa44a23077f0ea7f981a8dc743a0c47": {
+   "A": 0.0,
+   "B": 4172.074205279845,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x05a3d1cd21d0c88145e82600e62e7e496e0f222b": {
+   "A": 0.0,
+   "B": -1059.3577652958877,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xf274b70bef1ce31f08d3bd4105eccb9af9807777": {
+   "A": 0.0,
+   "B": 5.95926552017977,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x9990e4a79be59857207587aecc8fb31853a92742": {
+   "A": 0.0,
+   "B": 1221.0329673940878,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xcd652adcf9c986cb9ce7b1322bfc25b38ec37777": {
+   "A": 0.0,
+   "B": 565.5484229135507,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Xs2yquAgsHByNzx68WJC55WHjHBvG9JsMB7CWjTLyPy": {
+   "A": 0.0,
+   "B": -524.76047872508,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:4xSfWrG9VkyNbnCNvB6opKEex2ebXmCZCiied84fZisB": {
+   "A": 0.0,
+   "B": -530.262559421,
    "C": 0.0,
    "D": 0.0
   }
