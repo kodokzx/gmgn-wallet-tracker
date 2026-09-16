@@ -1,10 +1,10 @@
 {
- "sm:robinhood": 1789541246,
- "sm:bsc": 1789541248,
- "sm:sol": 1789541251,
- "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1789336383,
+ "sm:robinhood": 1789560664,
+ "sm:bsc": 1789560651,
+ "sm:sol": 1789560666,
+ "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1789549149,
  "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1789504161,
- "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1789518430,
+ "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1789558762,
  "initialized": true,
  "gflow": {
   "robinhood:0x0c5453edca198471fc39edb9156d9627caae04bf": {
@@ -1886,7 +1886,7 @@
   "robinhood:0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec": {
    "sym": "NVDA",
    "A": 0.0,
-   "B": 1127.5295285122565,
+   "B": 5137.529528512257,
    "C": 0.0,
    "D": 0.0
   },
@@ -5900,6 +5900,27 @@
    "B": -512.249445446,
    "C": 0.0,
    "D": 0.0
+  },
+  "robinhood:0x70d3e2fc29fbd88e2c7f9ebd1f1e66055c52ed34": {
+   "sym": "PERSON",
+   "A": 0.0,
+   "B": -596.8793404939294,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xe85192c4a0584be5fe3b2acdc9af7d203a527777": {
+   "sym": "Dino",
+   "A": 0.0,
+   "B": -627.7628320571768,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:7GPGqsfVK1gG88GuVEetrsVyDiikABTsj9B9aHEHpump": {
+   "sym": "lockinu",
+   "A": 0.0,
+   "B": -1272.4806401097,
+   "C": 0.0,
+   "D": 0.0
   }
  },
  "gflow_prev": {
@@ -7513,7 +7534,7 @@
   },
   "robinhood:0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec": {
    "A": 0.0,
-   "B": 1127.5295285122565,
+   "B": 5137.529528512257,
    "C": 0.0,
    "D": 0.0
   },
@@ -10952,6 +10973,24 @@
   "sol:3R51JJP2TZosMTHszJxbB4KCshVL67LU4Q8cynVMpump": {
    "A": 0.0,
    "B": -512.249445446,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x70d3e2fc29fbd88e2c7f9ebd1f1e66055c52ed34": {
+   "A": 0.0,
+   "B": -596.8793404939294,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xe85192c4a0584be5fe3b2acdc9af7d203a527777": {
+   "A": 0.0,
+   "B": -627.7628320571768,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:7GPGqsfVK1gG88GuVEetrsVyDiikABTsj9B9aHEHpump": {
+   "A": 0.0,
+   "B": -1272.4806401097,
    "C": 0.0,
    "D": 0.0
   }
