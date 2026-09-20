@@ -1,10 +1,10 @@
 {
- "sm:robinhood": 1789904414,
- "sm:bsc": 1789904416,
- "sm:sol": 1789904417,
- "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1789859705,
+ "sm:robinhood": 1789915901,
+ "sm:bsc": 1789915900,
+ "sm:sol": 1789915903,
+ "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1789914477,
  "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1789859167,
- "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1789903460,
+ "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1789914194,
  "initialized": true,
  "gflow": {
   "robinhood:0x0c5453edca198471fc39edb9156d9627caae04bf": {
@@ -6723,7 +6723,7 @@
   "robinhood:0xdc45b71d7203c2e8baafc43a19bca0eb993bb54e": {
    "sym": "DARK",
    "A": 0.0,
-   "B": -96.59479068230348,
+   "B": 2433.7733923176966,
    "C": 0.0,
    "D": 0.0
   },
@@ -7123,6 +7123,34 @@
    "sym": "TIGRINO",
    "A": 0.0,
    "B": 1614.68124981436,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xd3e50506b55e0d6e337b7bfac76c725cc9661e18": {
+   "sym": "PREDICTOOR",
+   "A": 0.0,
+   "B": -41.831088431005185,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xda735f8b2930e74ec3ce0a9f329d364d6a182d1e": {
+   "sym": "DEGENIUS",
+   "A": 0.0,
+   "B": 29.02651290004269,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:RBLXDGRD64AtRamHMFVcjqne3Ar7NLWtFtYNtsrf1cE": {
+   "sym": "RBLX",
+   "A": 0.0,
+   "B": -500.542630728,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Hdky1Lz84WL7cPWVk7StFWrXVXvdXwPrAcfjJoUrpump": {
+   "sym": "ROBUX",
+   "A": 0.0,
+   "B": -500.542630728,
    "C": 0.0,
    "D": 0.0
   }
@@ -12884,7 +12912,7 @@
   },
   "robinhood:0xdc45b71d7203c2e8baafc43a19bca0eb993bb54e": {
    "A": 0.0,
-   "B": -96.59479068230348,
+   "B": 2433.7733923176966,
    "C": 0.0,
    "D": 0.0
   },
@@ -13227,6 +13255,30 @@
   "sol:91ryaCo5yGpYZM3bs6GUPs97VWJQj7RozBmqPULgpump": {
    "A": 0.0,
    "B": 1614.68124981436,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xd3e50506b55e0d6e337b7bfac76c725cc9661e18": {
+   "A": 0.0,
+   "B": -41.831088431005185,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xda735f8b2930e74ec3ce0a9f329d364d6a182d1e": {
+   "A": 0.0,
+   "B": 29.02651290004269,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:RBLXDGRD64AtRamHMFVcjqne3Ar7NLWtFtYNtsrf1cE": {
+   "A": 0.0,
+   "B": -500.542630728,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:Hdky1Lz84WL7cPWVk7StFWrXVXvdXwPrAcfjJoUrpump": {
+   "A": 0.0,
+   "B": -500.542630728,
    "C": 0.0,
    "D": 0.0
   }
