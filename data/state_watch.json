@@ -1,10 +1,10 @@
 {
- "sm:robinhood": 1789933616,
- "sm:bsc": 1789933589,
- "sm:sol": 1789933618,
+ "sm:robinhood": 1789941243,
+ "sm:bsc": 1789941229,
+ "sm:sol": 1789941245,
  "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1789918900,
  "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1789859167,
- "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1789929136,
+ "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1789940798,
  "initialized": true,
  "gflow": {
   "robinhood:0x0c5453edca198471fc39edb9156d9627caae04bf": {
@@ -122,7 +122,7 @@
   "sol:So11111111111111111111111111111111111111112": {
    "sym": "WSOL",
    "A": 1694.5645069999996,
-   "B": -10515.898223000002,
+   "B": -9176.725970000003,
    "C": 0.0,
    "D": 0.0
   },
@@ -3181,7 +3181,7 @@
   "bsc:0xbe9d156892e55e7154bcd3cb0fea677f9d3103e1": {
    "sym": "SPCXB",
    "A": 0.0,
-   "B": 1146.978190117309,
+   "B": 1681.477140032783,
    "C": 0.0,
    "D": 0.0
   },
@@ -7244,6 +7244,69 @@
    "B": 1624.056706168482,
    "C": 0.0,
    "D": 0.0
+  },
+  "robinhood:0x17ccdc9f23c38dd392decb9872bcd423e751934c": {
+   "sym": "MCAT",
+   "A": 0.0,
+   "B": -22.434281841632696,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xb18598be82a3ef5fce8c5b70d8fd77af51021e18": {
+   "sym": "GATSBY",
+   "A": 0.0,
+   "B": 1128.5574823124953,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x0818df5bfa6b6d9de1e6566ac6f492858d9c8266": {
+   "sym": "VMLN",
+   "A": 0.0,
+   "B": 617.5070443872,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x355c11826d33ac0cce61f4c1f71eef9363707777": {
+   "sym": "osbook",
+   "A": 0.0,
+   "B": -1859.7295240609888,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x7e722b5528fc3b07f71cee40c82b07d80a17ffff": {
+   "sym": "CAT",
+   "A": 0.0,
+   "B": -120.92527588231803,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:CCv5c2LVTQyDxyodV7rKQwYaZK5KkNJdQ7c6jsmgsnXz": {
+   "sym": "MAGATARD",
+   "A": 0.0,
+   "B": -1868.84100356908,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:CashcatZMRn4Jv8sPQZUSsbTLi2PcPe1ssqbHcnaJqSS": {
+   "sym": "CASHCAT",
+   "A": 0.0,
+   "B": -833.782867,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:BnE66Dt8WmraxtrSshj5mmMj6npVGCdwyJEJq9hFN5Vu": {
+   "sym": "ROBINHOOD",
+   "A": 0.0,
+   "B": -833.782867,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:8mxSFPqc9MxVhFknx7dSu69XApTyUC6MChYem8m8RkLx": {
+   "sym": "MCAT",
+   "A": 0.0,
+   "B": -505.38938600000006,
+   "C": 0.0,
+   "D": 0.0
   }
  },
  "gflow_prev": {
@@ -7345,7 +7408,7 @@
   },
   "sol:So11111111111111111111111111111111111111112": {
    "A": 1694.5645069999996,
-   "B": -10515.898223000002,
+   "B": -9176.725970000003,
    "C": 0.0,
    "D": 0.0
   },
@@ -9967,7 +10030,7 @@
   },
   "bsc:0xbe9d156892e55e7154bcd3cb0fea677f9d3103e1": {
    "A": 0.0,
-   "B": 1146.978190117309,
+   "B": 1681.477140032783,
    "C": 0.0,
    "D": 0.0
   },
@@ -13448,6 +13511,60 @@
   "bsc:0x4e6d2497045d238a274bd1e60486a4bb9e984e89": {
    "A": 0.0,
    "B": 1624.056706168482,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x17ccdc9f23c38dd392decb9872bcd423e751934c": {
+   "A": 0.0,
+   "B": -22.434281841632696,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xb18598be82a3ef5fce8c5b70d8fd77af51021e18": {
+   "A": 0.0,
+   "B": 1128.5574823124953,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x0818df5bfa6b6d9de1e6566ac6f492858d9c8266": {
+   "A": 0.0,
+   "B": 617.5070443872,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x355c11826d33ac0cce61f4c1f71eef9363707777": {
+   "A": 0.0,
+   "B": -1859.7295240609888,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x7e722b5528fc3b07f71cee40c82b07d80a17ffff": {
+   "A": 0.0,
+   "B": -120.92527588231803,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:CCv5c2LVTQyDxyodV7rKQwYaZK5KkNJdQ7c6jsmgsnXz": {
+   "A": 0.0,
+   "B": -1868.84100356908,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:CashcatZMRn4Jv8sPQZUSsbTLi2PcPe1ssqbHcnaJqSS": {
+   "A": 0.0,
+   "B": -833.782867,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:BnE66Dt8WmraxtrSshj5mmMj6npVGCdwyJEJq9hFN5Vu": {
+   "A": 0.0,
+   "B": -833.782867,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:8mxSFPqc9MxVhFknx7dSu69XApTyUC6MChYem8m8RkLx": {
+   "A": 0.0,
+   "B": -505.38938600000006,
    "C": 0.0,
    "D": 0.0
   }
