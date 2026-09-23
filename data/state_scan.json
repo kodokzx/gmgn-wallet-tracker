@@ -3258,10 +3258,10 @@
   "last": "2026-09-23 00:23:53 +0000"
  },
  "bsc:0x108876c3df3d893350e9b780563b3697aa3e7777": {
-  "holders": 3984,
+  "holders": 3828,
   "sd": 96,
-  "mcap": 2122690.0,
-  "last": "2026-09-23 09:42:50 +0000"
+  "mcap": 1583100.0,
+  "last": "2026-09-23 14:26:55 +0000"
  },
  "sol:AP5YnCZRFHayveJ1zSSWeGpB1Hps4v8pLJ6ASmXLMD6M": {
   "holders": 1990,
@@ -3336,10 +3336,10 @@
   "last": "2026-09-22 06:11:46 +0000"
  },
  "robinhood:0x51377fe2ad6137e323500c9db71bb63b867cecab": {
-  "holders": 1741,
+  "holders": 1719,
   "sd": 164,
-  "mcap": 672580.0,
-  "last": "2026-09-23 09:42:50 +0000"
+  "mcap": 469426.0,
+  "last": "2026-09-23 14:26:55 +0000"
  },
  "sol:HhcfXbZ2rukoKx8oAH8rfkmzXbwvfdh6MMLZjneg4rWk": {
   "holders": 2263,
@@ -3354,10 +3354,10 @@
   "last": "2026-09-22 01:09:24 +0000"
  },
  "sol:6HU4CmRb15C2nQDx8Ld2f2W2wTdmog6aZiiXdrT5Pzi8": {
-  "holders": 2582,
-  "sd": 53,
-  "mcap": 2074810.0,
-  "last": "2026-09-23 00:23:53 +0000"
+  "holders": 3552,
+  "sd": 57,
+  "mcap": 2997550.0,
+  "last": "2026-09-23 14:26:55 +0000"
  },
  "sol:6UtY9iTZMQQ5QZVrbzFnNaJntV7oySm9k97mvwnuZcxr": {
   "holders": 7120,
@@ -3414,10 +3414,10 @@
   "last": "2026-09-23 00:23:53 +0000"
  },
  "sol:AVXPQqxd32ABAP5F7shHKNeWBpos9miktdH3uKqgXYJZ": {
-  "holders": 2767,
-  "sd": 76,
-  "mcap": 1199400.0,
-  "last": "2026-09-23 04:56:22 +0000"
+  "holders": 2820,
+  "sd": 77,
+  "mcap": 719245.0,
+  "last": "2026-09-23 14:26:55 +0000"
  },
  "sol:BjJyQFGTzu6JQfpdXEZ1mmFzhWgFYgEscRz472Zkpump": {
   "holders": 1643,
@@ -3462,10 +3462,10 @@
   "last": "2026-09-23 09:42:50 +0000"
  },
  "bsc:0x7bc023e0693589817ed258cd1507b66b1e207777": {
-  "holders": 2045,
-  "sd": 55,
-  "mcap": 572944.0,
-  "last": "2026-09-23 09:42:50 +0000"
+  "holders": 2097,
+  "sd": 59,
+  "mcap": 623307.0,
+  "last": "2026-09-23 14:26:55 +0000"
  },
  "bsc:0x3968ad99a3500b7407a5a9dd17c9c8cee6477777": {
   "holders": 9603,
@@ -3474,16 +3474,16 @@
   "last": "2026-09-23 04:56:22 +0000"
  },
  "sol:CgxXsJnDszZ4E2mhrXU4tQBKrwSk138o7PVgtCkJDDPC": {
-  "holders": 2177,
-  "sd": 67,
-  "mcap": 390176.0,
-  "last": "2026-09-23 09:42:50 +0000"
+  "holders": 1984,
+  "sd": 68,
+  "mcap": 308849.0,
+  "last": "2026-09-23 14:26:55 +0000"
  },
  "sol:FiyPnPU7nPgx73A94pntqUPhyfBPhMM54u25DWMzTwkH": {
-  "holders": 1434,
+  "holders": 1314,
   "sd": 101,
-  "mcap": 94368.2,
-  "last": "2026-09-23 00:23:53 +0000"
+  "mcap": 62677.7,
+  "last": "2026-09-23 14:26:55 +0000"
  },
  "sol:Eii9T6RPJXaFeWgLg5jYrnco7Fwz1RChFj6A5eqh39Ab": {
   "holders": 668,
@@ -3528,22 +3528,22 @@
   "last": "2026-09-23 04:56:22 +0000"
  },
  "sol:4wYd4vPhzaUQs5vqUrEJ7CPtKg1qzXHhauERuh4MiNMB": {
-  "holders": 2829,
-  "sd": 60,
-  "mcap": 250792.0,
-  "last": "2026-09-23 09:42:50 +0000"
+  "holders": 2708,
+  "sd": 62,
+  "mcap": 162072.0,
+  "last": "2026-09-23 14:26:55 +0000"
  },
  "sol:7XiFJgX4nkER8gTH1LXUX1VEBJrLRSZfFXuzDy8ccWGT": {
-  "holders": 933,
-  "sd": 33,
-  "mcap": 890665.0,
-  "last": "2026-09-23 04:56:22 +0000"
+  "holders": 945,
+  "sd": 36,
+  "mcap": 360883.0,
+  "last": "2026-09-23 14:26:55 +0000"
  },
  "robinhood:0x972b66b21de63da6b015f50bcd5f7cd9574a6ba3": {
-  "holders": 313,
-  "sd": 32,
-  "mcap": 334951.0,
-  "last": "2026-09-23 04:56:22 +0000"
+  "holders": 327,
+  "sd": 34,
+  "mcap": 245824.0,
+  "last": "2026-09-23 14:26:55 +0000"
  },
  "robinhood:0x83a49b808f8d5e02cb2931cd2352988f498e5ba3": {
   "holders": 6323,
@@ -3552,10 +3552,10 @@
   "last": "2026-09-23 09:42:50 +0000"
  },
  "robinhood:0x39679b59289cce7c7f6e0feacdf39a1e543de751": {
-  "holders": 1303,
+  "holders": 1262,
   "sd": 98,
-  "mcap": 251337.0,
-  "last": "2026-09-23 09:42:50 +0000"
+  "mcap": 246401.0,
+  "last": "2026-09-23 14:26:55 +0000"
  },
  "robinhood:0x7c2ce195c5260c45d0980d21a2822df6a35d9a80": {
   "holders": 1272,
@@ -3570,16 +3570,16 @@
   "last": "2026-09-23 04:56:22 +0000"
  },
  "sol:GkBZGFgNy9Q6jHjBuYeTqsvugfEMhniACF9ieV8H3TtC": {
-  "holders": 1691,
-  "sd": 24,
-  "mcap": 465042.0,
-  "last": "2026-09-23 09:42:50 +0000"
+  "holders": 1457,
+  "sd": 27,
+  "mcap": 143152.0,
+  "last": "2026-09-23 14:26:55 +0000"
  },
  "robinhood:0x65d7e1d00867d1a659c2f190cc40637df3ed1e18": {
-  "holders": 335,
-  "sd": 27,
-  "mcap": 142158.0,
-  "last": "2026-09-23 09:42:50 +0000"
+  "holders": 368,
+  "sd": 29,
+  "mcap": 189912.0,
+  "last": "2026-09-23 14:26:55 +0000"
  },
  "bsc:0x702afd71ff71a7309abbcd080e6ba85d706f7777": {
   "holders": 4851,
@@ -3594,10 +3594,10 @@
   "last": "2026-09-23 09:42:50 +0000"
  },
  "robinhood:0x8c8a99a60245f5ea170e53e351d5fa46278b8b3b": {
-  "holders": 531,
+  "holders": 523,
   "sd": 29,
-  "mcap": 136861.0,
-  "last": "2026-09-23 09:42:50 +0000"
+  "mcap": 90834.7,
+  "last": "2026-09-23 14:26:55 +0000"
  },
  "sol:FvMLDEUDKUr9C34e8Nynz5Aqfdk34a2RBKQxygLpfomo": {
   "holders": 3123,
@@ -3610,5 +3610,41 @@
   "sd": 233,
   "mcap": 5104840.0,
   "last": "2026-09-23 09:42:50 +0000"
+ },
+ "bsc:0xfca977c3fb406b8ed76c53620bc6eedd382f6666": {
+  "holders": 1089,
+  "sd": 11,
+  "mcap": 424598.0,
+  "last": "2026-09-23 14:26:55 +0000"
+ },
+ "bsc:0x3970dae108d4bdefd3d78c2ec3847ef0e93d6666": {
+  "holders": 1922,
+  "sd": 44,
+  "mcap": 830212.0,
+  "last": "2026-09-23 14:26:55 +0000"
+ },
+ "sol:AbkkkbRU8SZ69sZWsykkeutL1sf1Ds1fiu1yDQ8mMVo7": {
+  "holders": 1456,
+  "sd": 40,
+  "mcap": 565005.0,
+  "last": "2026-09-23 14:26:55 +0000"
+ },
+ "bsc:0xb03d209ed150ea091427d6b02e8d8f367c297777": {
+  "holders": 16121,
+  "sd": 3,
+  "mcap": 335880.0,
+  "last": "2026-09-23 14:26:55 +0000"
+ },
+ "robinhood:0x5507b808112c1edb80c837b8e262f6605d776c80": {
+  "holders": 340,
+  "sd": 17,
+  "mcap": 45216.7,
+  "last": "2026-09-23 14:26:55 +0000"
+ },
+ "bsc:0x11d8f641f11f9792880687e59cb5df371a227777": {
+  "holders": 2595,
+  "sd": 3,
+  "mcap": 77876.2,
+  "last": "2026-09-23 14:26:55 +0000"
  }
 }
