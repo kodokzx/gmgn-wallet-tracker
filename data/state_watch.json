@@ -1,10 +1,10 @@
 {
- "sm:robinhood": 1790114729,
- "sm:bsc": 1790114583,
- "sm:sol": 1790114729,
- "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1790114710,
+ "sm:robinhood": 1790123022,
+ "sm:bsc": 1790123012,
+ "sm:sol": 1790123023,
+ "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1790121249,
  "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1790111765,
- "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1790112980,
+ "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1790119439,
  "initialized": true,
  "gflow": {
   "robinhood:0x0c5453edca198471fc39edb9156d9627caae04bf": {
@@ -8007,6 +8007,27 @@
    "B": -529.3124896741232,
    "C": 0.0,
    "D": 0.0
+  },
+  "robinhood:0x5f57aa1bb52d7ca10a3588ff4736e3650a2e1e18": {
+   "sym": "MP",
+   "A": 0.0,
+   "B": -7.441826267307306,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xab46259cafb7ef2b8fca6188e030f79a58b81e18": {
+   "sym": "GRACE",
+   "A": 0.0,
+   "B": 1075.8075348233533,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x19368f221954a4957aa8f6add8c991ac86997777": {
+   "sym": "Eva",
+   "A": 0.0,
+   "B": -935.2614636076297,
+   "C": 0.0,
+   "D": 0.0
   }
  },
  "gflow_prev": {
@@ -14865,6 +14886,24 @@
   "sol:4nKuv6rxBmNSZQ4PE7YCzxmjv7PHmv3YWp3hoWqSQ4Zc": {
    "A": 0.0,
    "B": -529.3124896741232,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x5f57aa1bb52d7ca10a3588ff4736e3650a2e1e18": {
+   "A": 0.0,
+   "B": -7.441826267307306,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xab46259cafb7ef2b8fca6188e030f79a58b81e18": {
+   "A": 0.0,
+   "B": 1075.8075348233533,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x19368f221954a4957aa8f6add8c991ac86997777": {
+   "A": 0.0,
+   "B": -935.2614636076297,
    "C": 0.0,
    "D": 0.0
   }
