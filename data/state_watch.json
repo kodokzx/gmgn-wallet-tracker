@@ -1,9 +1,9 @@
 {
- "sm:robinhood": 1790443558,
- "sm:bsc": 1790443587,
- "sm:sol": 1790443589,
- "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1790363010,
- "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1790443290,
+ "sm:robinhood": 1790452967,
+ "sm:bsc": 1790452968,
+ "sm:sol": 1790452967,
+ "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1790450420,
+ "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1790451649,
  "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1790441939,
  "initialized": true,
  "gflow": {
@@ -731,7 +731,7 @@
   "robinhood:0x5d6ef090a1461b11c9427ac319260122d1c61e18": {
    "sym": "ICOIN",
    "A": 0.0,
-   "B": 19452.50003784413,
+   "B": 20496.615065361275,
    "C": 0.0,
    "D": 0.0
   },
@@ -6155,7 +6155,7 @@
   },
   "sol:Hk8Uiq8CeNdmZzu1aPaT7MhvujtJifFS9kKhfpXmpaid": {
    "sym": "BOAR",
-   "A": 0.0,
+   "A": 1799.29085508862,
    "B": -161.90324929524002,
    "C": 0.0,
    "D": 0.0
@@ -6821,7 +6821,7 @@
   "robinhood:0x6249519883b8d7ccf915dfcd6c0442984dae9d24": {
    "sym": "CASHED",
    "A": 0.0,
-   "B": 1477.6874543845584,
+   "B": 2003.8482587845583,
    "C": 0.0,
    "D": 0.0
   },
@@ -8760,7 +8760,7 @@
   "robinhood:0x45593d952d9a83ba7f100ec4f874f5905d854eea": {
    "sym": "YASHMODE",
    "A": 0.0,
-   "B": -634.1186698265551,
+   "B": -2449.9140595193053,
    "C": 0.0,
    "D": 0.0
   },
@@ -9076,6 +9076,48 @@
    "sym": "Get",
    "A": 0.0,
    "B": -605.0207718797029,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x28b0ed2365c8c25b4542d06725acb7662bef6edf": {
+   "sym": "HOODS",
+   "A": 0.0,
+   "B": -5329.26687633137,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x4da3916d3ae6feece32ec8a2c4856d4abeb41bfd": {
+   "sym": "SCROOGE",
+   "A": 0.0,
+   "B": -130.28644592957062,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xaa5751ff3fb61e613993b2eb4eab1fce017081fc": {
+   "sym": "HYDX",
+   "A": 0.0,
+   "B": -623.9443987258998,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x11dc0fd5e2c9a4407fdb15aa6871501ba9307777": {
+   "sym": "BNPaid",
+   "A": 0.0,
+   "B": -830.4397998199559,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:B8A4bitd8bfsLYZQ67qbuwQxAZAY7D1UCXjJoYd2pump": {
+   "sym": "LOTTO",
+   "A": 0.0,
+   "B": -578.42344713739,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:7cXWSNTq71PZREBmGCBvZirkNwoGokWBQz9fWferViiV": {
+   "sym": "ASTEROID",
+   "A": 0.0,
+   "B": 761.80549813719,
    "C": 0.0,
    "D": 0.0
   }
@@ -9701,7 +9743,7 @@
   },
   "robinhood:0x5d6ef090a1461b11c9427ac319260122d1c61e18": {
    "A": 0.0,
-   "B": 19452.50003784413,
+   "B": 20496.615065361275,
    "C": 0.0,
    "D": 0.0
   },
@@ -14350,7 +14392,7 @@
    "D": 0.0
   },
   "sol:Hk8Uiq8CeNdmZzu1aPaT7MhvujtJifFS9kKhfpXmpaid": {
-   "A": 0.0,
+   "A": 1799.29085508862,
    "B": -161.90324929524002,
    "C": 0.0,
    "D": 0.0
@@ -14921,7 +14963,7 @@
   },
   "robinhood:0x6249519883b8d7ccf915dfcd6c0442984dae9d24": {
    "A": 0.0,
-   "B": 1477.6874543845584,
+   "B": 2003.8482587845583,
    "C": 0.0,
    "D": 0.0
   },
@@ -16583,7 +16625,7 @@
   },
   "robinhood:0x45593d952d9a83ba7f100ec4f874f5905d854eea": {
    "A": 0.0,
-   "B": -634.1186698265551,
+   "B": -2449.9140595193053,
    "C": 0.0,
    "D": 0.0
   },
@@ -16854,6 +16896,42 @@
   "sol:8FaVxGi8xCZkxryYVRtmZXKFBsMF1VLNdWQfCyEjpump": {
    "A": 0.0,
    "B": -605.0207718797029,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x28b0ed2365c8c25b4542d06725acb7662bef6edf": {
+   "A": 0.0,
+   "B": -5329.26687633137,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x4da3916d3ae6feece32ec8a2c4856d4abeb41bfd": {
+   "A": 0.0,
+   "B": -130.28644592957062,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xaa5751ff3fb61e613993b2eb4eab1fce017081fc": {
+   "A": 0.0,
+   "B": -623.9443987258998,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x11dc0fd5e2c9a4407fdb15aa6871501ba9307777": {
+   "A": 0.0,
+   "B": -830.4397998199559,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:B8A4bitd8bfsLYZQ67qbuwQxAZAY7D1UCXjJoYd2pump": {
+   "A": 0.0,
+   "B": -578.42344713739,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:7cXWSNTq71PZREBmGCBvZirkNwoGokWBQz9fWferViiV": {
+   "A": 0.0,
+   "B": 761.80549813719,
    "C": 0.0,
    "D": 0.0
   }
