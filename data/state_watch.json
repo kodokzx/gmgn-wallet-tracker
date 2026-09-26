@@ -1,10 +1,10 @@
 {
- "sm:robinhood": 1790452967,
- "sm:bsc": 1790452968,
- "sm:sol": 1790452967,
+ "sm:robinhood": 1790462410,
+ "sm:bsc": 1790462419,
+ "sm:sol": 1790462419,
  "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1790450420,
  "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1790451649,
- "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1790441939,
+ "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1790453970,
  "initialized": true,
  "gflow": {
   "robinhood:0x0c5453edca198471fc39edb9156d9627caae04bf": {
@@ -444,7 +444,7 @@
   "sol:Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8": {
    "sym": "SPCXx",
    "A": 0.0,
-   "B": 1693.7852099397,
+   "B": 955.7819949931501,
    "C": 0.0,
    "D": 0.0
   },
@@ -6891,7 +6891,7 @@
   "bsc:0xc31ae677e52d8c4d3def6b00affc9c3c19577777": {
    "sym": "PAID",
    "A": 0.0,
-   "B": -571.0231968026907,
+   "B": 99.53128715447474,
    "C": 0.0,
    "D": 0.0
   },
@@ -7080,7 +7080,7 @@
   "bsc:0x3064a49ad4db3ef8390e66ecf5a632253daa7777": {
    "sym": "噜噜",
    "A": 0.0,
-   "B": -1678.2127797292828,
+   "B": -927.5361177892614,
    "C": 0.0,
    "D": 0.0
   },
@@ -9120,6 +9120,62 @@
    "B": 761.80549813719,
    "C": 0.0,
    "D": 0.0
+  },
+  "robinhood:0xf6192c0ac71c14a43572366a807643a3479c8e65": {
+   "sym": "APES",
+   "A": 0.0,
+   "B": 521.8046064,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x82acb89dff38ef72ee397d4a6322032b80a6567d": {
+   "sym": "ALC",
+   "A": 0.0,
+   "B": 1265.12298,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x0111ccbc4739d5ec623d9a38bec8bb5fb5327777": {
+   "sym": "BONKGUY",
+   "A": 0.0,
+   "B": -1609.40027925171,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x55db4b1f497b1d7aa93354701883efc758367777": {
+   "sym": "WIRED",
+   "A": 0.0,
+   "B": 87.71895558862707,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:8DwNVMzpcc3mq7Tk4gyWeTkvmFhnXcnDDCLayFFhXvex": {
+   "sym": "HEISENBERG",
+   "A": 0.0,
+   "B": 1190.86683599352,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6HU4CmRb15C2nQDx8Ld2f2W2wTdmog6aZiiXdrT5Pzi8": {
+   "sym": "GROK",
+   "A": 0.0,
+   "B": -744.187279212,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:tip2EGeW8iz6oLMVhyLufPhJ8eL24zLAehHCTjVbkJ2": {
+   "sym": "TIPTOK",
+   "A": 0.0,
+   "B": 599.06172828124,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:5677jqYHSWFdmaoue1J8KGV7WCjQv3Zrq76Bsy8y1a3S": {
+   "sym": "Charlie",
+   "A": 0.0,
+   "B": -2782.7551819910404,
+   "C": 0.0,
+   "D": 0.0
   }
  },
  "gflow_prev": {
@@ -9497,7 +9553,7 @@
   },
   "sol:Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8": {
    "A": 0.0,
-   "B": 1693.7852099397,
+   "B": 955.7819949931501,
    "C": 0.0,
    "D": 0.0
   },
@@ -15023,7 +15079,7 @@
   },
   "bsc:0xc31ae677e52d8c4d3def6b00affc9c3c19577777": {
    "A": 0.0,
-   "B": -571.0231968026907,
+   "B": 99.53128715447474,
    "C": 0.0,
    "D": 0.0
   },
@@ -15185,7 +15241,7 @@
   },
   "bsc:0x3064a49ad4db3ef8390e66ecf5a632253daa7777": {
    "A": 0.0,
-   "B": -1678.2127797292828,
+   "B": -927.5361177892614,
    "C": 0.0,
    "D": 0.0
   },
@@ -16932,6 +16988,54 @@
   "sol:7cXWSNTq71PZREBmGCBvZirkNwoGokWBQz9fWferViiV": {
    "A": 0.0,
    "B": 761.80549813719,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xf6192c0ac71c14a43572366a807643a3479c8e65": {
+   "A": 0.0,
+   "B": 521.8046064,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x82acb89dff38ef72ee397d4a6322032b80a6567d": {
+   "A": 0.0,
+   "B": 1265.12298,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x0111ccbc4739d5ec623d9a38bec8bb5fb5327777": {
+   "A": 0.0,
+   "B": -1609.40027925171,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x55db4b1f497b1d7aa93354701883efc758367777": {
+   "A": 0.0,
+   "B": 87.71895558862707,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:8DwNVMzpcc3mq7Tk4gyWeTkvmFhnXcnDDCLayFFhXvex": {
+   "A": 0.0,
+   "B": 1190.86683599352,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6HU4CmRb15C2nQDx8Ld2f2W2wTdmog6aZiiXdrT5Pzi8": {
+   "A": 0.0,
+   "B": -744.187279212,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:tip2EGeW8iz6oLMVhyLufPhJ8eL24zLAehHCTjVbkJ2": {
+   "A": 0.0,
+   "B": 599.06172828124,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:5677jqYHSWFdmaoue1J8KGV7WCjQv3Zrq76Bsy8y1a3S": {
+   "A": 0.0,
+   "B": -2782.7551819910404,
    "C": 0.0,
    "D": 0.0
   }
