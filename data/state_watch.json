@@ -1,10 +1,10 @@
 {
- "sm:robinhood": 1790716851,
- "sm:bsc": 1790716847,
- "sm:sol": 1790716851,
+ "sm:robinhood": 1790728526,
+ "sm:bsc": 1790728497,
+ "sm:sol": 1790728526,
  "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1790450420,
- "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1790716758,
- "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1790715405,
+ "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1790721184,
+ "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1790727720,
  "initialized": true,
  "gflow": {
   "robinhood:0x0c5453edca198471fc39edb9156d9627caae04bf": {
@@ -346,7 +346,7 @@
   "sol:6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
    "sym": "STONK",
    "A": 0.0,
-   "B": -2126.344494791949,
+   "B": -1453.7553247919489,
    "C": 0.0,
    "D": 0.0
   },
@@ -4322,7 +4322,7 @@
   "robinhood:0x39dbed3a2bd333467115de45665cc57f813c4571": {
    "sym": "PONS",
    "A": 0.0,
-   "B": -2265.044758281948,
+   "B": -1740.8833578819479,
    "C": 0.0,
    "D": 0.0
   },
@@ -6065,7 +6065,7 @@
   "bsc:0x9b8e987e6fec8cf1380c4dca7071e2c7853aeea1": {
    "sym": "FXIon",
    "A": 0.0,
-   "B": 3564.6478557635364,
+   "B": 4067.292560963371,
    "C": 0.0,
    "D": 0.0
   },
@@ -7563,7 +7563,7 @@
   "bsc:0x108876c3df3d893350e9b780563b3697aa3e7777": {
    "sym": "中国人能飞",
    "A": 0.0,
-   "B": -917.098470653683,
+   "B": -168.00007739722696,
    "C": 0.0,
    "D": 0.0
   },
@@ -9806,6 +9806,48 @@
    "B": 694.68764005956,
    "C": 0.0,
    "D": 0.0
+  },
+  "robinhood:0x712db53aff94f93822e60081ce36d36f55001e18": {
+   "sym": "NUTFLEXXX",
+   "A": 0.0,
+   "B": -596.8944040116153,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xba43fa7a046efcddc641c1f4facb9b23accb1e18": {
+   "sym": "NUTFLEX",
+   "A": 0.0,
+   "B": -1541.470223147212,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3fcd140c68d067c6a71ca328a90fe8d688b81e18": {
+   "sym": "SI",
+   "A": 0.0,
+   "B": 2889.6130571477024,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x9c8ec5d71069ae8f08ae16c9edc04f89bcce7777": {
+   "sym": "NUTFLEX",
+   "A": 0.0,
+   "B": -566.2258309826306,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:J47Jmw8ndwu6Vt6ZubD9C9VUVHi6uWsBE2XPsEjmpump": {
+   "sym": "FKCANCER",
+   "A": 0.0,
+   "B": 590.35284224841,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6HTYmJiaCNzsm5Cw2x8MrH5oxC3hA1kQT7SdLfJFSTNK": {
+   "sym": "STONKSPLIT",
+   "A": 0.0,
+   "B": 670.3669822740519,
+   "C": 0.0,
+   "D": 0.0
   }
  },
  "gflow_prev": {
@@ -10099,7 +10141,7 @@
   },
   "sol:6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
    "A": 0.0,
-   "B": -2126.344494791949,
+   "B": -1453.7553247919489,
    "C": 0.0,
    "D": 0.0
   },
@@ -13507,7 +13549,7 @@
   },
   "robinhood:0x39dbed3a2bd333467115de45665cc57f813c4571": {
    "A": 0.0,
-   "B": -2265.044758281948,
+   "B": -1740.8833578819479,
    "C": 0.0,
    "D": 0.0
   },
@@ -15001,7 +15043,7 @@
   },
   "bsc:0x9b8e987e6fec8cf1380c4dca7071e2c7853aeea1": {
    "A": 0.0,
-   "B": 3564.6478557635364,
+   "B": 4067.292560963371,
    "C": 0.0,
    "D": 0.0
   },
@@ -16285,7 +16327,7 @@
   },
   "bsc:0x108876c3df3d893350e9b780563b3697aa3e7777": {
    "A": 0.0,
-   "B": -917.098470653683,
+   "B": -168.00007739722696,
    "C": 0.0,
    "D": 0.0
   },
@@ -18206,6 +18248,42 @@
   "sol:97SkmPTaFH5zT4QD2KjSsmxaPmKG3PL9kxb3KMtsJwfs": {
    "A": 0.0,
    "B": 694.68764005956,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x712db53aff94f93822e60081ce36d36f55001e18": {
+   "A": 0.0,
+   "B": -596.8944040116153,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xba43fa7a046efcddc641c1f4facb9b23accb1e18": {
+   "A": 0.0,
+   "B": -1541.470223147212,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x3fcd140c68d067c6a71ca328a90fe8d688b81e18": {
+   "A": 0.0,
+   "B": 2889.6130571477024,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x9c8ec5d71069ae8f08ae16c9edc04f89bcce7777": {
+   "A": 0.0,
+   "B": -566.2258309826306,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:J47Jmw8ndwu6Vt6ZubD9C9VUVHi6uWsBE2XPsEjmpump": {
+   "A": 0.0,
+   "B": 590.35284224841,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6HTYmJiaCNzsm5Cw2x8MrH5oxC3hA1kQT7SdLfJFSTNK": {
+   "A": 0.0,
+   "B": 670.3669822740519,
    "C": 0.0,
    "D": 0.0
   }
