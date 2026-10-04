@@ -1,10 +1,10 @@
 {
- "sm:robinhood": 1791101621,
- "sm:bsc": 1791101624,
- "sm:sol": 1791101624,
+ "sm:robinhood": 1791122721,
+ "sm:bsc": 1791122724,
+ "sm:sol": 1791122726,
  "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1790450420,
  "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1791055856,
- "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1791068559,
+ "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1791120365,
  "initialized": true,
  "gflow": {
   "robinhood:0x0c5453edca198471fc39edb9156d9627caae04bf": {
@@ -1886,7 +1886,7 @@
   "robinhood:0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec": {
    "sym": "NVDA",
    "A": 0.0,
-   "B": 8108.9817153504155,
+   "B": 10045.781459006115,
    "C": 0.0,
    "D": 0.0
   },
@@ -5113,7 +5113,7 @@
   "robinhood:0x6245e67affa44a23077f0ea7f981a8dc743a0c47": {
    "sym": "FRONG",
    "A": 0.0,
-   "B": 4053.5451639907733,
+   "B": -193.10364176150551,
    "C": 0.0,
    "D": 0.0
   },
@@ -10363,7 +10363,7 @@
   "robinhood:0x316fa3ab9a8fd8d7567a823dedecf28d9fee2894": {
    "sym": "ZERO",
    "A": 0.0,
-   "B": 5104.041318062025,
+   "B": 5104.976909237546,
    "C": 0.0,
    "D": 0.0
   },
@@ -10517,7 +10517,7 @@
   "robinhood:0x14a64d6f3db9900be9c554d0961f539a16f43f9c": {
    "sym": "FABLE",
    "A": 0.0,
-   "B": 643.765914,
+   "B": -99.83975291854074,
    "C": 0.0,
    "D": 0.0
   },
@@ -10742,6 +10742,48 @@
    "sym": "DONALDMAXX",
    "A": 0.0,
    "B": 522.86150904926,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x54f5d8ee68530a2fe058d6e01465694e8b291e18": {
+   "sym": "SPROTTY",
+   "A": 0.0,
+   "B": -526.2570804364406,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x927b50e4ce03671d5a505922750edcc9cb734ad4": {
+   "sym": "VAUL",
+   "A": 0.0,
+   "B": -105.28911646039103,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xff776d9fb89900f4e735d7d2bcf643f3d5918f88": {
+   "sym": "SIF",
+   "A": 0.0,
+   "B": -192.69114976122455,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x3efbfff95576e1d23cf6ead0acd2e73f4d6a7777": {
+   "sym": "BNBCAT",
+   "A": 0.0,
+   "B": 506.740778549099,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:CpRkPw9M2iMDUozQFvkEeAjGJWucbLCJw3m3vZqdpump": {
+   "sym": "BRIDGE",
+   "A": 0.0,
+   "B": 538.0558447938,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:26Y2NpLKeyqHWMWaT1j1sWK4tPyw9FVRg8xvx6gtpump": {
+   "sym": "BOOMCAT",
+   "A": 0.0,
+   "B": 1202.08375,
    "C": 0.0,
    "D": 0.0
   }
@@ -12357,7 +12399,7 @@
   },
   "robinhood:0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec": {
    "A": 0.0,
-   "B": 8108.9817153504155,
+   "B": 10045.781459006115,
    "C": 0.0,
    "D": 0.0
   },
@@ -15123,7 +15165,7 @@
   },
   "robinhood:0x6245e67affa44a23077f0ea7f981a8dc743a0c47": {
    "A": 0.0,
-   "B": 4053.5451639907733,
+   "B": -193.10364176150551,
    "C": 0.0,
    "D": 0.0
   },
@@ -19623,7 +19665,7 @@
   },
   "robinhood:0x316fa3ab9a8fd8d7567a823dedecf28d9fee2894": {
    "A": 0.0,
-   "B": 5104.041318062025,
+   "B": 5104.976909237546,
    "C": 0.0,
    "D": 0.0
   },
@@ -19755,7 +19797,7 @@
   },
   "robinhood:0x14a64d6f3db9900be9c554d0961f539a16f43f9c": {
    "A": 0.0,
-   "B": 643.765914,
+   "B": -99.83975291854074,
    "C": 0.0,
    "D": 0.0
   },
@@ -19948,6 +19990,42 @@
   "sol:9nhQhPcW8LuuGze436KU9SYxgX95byGUirURpkVvpump": {
    "A": 0.0,
    "B": 522.86150904926,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x54f5d8ee68530a2fe058d6e01465694e8b291e18": {
+   "A": 0.0,
+   "B": -526.2570804364406,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x927b50e4ce03671d5a505922750edcc9cb734ad4": {
+   "A": 0.0,
+   "B": -105.28911646039103,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xff776d9fb89900f4e735d7d2bcf643f3d5918f88": {
+   "A": 0.0,
+   "B": -192.69114976122455,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x3efbfff95576e1d23cf6ead0acd2e73f4d6a7777": {
+   "A": 0.0,
+   "B": 506.740778549099,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:CpRkPw9M2iMDUozQFvkEeAjGJWucbLCJw3m3vZqdpump": {
+   "A": 0.0,
+   "B": 538.0558447938,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:26Y2NpLKeyqHWMWaT1j1sWK4tPyw9FVRg8xvx6gtpump": {
+   "A": 0.0,
+   "B": 1202.08375,
    "C": 0.0,
    "D": 0.0
   }
