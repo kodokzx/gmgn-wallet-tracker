@@ -1,7 +1,7 @@
 {
- "sm:robinhood": 1791598294,
- "sm:bsc": 1791598288,
- "sm:sol": 1791598301,
+ "sm:robinhood": 1791620924,
+ "sm:bsc": 1791620921,
+ "sm:sol": 1791620922,
  "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1790450420,
  "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1791224983,
  "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1791594712,
@@ -444,7 +444,7 @@
   "sol:Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8": {
    "sym": "SPCXx",
    "A": 0.0,
-   "B": 955.7819949931501,
+   "B": 439.8787639931501,
    "C": 0.0,
    "D": 0.0
   },
@@ -5400,7 +5400,7 @@
   "robinhood:0xaf3d76f1834a1d425780943c99ea8a608f8a93f9": {
    "sym": "AAPL",
    "A": 0.0,
-   "B": 3925.913310956208,
+   "B": 3358.7709702539973,
    "C": 0.0,
    "D": 0.0
   },
@@ -9096,7 +9096,7 @@
   "robinhood:0xaa5751ff3fb61e613993b2eb4eab1fce017081fc": {
    "sym": "HYDX",
    "A": 0.0,
-   "B": -623.9443987258998,
+   "B": 317.66262560284645,
    "C": 0.0,
    "D": 0.0
   },
@@ -11724,6 +11724,62 @@
    "B": 549.71745726159,
    "C": 0.0,
    "D": 0.0
+  },
+  "robinhood:0xdd38f3dbb043c0331351ac6bfb60e86f28ab1e18": {
+   "sym": "RETURN",
+   "A": 0.0,
+   "B": -978.8255703431782,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xff1450b11baaef153c022048a0fbcad3f6ab2884": {
+   "sym": "OZZY",
+   "A": 0.0,
+   "B": 977.5752624,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x1d08d2e96e7712b754048dd1c2e7a6e878ed4913": {
+   "sym": "ANR",
+   "A": 0.0,
+   "B": 551.17417212,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xb3eba5751c0f64373416f92aa8eaa4d8b3ef7777": {
+   "sym": "奶蛙",
+   "A": 0.0,
+   "B": 501.2330795562149,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:4KHrQuLwbEktAWBY5Pnxz6QAF1Qo1BfRvEpe49zFpump": {
+   "sym": "Poor",
+   "A": 0.0,
+   "B": 1506.31517446194,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:DQysBW79uHzZAWd2ahVQrf89CuSFqVzuNA3ijHbjVJfG": {
+   "sym": "SXSI",
+   "A": 0.0,
+   "B": -515.8140631986087,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:FznYvFYHgbNWJcskwgCdmbvB5cLjR9Lz1asH8qdxpump": {
+   "sym": "Poor",
+   "A": 0.0,
+   "B": 570.7624375100204,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:GQ4BwM1rybEd2G5ne8hjqVKYa1HBWB31BcFvvmKZpump": {
+   "sym": "Poor",
+   "A": 0.0,
+   "B": 2713.88107388148,
+   "C": 0.0,
+   "D": 0.0
   }
  },
  "gflow_prev": {
@@ -12101,7 +12157,7 @@
   },
   "sol:Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8": {
    "A": 0.0,
-   "B": 955.7819949931501,
+   "B": 439.8787639931501,
    "C": 0.0,
    "D": 0.0
   },
@@ -16349,7 +16405,7 @@
   },
   "robinhood:0xaf3d76f1834a1d425780943c99ea8a608f8a93f9": {
    "A": 0.0,
-   "B": 3925.913310956208,
+   "B": 3358.7709702539973,
    "C": 0.0,
    "D": 0.0
   },
@@ -19517,7 +19573,7 @@
   },
   "robinhood:0xaa5751ff3fb61e613993b2eb4eab1fce017081fc": {
    "A": 0.0,
-   "B": -623.9443987258998,
+   "B": 317.66262560284645,
    "C": 0.0,
    "D": 0.0
   },
@@ -21768,6 +21824,54 @@
   "sol:8JMLUoN24GAuLtbfCHHUQtdc4JBWNnLohFJtMEkmpump": {
    "A": 0.0,
    "B": 549.71745726159,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xdd38f3dbb043c0331351ac6bfb60e86f28ab1e18": {
+   "A": 0.0,
+   "B": -978.8255703431782,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xff1450b11baaef153c022048a0fbcad3f6ab2884": {
+   "A": 0.0,
+   "B": 977.5752624,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x1d08d2e96e7712b754048dd1c2e7a6e878ed4913": {
+   "A": 0.0,
+   "B": 551.17417212,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0xb3eba5751c0f64373416f92aa8eaa4d8b3ef7777": {
+   "A": 0.0,
+   "B": 501.2330795562149,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:4KHrQuLwbEktAWBY5Pnxz6QAF1Qo1BfRvEpe49zFpump": {
+   "A": 0.0,
+   "B": 1506.31517446194,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:DQysBW79uHzZAWd2ahVQrf89CuSFqVzuNA3ijHbjVJfG": {
+   "A": 0.0,
+   "B": -515.8140631986087,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:FznYvFYHgbNWJcskwgCdmbvB5cLjR9Lz1asH8qdxpump": {
+   "A": 0.0,
+   "B": 570.7624375100204,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:GQ4BwM1rybEd2G5ne8hjqVKYa1HBWB31BcFvvmKZpump": {
+   "A": 0.0,
+   "B": 2713.88107388148,
    "C": 0.0,
    "D": 0.0
   }
