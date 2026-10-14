@@ -1,10 +1,10 @@
 {
- "sm:robinhood": 1791997447,
- "sm:bsc": 1791997390,
- "sm:sol": 1791997447,
+ "sm:robinhood": 1792010203,
+ "sm:bsc": 1792010183,
+ "sm:sol": 1792010207,
  "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1790450420,
  "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1791224983,
- "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1791988119,
+ "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1792006282,
  "initialized": true,
  "gflow": {
   "robinhood:0x0c5453edca198471fc39edb9156d9627caae04bf": {
@@ -8361,7 +8361,7 @@
   "robinhood:0xef67e3064bef1a27e81925ec7132f23e533bd5f6": {
    "sym": "GME",
    "A": 0.0,
-   "B": -1072.0573213256034,
+   "B": -2559.8188306821485,
    "C": 0.0,
    "D": 0.0
   },
@@ -12421,7 +12421,7 @@
   "robinhood:0x92de9d3888953f3c6a55840f189c409976d9bba1": {
    "sym": "KIMCHI",
    "A": 0.0,
-   "B": -751.1156670310687,
+   "B": -2100.214509488749,
    "C": 0.0,
    "D": 0.0
   },
@@ -12457,6 +12457,41 @@
    "sym": "RENRUTS",
    "A": 0.0,
    "B": 727.72345669396,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xb489068e1d48cda3e4c9a5f1ff526aa7fc9496d7": {
+   "sym": "Parabol",
+   "A": 0.0,
+   "B": 654.2849503377579,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x5569bbb3f934e1c22b8e7fdd898b7dbbaa427777": {
+   "sym": "CLAWD",
+   "A": 0.0,
+   "B": 508.67792683137156,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:G57eqcaBMocXbL54ucBauReuPi3eGH2FRzqBppVUpump": {
+   "sym": "FIX6900",
+   "A": 0.0,
+   "B": 804.65319990534,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6bkXfvQFZE8WhJppSro3bxoqwtUHSxBz7edtE7Twpump": {
+   "sym": "FIX6900",
+   "A": 0.0,
+   "B": 719.3399598644401,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:CUrycqm5cyiAEVbxHtMPynhFEE67EizDmP8qLYdSpump": {
+   "sym": "FIX6900",
+   "A": 0.0,
+   "B": 1541.48148129265,
    "C": 0.0,
    "D": 0.0
   }
@@ -19622,7 +19657,7 @@
   },
   "robinhood:0xef67e3064bef1a27e81925ec7132f23e533bd5f6": {
    "A": 0.0,
-   "B": -1072.0573213256034,
+   "B": -2559.8188306821485,
    "C": 0.0,
    "D": 0.0
   },
@@ -23102,7 +23137,7 @@
   },
   "robinhood:0x92de9d3888953f3c6a55840f189c409976d9bba1": {
    "A": 0.0,
-   "B": -751.1156670310687,
+   "B": -2100.214509488749,
    "C": 0.0,
    "D": 0.0
   },
@@ -23133,6 +23168,36 @@
   "sol:3VUp3j6CJDNUocDPVWHc6t9cUwyXfv1UW48zbVXSpump": {
    "A": 0.0,
    "B": 727.72345669396,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xb489068e1d48cda3e4c9a5f1ff526aa7fc9496d7": {
+   "A": 0.0,
+   "B": 654.2849503377579,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "bsc:0x5569bbb3f934e1c22b8e7fdd898b7dbbaa427777": {
+   "A": 0.0,
+   "B": 508.67792683137156,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:G57eqcaBMocXbL54ucBauReuPi3eGH2FRzqBppVUpump": {
+   "A": 0.0,
+   "B": 804.65319990534,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:6bkXfvQFZE8WhJppSro3bxoqwtUHSxBz7edtE7Twpump": {
+   "A": 0.0,
+   "B": 719.3399598644401,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:CUrycqm5cyiAEVbxHtMPynhFEE67EizDmP8qLYdSpump": {
+   "A": 0.0,
+   "B": 1541.48148129265,
    "C": 0.0,
    "D": 0.0
   }
