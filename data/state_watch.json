@@ -1,9 +1,9 @@
 {
- "sm:robinhood": 1792126853,
- "sm:bsc": 1792126862,
- "sm:sol": 1792126864,
+ "sm:robinhood": 1792143497,
+ "sm:bsc": 1792143480,
+ "sm:sol": 1792143502,
  "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1790450420,
- "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1791224983,
+ "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1792142866,
  "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1792103018,
  "initialized": true,
  "gflow": {
@@ -5400,7 +5400,7 @@
   "robinhood:0xaf3d76f1834a1d425780943c99ea8a608f8a93f9": {
    "sym": "AAPL",
    "A": 0.0,
-   "B": 3358.7709702539973,
+   "B": 4094.419961753997,
    "C": 0.0,
    "D": 0.0
   },
@@ -12540,7 +12540,7 @@
   "robinhood:0x4a3e1c523efbfbda311d4724487e21aadeb8f7ed": {
    "sym": "BEANS",
    "A": 0.0,
-   "B": 2810.7877169294225,
+   "B": 1778.9048139507581,
    "C": 0.0,
    "D": 0.0
   },
@@ -12674,6 +12674,20 @@
    "sym": "BUBBLE",
    "A": 0.0,
    "B": -502.43691306751913,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x200115162bfbd3c4f089b0476c3f2989b7e03e50": {
+   "sym": "WISP",
+   "A": 0.0,
+   "B": -745.5614466563302,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:pFibPnQk8ekCCtuBoQFJqeJjHVo92dAME3uH8A4pump": {
+   "sym": "ElonThrust",
+   "A": 0.0,
+   "B": 528.92702963857,
    "C": 0.0,
    "D": 0.0
   }
@@ -17301,7 +17315,7 @@
   },
   "robinhood:0xaf3d76f1834a1d425780943c99ea8a608f8a93f9": {
    "A": 0.0,
-   "B": 3358.7709702539973,
+   "B": 4094.419961753997,
    "C": 0.0,
    "D": 0.0
   },
@@ -23421,7 +23435,7 @@
   },
   "robinhood:0x4a3e1c523efbfbda311d4724487e21aadeb8f7ed": {
    "A": 0.0,
-   "B": 2810.7877169294225,
+   "B": 1778.9048139507581,
    "C": 0.0,
    "D": 0.0
   },
@@ -23536,6 +23550,18 @@
   "sol:ALDVtr9JeLjKH91fHFvLxFoyd7C6eLUxi9dUoN2FsWdD": {
    "A": 0.0,
    "B": -502.43691306751913,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x200115162bfbd3c4f089b0476c3f2989b7e03e50": {
+   "A": 0.0,
+   "B": -745.5614466563302,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:pFibPnQk8ekCCtuBoQFJqeJjHVo92dAME3uH8A4pump": {
+   "A": 0.0,
+   "B": 528.92702963857,
    "C": 0.0,
    "D": 0.0
   }
