@@ -1,7 +1,7 @@
 {
- "sm:robinhood": 1792215733,
- "sm:bsc": 1792215713,
- "sm:sol": 1792215758,
+ "sm:robinhood": 1792230098,
+ "sm:bsc": 1792230086,
+ "sm:sol": 1792230097,
  "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1790450420,
  "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1792197226,
  "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1792184595,
@@ -12851,6 +12851,48 @@
    "B": -656.0362292947,
    "C": 0.0,
    "D": 0.0
+  },
+  "robinhood:0x19dcb63c4d2f29a6f077f094a4f858fc790145e1": {
+   "sym": "CrawlScan",
+   "A": 0.0,
+   "B": 767.580229153935,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x7e517e779b85895894becad80c9bb69b4cb1c4d6": {
+   "sym": "SHUNT",
+   "A": 0.0,
+   "B": -618.8046715536301,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xb39619059eff1f992e157d32ff3e21407ca3233a": {
+   "sym": "BURROW",
+   "A": 0.0,
+   "B": 536.7845883054908,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x28e3c0c404088f1a5d739221072ddf6ab4431022": {
+   "sym": "IRIDIUS",
+   "A": 0.0,
+   "B": 199.80516998287862,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:8H5yfL1GoDETLDaLYZzrgQuZs37eiKJjdfP21b6ypump": {
+   "sym": "SAAR",
+   "A": 0.0,
+   "B": -938.59091112916,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:rVWG97Yj6ZbuF9zeQo8TosQG6mUcUeL8BocfHu3pump": {
+   "sym": "PRIME",
+   "A": 0.0,
+   "B": -503.37222927471,
+   "C": 0.0,
+   "D": 0.0
   }
  },
  "gflow_prev": {
@@ -23861,6 +23903,42 @@
   "sol:3iC63FgnB7EhcPaiSaC51UkVweeBDkqu17SaRyy2pump": {
    "A": 0.0,
    "B": -656.0362292947,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x19dcb63c4d2f29a6f077f094a4f858fc790145e1": {
+   "A": 0.0,
+   "B": 767.580229153935,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x7e517e779b85895894becad80c9bb69b4cb1c4d6": {
+   "A": 0.0,
+   "B": -618.8046715536301,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0xb39619059eff1f992e157d32ff3e21407ca3233a": {
+   "A": 0.0,
+   "B": 536.7845883054908,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "robinhood:0x28e3c0c404088f1a5d739221072ddf6ab4431022": {
+   "A": 0.0,
+   "B": 199.80516998287862,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:8H5yfL1GoDETLDaLYZzrgQuZs37eiKJjdfP21b6ypump": {
+   "A": 0.0,
+   "B": -938.59091112916,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:rVWG97Yj6ZbuF9zeQo8TosQG6mUcUeL8BocfHu3pump": {
+   "A": 0.0,
+   "B": -503.37222927471,
    "C": 0.0,
    "D": 0.0
   }
