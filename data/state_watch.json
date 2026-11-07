@@ -1,7 +1,7 @@
 {
- "sm:robinhood": 1794061312,
- "sm:bsc": 1794061316,
- "sm:sol": 1794061319,
+ "sm:robinhood": 1794077636,
+ "sm:bsc": 1794077637,
+ "sm:sol": 1794077638,
  "w:robinhood:0x785f362a6d5ca85100e0601a8bc1f1466b7d92e9": 1792753159,
  "w:robinhood:0xf8ca7d499b1c2b003b9b503cd0b050ec5d98783c": 1793389881,
  "w:robinhood:0x867ab60b3d5655e5ba51e636ec160ffcffe5fa97": 1792767869,
@@ -1914,7 +1914,7 @@
   "robinhood:0x18e674231a58c239dc7daedcffe15ec3a24cff5c": {
    "sym": "HOOKR",
    "A": 0.0,
-   "B": 5013.702095191522,
+   "B": 5896.855709084842,
    "C": 0.0,
    "D": 0.0
   },
@@ -15217,6 +15217,13 @@
    "B": -506.667947351639,
    "C": 0.0,
    "D": 0.0
+  },
+  "sol:87CQtouHSb6YCXaPZ1pp8jD56VudRMXBVqU3oDMD1UJT": {
+   "sym": "José",
+   "A": 0.0,
+   "B": -90.29041467636011,
+   "C": 0.0,
+   "D": 0.0
   }
  },
  "gflow_prev": {
@@ -16854,7 +16861,7 @@
   },
   "robinhood:0x18e674231a58c239dc7daedcffe15ec3a24cff5c": {
    "A": 0.0,
-   "B": 5013.702095191522,
+   "B": 5896.855709084842,
    "C": 0.0,
    "D": 0.0
   },
@@ -28255,6 +28262,12 @@
   "robinhood:0xc306419aa06ac78a0e1aaf97aa6aa2e9bed3a63f": {
    "A": 0.0,
    "B": -506.667947351639,
+   "C": 0.0,
+   "D": 0.0
+  },
+  "sol:87CQtouHSb6YCXaPZ1pp8jD56VudRMXBVqU3oDMD1UJT": {
+   "A": 0.0,
+   "B": -90.29041467636011,
    "C": 0.0,
    "D": 0.0
   }
